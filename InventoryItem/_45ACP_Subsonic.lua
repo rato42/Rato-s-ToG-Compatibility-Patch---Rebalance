@@ -6,10 +6,10 @@ DefineClass._45ACP_Subsonic = {
 
 	object_class = "Ammo",
 	Icon = "Mod/Dau6w/Images/45ACP_rounds_SS.png",
-	DisplayName = T(919465485643, --[[ModItemInventoryItemCompositeDef _45ACP_Subsonic DisplayName]] ".45 ACP Subsonic"),
-	DisplayNamePlural = T(175529545785, --[[ModItemInventoryItemCompositeDef _45ACP_Subsonic DisplayNamePlural]] ".45 ACP Subsonic"),
+	DisplayName = T(183277567411, --[[ModItemInventoryItemCompositeDef _45ACP_Subsonic DisplayName]] ".45 ACP Subsonic"),
+	DisplayNamePlural = T(510286455037, --[[ModItemInventoryItemCompositeDef _45ACP_Subsonic DisplayNamePlural]] ".45 ACP Subsonic"),
 	colorStyle = "AmmoMatchColor",
-	Description = T(608631138985, --[[ModItemInventoryItemCompositeDef _45ACP_Subsonic Description]] ".45 ACP for Handguns and SMGs."),
+	Description = T(487740803895, --[[ModItemInventoryItemCompositeDef _45ACP_Subsonic Description]] ".45 ACP for Handguns and SMGs."),
 	Cost = 220,
 	CanAppearInShop = true,
 	Tier = 2,
