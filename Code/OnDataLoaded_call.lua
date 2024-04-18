@@ -1,10 +1,10 @@
 
--- function OnMsg.DataLoaded()
-	
-	-- tog_actions()
-	
-	-------placeobj
-	-- rat_bobby_tog()
-	-- tog_components()
+function OnMsg.DataLoaded()
+	disable_unpatched_shop()
+end
 
--- end
+function OnMsg.ModsReloaded()
+	disable_unpatched_shop()
+end
+
+disable_unpatched_shop()

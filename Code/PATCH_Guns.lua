@@ -1224,89 +1224,23 @@ function RatoTOG_Patch()
 	VikingMP446_1.AdditionalHint = T( 746490991929, [[<description_hints>]] )
 	VikingMP446_1.PenetrationClass = 1
 
-	M79SAW2_1.Icon = "Mod/KKh3Yhf/Images/M79SAWEDOFF_icon.png"
-	M79SAW2_1.RestockWeight = 40
-	M79SAW2_1.Caliber = "40mmGrenade"
-	M79SAW2_1.ReloadAP = 6000
-	M79SAW2_1.ShootAP = 4000
-	M79SAW2_1.LargeItem = 0
-	M79SAW2_1.WeaponRange = 25
-	M79SAW2_1.object_class = "GrenadeLauncher"
-	M79SAW2_1.HandSlot = "OneHanded"
-	M79SAW2_1.ScrapParts = 16
-	M79SAW2_1.PenetrationClass = 1
+
 	M79SAW2_1.Cost = 4000
-	M79SAW2_1.Reliability = 50
-	M79SAW2_1.RepairCost = 80
-	M79SAW2_1.AimAccuracy = 2
-	M79SAW2_1.Valuable = 0
-	M79SAW2_1.burst_selective = false
 	M79SAW2_1.Tier = 2
-	M79SAW2_1.CategoryPair = "HeavyWeapons"
-	M79SAW2_1.PointBlankBonus = 1
-	M79SAW2_1.HolsterSlot = "Leg"
 	M79SAW2_1.MaxStock = 2
 	M79SAW2_1.CanAppearInShop = true
 	M79SAW2_1.is_tog_patched = true
-	M79SAW2_1.ObjDamageMod = 100
-	M79SAW2_1.Cumbersome = 0
-	M79SAW2_1.Noise = 22
 	M79SAW2_1.is_vanilla_firearm = false
-	M79SAW2_1.fxClass = "UnderslungGrenadeLauncher"
-	M79SAW2_1.rat_scope_block = false
-	M79SAW2_1.ComponentSlots = {{CanBeEmpty = false, SlotType = 'Muzzle', DefaultComponent = 'ToG_VFX_Muzzle', Modifiable = false, AvailableComponents = {'ToG_VFX_Muzzle', }}}
-	M79SAW2_1.Condition = 100
-	M79SAW2_1.AttackAP = 4000
-	M79SAW2_1.unwieldy_weapon = false
-	M79SAW2_1.default_long_barrel = false
-	M79SAW2_1.CanAppearUsed = true
-	M79SAW2_1.pistol_swap = false
-	M79SAW2_1.AdditionalHint = T( 455509044395, [[<image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> Shoots 40mm Grenades
-<image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> Mishap chance increased with distance
-<image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> Slow rate of Fire]] )
-	M79SAW2_1.PenetrationClass = 1
 
-	M79SAW_1.Icon = "Mod/KKh3Yhf/Images/M79SAW_icon.png"
-	M79SAW_1.RestockWeight = 75
-	M79SAW_1.Caliber = "40mmGrenade"
-	M79SAW_1.ReloadAP = 6000
-	M79SAW_1.ShootAP = 4000
-	M79SAW_1.LargeItem = 0
-	M79SAW_1.WeaponRange = 25
-	M79SAW_1.object_class = "GrenadeLauncher"
-	M79SAW_1.HandSlot = "OneHanded"
-	M79SAW_1.ScrapParts = 16
-	M79SAW_1.PenetrationClass = 1
+
+	
 	M79SAW_1.Cost = 4000
-	M79SAW_1.Reliability = 50
-	M79SAW_1.RepairCost = 80
-	M79SAW_1.AimAccuracy = 2
-	M79SAW_1.Valuable = 0
-	M79SAW_1.burst_selective = false
 	M79SAW_1.Tier = 1
-	M79SAW_1.CategoryPair = "HeavyWeapons"
-	M79SAW_1.PointBlankBonus = 1
-	M79SAW_1.HolsterSlot = "Leg"
 	M79SAW_1.MaxStock = 2
 	M79SAW_1.CanAppearInShop = false
 	M79SAW_1.is_tog_patched = true
-	M79SAW_1.ObjDamageMod = 100
-	M79SAW_1.Cumbersome = 0
-	M79SAW_1.Noise = 18
 	M79SAW_1.is_vanilla_firearm = false
-	M79SAW_1.fxClass = "UnderslungGrenadeLauncher"
-	M79SAW_1.rat_scope_block = false
-	M79SAW_1.ComponentSlots = {{CanBeEmpty = false, SlotType = 'Muzzle', DefaultComponent = 'ToG_VFX_Muzzle', Modifiable = false, AvailableComponents = {'ToG_VFX_Muzzle', }}}
-	M79SAW_1.Condition = 100
-	M79SAW_1.AttackAP = 4000
-	M79SAW_1.unwieldy_weapon = false
-	M79SAW_1.default_long_barrel = false
-	M79SAW_1.CanAppearUsed = true
-	M79SAW_1.pistol_swap = false
-	M79SAW_1.AdditionalHint = T( 309537575554, [[<image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> Shoots 40mm Grenades
-<image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> Mishap chance increased with distance
-<image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> Slow rate of Fire]] )
-	M79SAW_1.PenetrationClass = 1
+	
 
 	HK23ECamo_1.Icon = "Mod/KKh3Yhf/Images/HK23ECamo_icon.png"
 	HK23ECamo_1.RestockWeight = 30
@@ -1432,7 +1366,7 @@ function RatoTOG_Patch()
 	PKM_1.WeaponRange = 36
 	PKM_1.AvailableAttacks = {"MGBurstFire"}
 	PKM_1.object_class = "RPK74"
-	PKM_1.HandSlot = "OneHanded"
+	PKM_1.HandSlot = "TwoHanded"
 	PKM_1.PenetrationClass = 1
 	PKM_1.Cost = 12000
 	PKM_1.Damage = 32
@@ -2336,11 +2270,11 @@ function RatoTOG_Patch()
 	VSS_1.ReloadAP = 2000
 	VSS_1.ShootAP = 4000
 	VSS_1.OverwatchAngle = 1465
-	VSS_1.LargeItem = 0
+	VSS_1.LargeItem = 1
 	VSS_1.WeaponRange = 24
 	VSS_1.AvailableAttacks = {"SingleShot", "CancelShot", "BurstFire", "AutoFire"}
 	VSS_1.object_class = "BarretM82"
-	VSS_1.HandSlot = "OneHanded"
+	VSS_1.HandSlot = "TwoHanded"
 	VSS_1.ScrapParts = 13
 	VSS_1.PenetrationClass = 1
 	VSS_1.Cost = 8600
@@ -2577,7 +2511,7 @@ function RatoTOG_Patch()
 	UMP_1.WeaponRange = 18
 	UMP_1.AvailableAttacks = {"BurstFire", "AutoFire", "SingleShot", "RunAndGun", "CancelShot"}
 	UMP_1.object_class = "SubmachineGun"
-	UMP_1.HandSlot = "OneHanded"
+	UMP_1.HandSlot = "TwoHanded"
 	UMP_1.ScrapParts = 15
 	UMP_1.PenetrationClass = 1
 	UMP_1.Cost = 4500
@@ -2634,7 +2568,7 @@ function RatoTOG_Patch()
 	VigM2_1.WeaponRange = 18
 	VigM2_1.AvailableAttacks = {"BurstFire", "AutoFire", "SingleShot", "DualShot", "RunAndGun", "CancelShot"}
 	VigM2_1.object_class = "SubmachineGun"
-	VigM2_1.HandSlot = "OneHanded"
+	VigM2_1.HandSlot = "TwoHanded"
 	VigM2_1.ScrapParts = 5
 	VigM2_1.PenetrationClass = 1
 	VigM2_1.Cost = 900
