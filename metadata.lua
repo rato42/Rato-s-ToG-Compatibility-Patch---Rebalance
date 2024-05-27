@@ -31,26 +31,14 @@ return PlaceObj('ModDef', {
 		"Code/REW_table.lua",
 		"Code/FUNCTION_bipod_change.lua",
 		"Code/PATCH_Guns.lua",
-		"Code/PATCH_ammo.lua",
 		"Code/BOBBY_bobby_category.lua",
 		"Code/WEAPON_COMPONENTS_components.lua",
 		"Code/FUNCTION_grenade_launcher_22.lua",
 		"Code/explosion_inherit.lua",
-		"InventoryItem/_45ACP_Basic.lua",
-		"InventoryItem/_45ACP_AP.lua",
-		"InventoryItem/_45ACP_HP.lua",
-		"InventoryItem/_45ACP_Match.lua",
 		"InventoryItem/_45ACP_Tracer.lua",
 		"InventoryItem/_45ACP_Subsonic.lua",
 		"InventoryItem/_45ACP_Shock.lua",
-		"InventoryItem/_792kurz_Basic.lua",
-		"InventoryItem/_939_Basic.lua",
-		"InventoryItem/_939_SPP.lua",
-		"InventoryItem/_939_AP.lua",
-		"InventoryItem/_57x28_AP.lua",
-		"InventoryItem/_57x28_HP.lua",
 		"InventoryItem/_57x28_Tracer.lua",
-		"InventoryItem/_57x28_Match.lua",
 		"InventoryItem/_22m_HE.lua",
 		"InventoryItem/rat_22mmUnderslungGrenadeLauncher.lua",
 	},
@@ -59,16 +47,6 @@ return PlaceObj('ModDef', {
 	'saved', 1716149474,
 	'code_hash', -1499599475722528765,
 	'affected_resources', {
-		PlaceObj('ModResourcePreset', {
-			'Class', "Caliber",
-			'Id', "792x33",
-			'ClassDisplayName', "Caliber mod",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "Caliber",
-			'Id', "9x39",
-			'ClassDisplayName', "Caliber mod",
-		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "Caliber",
 			'Id', "22m_grenade",
@@ -115,31 +93,6 @@ return PlaceObj('ModDef', {
 			'ClassDisplayName', "ActionFX Object",
 		}),
 		PlaceObj('ModResourcePreset', {
-			'Class', "Caliber",
-			'Id', "45ACP",
-			'ClassDisplayName', "Caliber mod",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_45ACP_Basic",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_45ACP_AP",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_45ACP_HP",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_45ACP_Match",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
 			'Class', "InventoryItemCompositeDef",
 			'Id', "_45ACP_Tracer",
 			'ClassDisplayName', "Inventory item",
@@ -156,42 +109,7 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "InventoryItemCompositeDef",
-			'Id', "_792kurz_Basic",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_939_Basic",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_939_SPP",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_939_AP",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_57x28_AP",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_57x28_HP",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
 			'Id', "_57x28_Tracer",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_57x28_Match",
 			'ClassDisplayName', "Inventory item",
 		}),
 		PlaceObj('ModResourcePreset', {
