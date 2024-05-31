@@ -21,7 +21,7 @@ return PlaceObj('ModDef', {
 	'author', "rato",
 	'version_major', 1,
 	'version_minor', 18,
-	'version', 2892,
+	'version', 2896,
 	'lua_revision', 233360,
 	'saved_with_revision', 350233,
 	'code', {
@@ -31,21 +31,16 @@ return PlaceObj('ModDef', {
 		"Code/REW_table.lua",
 		"Code/FUNCTION_bipod_change.lua",
 		"Code/PATCH_Guns.lua",
-		"Code/BOBBY_bobby_category.lua",
 		"Code/WEAPON_COMPONENTS_components.lua",
 		"Code/FUNCTION_grenade_launcher_22.lua",
 		"Code/explosion_inherit.lua",
-		"InventoryItem/_45ACP_Tracer.lua",
-		"InventoryItem/_45ACP_Subsonic.lua",
-		"InventoryItem/_45ACP_Shock.lua",
-		"InventoryItem/_57x28_Tracer.lua",
 		"InventoryItem/_22m_HE.lua",
 		"InventoryItem/rat_22mmUnderslungGrenadeLauncher.lua",
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1716149474,
-	'code_hash', -1499599475722528765,
+	'saved', 1717170378,
+	'code_hash', -2056102408409689351,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "Caliber",
@@ -54,32 +49,12 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "RatBunker_STG44_1",
-			'ClassDisplayName', "Loot definition",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
 			'Id', "Rat_p08_bunker_ernie_1",
 			'ClassDisplayName', "Loot definition",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "Bunker_Junk_1",
-			'ClassDisplayName', "Loot definition",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
 			'Id', "RatBunker_GewerS_1",
-			'ClassDisplayName', "Loot definition",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Bunker_MP40_1",
-			'ClassDisplayName', "Loot definition",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Bunker_G98_1",
 			'ClassDisplayName', "Loot definition",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -94,102 +69,12 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "InventoryItemCompositeDef",
-			'Id', "_45ACP_Tracer",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_45ACP_Subsonic",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_45ACP_Shock",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_57x28_Tracer",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
 			'Id', "_22m_HE",
 			'ClassDisplayName', "Inventory item",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "CraftOperationsRecipeDef",
-			'Id', "Kurz_craft",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
 			'Id', "_22mmhe_craft",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "_45basic",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "939_basic",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "57_basic",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "_45shock",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "_45hp",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "57_hp",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "_45tracer",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "57_tracer",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "_45_ss",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "_45_match",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "57_match",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "_45ap",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "57_ap",
 			'ClassDisplayName', "Crafting operation recipe",
 		}),
 		PlaceObj('ModResourcePreset', {

@@ -1,16 +1,5 @@
 return {
 	PlaceObj('ModItemCaliber', {
-		Name = T(177627402591, --[[ModItemCaliber Default 792x33 Name]] "7.92x33 mm Kurz"),
-		SortKey = 5,
-		id = "792x33",
-	}),
-	PlaceObj('ModItemCaliber', {
-		Name = T(575589925143, --[[ModItemCaliber Default 9x39 Name]] "9x39 mm"),
-		SortKey = 8,
-		group = "Default",
-		id = "9x39",
-	}),
-	PlaceObj('ModItemCaliber', {
 		Name = T(990151491376, --[[ModItemCaliber Default 22m_grenade Name]] "22mm Grenade"),
 		id = "22m_grenade",
 	}),
@@ -39,10 +28,6 @@ return {
 		'CodeFileName', "Code/PATCH_Guns.lua",
 	}),
 	PlaceObj('ModItemCode', {
-		'name', "BOBBY_bobby_category",
-		'CodeFileName', "Code/BOBBY_bobby_category.lua",
-	}),
-	PlaceObj('ModItemCode', {
 		'name', "WEAPON_COMPONENTS_components",
 		'CodeFileName', "Code/WEAPON_COMPONENTS_components.lua",
 	}),
@@ -55,23 +40,6 @@ return {
 	}, {
 		PlaceObj('ModItemLootDef', {
 			Comment = "ernie container",
-			group = "Default",
-			id = "RatBunker_STG44_1",
-			loot = "all",
-			PlaceObj('LootEntryInventoryItem', {
-				Condition = 69,
-				item = "STG44R_1",
-				stack_max = 1,
-				stack_min = 1,
-			}),
-			PlaceObj('LootEntryInventoryItem', {
-				item = "_792kurz_Basic",
-				stack_max = 50,
-				stack_min = 30,
-			}),
-		}),
-		PlaceObj('ModItemLootDef', {
-			Comment = "ernie container",
 			group = "Ernie",
 			id = "Rat_p08_bunker_ernie_1",
 			PlaceObj('LootEntryInventoryItem', {
@@ -82,25 +50,6 @@ return {
 				stack_min = 1,
 			}),
 			PlaceObj('LootEntryNoLoot', {}),
-		}),
-		PlaceObj('ModItemLootDef', {
-			Comment = "ernie container",
-			group = "Ernie",
-			id = "Bunker_Junk_1",
-			loot = "all",
-			PlaceObj('LootEntryInventoryItem', {
-				item = "Parts",
-				stack_max = 11,
-				stack_min = 11,
-			}),
-			PlaceObj('LootEntryInventoryItem', {
-				item = "OpticalLens",
-				stack_max = 1,
-				stack_min = 1,
-			}),
-			PlaceObj('LootEntryLootDef', {
-				loot_def = "Rat_p08_bunker_ernie",
-			}),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "ernie container",
@@ -118,30 +67,6 @@ return {
 				stack_max = 1,
 				stack_min = 1,
 				weight = 8000,
-			}),
-		}),
-		PlaceObj('ModItemLootDef', {
-			Comment = "ernie container",
-			group = "Default",
-			id = "Bunker_MP40_1",
-			PlaceObj('LootEntryInventoryItem', {
-				Condition = 84,
-				item = "MP40",
-				stack_max = 1,
-				stack_min = 1,
-				weight = 6000,
-			}),
-			PlaceObj('LootEntryLootDef', {
-				loot_def = "RatBunker_STG44",
-			}),
-		}),
-		PlaceObj('ModItemLootDef', {
-			Comment = "ernie container",
-			group = "Default",
-			id = "Bunker_G98_1",
-			loot = "all",
-			PlaceObj('LootEntryLootDef', {
-				loot_def = "RatBunker_GewerS",
 			}),
 		}),
 		}),
@@ -180,163 +105,6 @@ return {
 	PlaceObj('ModItemFolder', {
 		'name', "Ammo and crafting",
 	}, {
-		PlaceObj('ModItemCaliber', {
-			Name = T(340195046325, --[[ModItemCaliber Default 45ACP Name]] ".45 ACP"),
-			SortKey = 1,
-			comment = ".45 ACP otherwise known as .45 Auto",
-			group = "Default",
-			id = "45ACP",
-		}),
-		PlaceObj('ModItemInventoryItemCompositeDef', {
-			'Group', "Ammo",
-			'Id', "_45ACP_Tracer",
-			'object_class', "Ammo",
-			'Icon', "Mod/Dau6w/Images/45ACP_rounds_tracer.png",
-			'DisplayName', T(815578891761, --[[ModItemInventoryItemCompositeDef _45ACP_Tracer DisplayName]] ".45 ACP Tracer"),
-			'DisplayNamePlural', T(903738075278, --[[ModItemInventoryItemCompositeDef _45ACP_Tracer DisplayNamePlural]] ".45 ACP Tracer"),
-			'colorStyle', "AmmoTracerColor",
-			'Description', T(977608926578, --[[ModItemInventoryItemCompositeDef _45ACP_Tracer Description]] ".45 ACP for Handguns and SMGs."),
-			'AdditionalHint', T(527902935931, --[[ModItemInventoryItemCompositeDef _45ACP_Tracer AdditionalHint]] "<image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> Hit enemies are <color EmStyle>Marked</color> \n<image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> Attacker and target have their positions <color EmStyle>Revealed</color>, making them easier to hit in the dark\n<image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> Easier to compensate recoil in multishot attacks"),
-			'Cost', 220,
-			'CanAppearInShop', true,
-			'Tier', 2,
-			'MaxStock', 5,
-			'RestockWeight', 25,
-			'CategoryPair', "45ACP",
-			'ShopStackSize', 30,
-			'MaxStacks', 500,
-			'Caliber', "45ACP",
-			'Modifications', {
-				PlaceObj('CaliberModification', {
-					mod_add = 16,
-					target_prop = "Noise",
-				}),
-				PlaceObj('CaliberModification', {
-					mod_add = 1,
-					target_prop = "tracer",
-				}),
-			},
-			'AppliedEffects', {
-				"Marked",
-				"Revealed_R",
-			},
-			'ammo_type_icon', "UI/Icons/Items/ta_tracer.png",
-		}),
-		PlaceObj('ModItemInventoryItemCompositeDef', {
-			'Group', "Ammo",
-			'Id', "_45ACP_Subsonic",
-			'object_class', "Ammo",
-			'Icon', "Mod/Dau6w/Images/45ACP_rounds_SS.png",
-			'DisplayName', T(183277567411, --[[ModItemInventoryItemCompositeDef _45ACP_Subsonic DisplayName]] ".45 ACP Subsonic"),
-			'DisplayNamePlural', T(510286455037, --[[ModItemInventoryItemCompositeDef _45ACP_Subsonic DisplayNamePlural]] ".45 ACP Subsonic"),
-			'colorStyle', "AmmoMatchColor",
-			'Description', T(487740803895, --[[ModItemInventoryItemCompositeDef _45ACP_Subsonic Description]] ".45 ACP for Handguns and SMGs."),
-			'Cost', 220,
-			'CanAppearInShop', true,
-			'Tier', 2,
-			'RestockWeight', 25,
-			'CategoryPair', "45ACP",
-			'ShopStackSize', 30,
-			'MaxStacks', 500,
-			'Caliber', "45ACP",
-			'Modifications', {
-				PlaceObj('CaliberModification', {
-					mod_add = 16,
-					mod_mul = 350,
-					target_prop = "Noise",
-				}),
-				PlaceObj('CaliberModification', {
-					mod_add = -2,
-					target_prop = "WeaponRange",
-				}),
-				PlaceObj('CaliberModification', {
-					mod_add = -1,
-					target_prop = "AimAccuracy",
-				}),
-			},
-			'ammo_type_icon', "UI/Icons/Items/ta_subsonic.png",
-		}),
-		PlaceObj('ModItemInventoryItemCompositeDef', {
-			'Group', "Ammo",
-			'Id', "_45ACP_Shock",
-			'object_class', "Ammo",
-			'Icon', "Mod/Dau6w/Images/45ACP_rounds_shock.png",
-			'DisplayName', T(190958515447, --[[ModItemInventoryItemCompositeDef _45ACP_Shock DisplayName]] ".45 ACP Shock"),
-			'DisplayNamePlural', T(413473961297, --[[ModItemInventoryItemCompositeDef _45ACP_Shock DisplayNamePlural]] ".45 ACP Shock"),
-			'colorStyle', "AmmoHPColor",
-			'Description', T(610800846683, --[[ModItemInventoryItemCompositeDef _45ACP_Shock Description]] ".45 ACP for Handguns and SMGs."),
-			'AdditionalHint', T(688608367022, --[[ModItemInventoryItemCompositeDef _45ACP_Shock AdditionalHint]] "<image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> Reduced range\n<image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> No armor penetration\n<image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> Greater Critical Damage\n<image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> Inflicts <color EmStyle>Bleeding</color>"),
-			'Cost', 300,
-			'CanAppearInShop', true,
-			'Tier', 2,
-			'RestockWeight', 10,
-			'CategoryPair', "45ACP",
-			'ShopStackSize', 30,
-			'MaxStacks', 500,
-			'Caliber', "45ACP",
-			'Modifications', {
-				PlaceObj('CaliberModification', {
-					mod_add = 70,
-					target_prop = "CritDamage",
-				}),
-				PlaceObj('CaliberModification', {
-					mod_add = -4,
-					target_prop = "PenetrationClass",
-				}),
-				PlaceObj('CaliberModification', {
-					mod_add = -4,
-					target_prop = "WeaponRange",
-				}),
-				PlaceObj('CaliberModification', {
-					mod_add = 16,
-					target_prop = "Noise",
-				}),
-			},
-			'AppliedEffects', {
-				"Bleeding",
-			},
-			'ammo_type_icon', "UI/Icons/Items/ta_shock.png",
-		}),
-		PlaceObj('ModItemInventoryItemCompositeDef', {
-			'Group', "Ammo",
-			'Id', "_57x28_Tracer",
-			'comment', "rat",
-			'object_class', "Ammo",
-			'Icon', "Mod/Dau6w/Images/tracer.png",
-			'DisplayName', T(415712042905, --[[ModItemInventoryItemCompositeDef _57x28_Tracer DisplayName]] "5.7x28 mm Tracer"),
-			'DisplayNamePlural', T(300874798240, --[[ModItemInventoryItemCompositeDef _57x28_Tracer DisplayNamePlural]] "5.7x28 mm Tracer"),
-			'colorStyle', "AmmoTracerColor",
-			'Description', T(424907333767, --[[ModItemInventoryItemCompositeDef _57x28_Tracer Description]] "5.7 x 28 mm Tracer Ammo for SMGs and Pistols"),
-			'AdditionalHint', T(281498508775, --[[ModItemInventoryItemCompositeDef _57x28_Tracer AdditionalHint]] "<image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> Hit enemies are <color EmStyle>Marked</color> \n<image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> Attacker and target have their positions <color EmStyle>Revealed</color>, making them easier to hit in the dark\n<image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> Easier to compensate recoil in multishot attacks"),
-			'Cost', 300,
-			'CanAppearInShop', true,
-			'Tier', 2,
-			'MaxStock', 5,
-			'RestockWeight', 50,
-			'CategoryPair', "57x28",
-			'ShopStackSize', 30,
-			'MaxStacks', 500,
-			'Caliber', "5.7x28mm",
-			'Modifications', {
-				PlaceObj('CaliberModification', {
-					mod_add = 1,
-					target_prop = "PenetrationClass",
-				}),
-				PlaceObj('CaliberModification', {
-					mod_add = 12,
-					target_prop = "Noise",
-				}),
-				PlaceObj('CaliberModification', {
-					mod_add = 1,
-					target_prop = "tracer",
-				}),
-			},
-			'AppliedEffects', {
-				"Marked",
-				"Revealed_R",
-			},
-			'ammo_type_icon', "UI/Icons/Items/ta_tracer.png",
-		}),
 		PlaceObj('ModItemInventoryItemCompositeDef', {
 			'Group', "Ammo - Ordnance",
 			'Id', "_22m_HE",
@@ -16583,12 +16351,6 @@ return {
 		Slot = "Side2",
 		Visuals = {
 			PlaceObj('WeaponComponentVisual', {
-				ApplyTo = "MP7A2_1",
-				Entity = "WeaponAttA_SideLight",
-				Slot = "Side2",
-				param_bindings = false,
-			}),
-			PlaceObj('WeaponComponentVisual', {
 				ApplyTo = "UMP_1",
 				Entity = "WeaponAttA_SideLight",
 				Slot = "Side2",
@@ -16656,12 +16418,6 @@ return {
 		},
 		Slot = "Side3",
 		Visuals = {
-			PlaceObj('WeaponComponentVisual', {
-				ApplyTo = "MP7A2_1",
-				Entity = "WeaponAttA_SideLight",
-				Slot = "Side3",
-				param_bindings = false,
-			}),
 			PlaceObj('WeaponComponentVisual', {
 				ApplyTo = "UMP_1",
 				Entity = "WeaponAttA_SideLight",
@@ -16743,12 +16499,6 @@ return {
 		Slot = "Side2",
 		Visuals = {
 			PlaceObj('WeaponComponentVisual', {
-				ApplyTo = "MP7A2_1",
-				Entity = "WeaponAttA_SideLaser",
-				Slot = "Side2",
-				param_bindings = false,
-			}),
-			PlaceObj('WeaponComponentVisual', {
 				ApplyTo = "UMP_1",
 				Entity = "WeaponAttA_SideLaser",
 				Slot = "Side2",
@@ -16808,12 +16558,6 @@ return {
 		},
 		Slot = "Side3",
 		Visuals = {
-			PlaceObj('WeaponComponentVisual', {
-				ApplyTo = "MP7A2_1",
-				Entity = "WeaponAttA_SideLaser",
-				Slot = "Side3",
-				param_bindings = false,
-			}),
 			PlaceObj('WeaponComponentVisual', {
 				ApplyTo = "UMP_1",
 				Entity = "WeaponAttA_SideLaser",
@@ -16889,12 +16633,6 @@ return {
 		Slot = "Side2",
 		Visuals = {
 			PlaceObj('WeaponComponentVisual', {
-				ApplyTo = "MP7A2_1",
-				Entity = "WeaponAttA_SideLaser",
-				Slot = "Side2",
-				param_bindings = false,
-			}),
-			PlaceObj('WeaponComponentVisual', {
 				ApplyTo = "UMP_1",
 				Entity = "WeaponAttA_SideLaser",
 				Slot = "Side2",
@@ -16954,12 +16692,6 @@ return {
 		},
 		Slot = "Side3",
 		Visuals = {
-			PlaceObj('WeaponComponentVisual', {
-				ApplyTo = "MP7A2_1",
-				Entity = "WeaponAttA_SideLaser",
-				Slot = "Side3",
-				param_bindings = false,
-			}),
 			PlaceObj('WeaponComponentVisual', {
 				ApplyTo = "UMP_1",
 				Entity = "WeaponAttA_SideLaser",
@@ -17385,12 +17117,6 @@ return {
 				param_bindings = false,
 			}),
 			PlaceObj('WeaponComponentVisual', {
-				ApplyTo = "MP7A2_1",
-				Entity = "WeaponAttA_BarrelUzi_02",
-				Slot = "Barrel",
-				param_bindings = false,
-			}),
-			PlaceObj('WeaponComponentVisual', {
 				ApplyTo = "UMP_1",
 				Entity = "WeaponAttA_BarrelUzi_02",
 				Slot = "Barrel",
@@ -17473,12 +17199,6 @@ return {
 			}),
 			PlaceObj('WeaponComponentVisual', {
 				ApplyTo = "HK_SL8_1",
-				Entity = "WeaponAttA_BarrelUzi_02",
-				Slot = "Barrel",
-				param_bindings = false,
-			}),
-			PlaceObj('WeaponComponentVisual', {
-				ApplyTo = "MP7A2_1",
 				Entity = "WeaponAttA_BarrelUzi_02",
 				Slot = "Barrel",
 				param_bindings = false,
@@ -17584,12 +17304,6 @@ return {
 				param_bindings = false,
 			}),
 			PlaceObj('WeaponComponentVisual', {
-				ApplyTo = "MP7A2_1",
-				Entity = "WeaponAttA_BarrelUzi_02",
-				Slot = "Barrel",
-				param_bindings = false,
-			}),
-			PlaceObj('WeaponComponentVisual', {
 				ApplyTo = "UMP_1",
 				Entity = "WeaponAttA_BarrelUzi_02",
 				Slot = "Barrel",
@@ -17678,12 +17392,6 @@ return {
 			}),
 			PlaceObj('WeaponComponentVisual', {
 				ApplyTo = "HK_SL8_1",
-				Entity = "WeaponAttA_BarrelUzi_02",
-				Slot = "Barrel",
-				param_bindings = false,
-			}),
-			PlaceObj('WeaponComponentVisual', {
-				ApplyTo = "MP7A2_1",
 				Entity = "WeaponAttA_BarrelUzi_02",
 				Slot = "Barrel",
 				param_bindings = false,
