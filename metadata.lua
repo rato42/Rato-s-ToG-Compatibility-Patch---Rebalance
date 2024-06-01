@@ -31,6 +31,7 @@ return PlaceObj('ModDef', {
 		"Code/REW_table.lua",
 		"Code/FUNCTION_bipod_change.lua",
 		"Code/PATCH_Guns.lua",
+		"Code/PATCH_old_tog_ammo.lua",
 		"Code/WEAPON_COMPONENTS_components.lua",
 		"Code/FUNCTION_grenade_launcher_22.lua",
 		"Code/explosion_inherit.lua",
