@@ -28,10 +28,6 @@ return {
 		'CodeFileName', "Code/PATCH_Guns.lua",
 	}),
 	PlaceObj('ModItemCode', {
-		'name', "PATCH_old_tog_ammo",
-		'CodeFileName', "Code/PATCH_old_tog_ammo.lua",
-	}),
-	PlaceObj('ModItemCode', {
 		'name', "WEAPON_COMPONENTS_components",
 		'CodeFileName', "Code/WEAPON_COMPONENTS_components.lua",
 	}),
