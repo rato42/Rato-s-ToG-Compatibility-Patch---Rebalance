@@ -22,7 +22,6 @@ function RatoTOG_Patch()
 	AN94_1.PenetrationClass = 1
 	AN94_1.Cost = 18900
 	AN94_1.Damage = 23
-	AN94_1.MagazineSize = 30
 	AN94_1.Reliability = 86
 	AN94_1.RepairCost = 30
 	AN94_1.AimAccuracy = 6
@@ -119,7 +118,6 @@ function RatoTOG_Patch()
 	B93RR_1.PenetrationClass = 1
 	B93RR_1.Cost = 3200
 	B93RR_1.Damage = 16
-	B93RR_1.MagazineSize = 20
 	B93RR_1.Reliability = 60
 	B93RR_1.RepairCost = 70
 	B93RR_1.AimAccuracy = 3
@@ -205,7 +203,6 @@ function RatoTOG_Patch()
 	Glock17_1.PenetrationClass = 1
 	Glock17_1.Cost = 950
 	Glock17_1.Damage = 16
-	Glock17_1.MagazineSize = 15
 	Glock17_1.Reliability = 80
 	Glock17_1.RepairCost = 70
 	Glock17_1.AimAccuracy = 2
@@ -284,7 +281,6 @@ function RatoTOG_Patch()
 	SteyrScout_1.PenetrationClass = 1
 	SteyrScout_1.Cost = 9800
 	SteyrScout_1.Damage = 24
-	SteyrScout_1.MagazineSize = 5
 	SteyrScout_1.Reliability = 55
 	SteyrScout_1.RepairCost = 80
 	SteyrScout_1.AimAccuracy = 7
@@ -386,7 +382,6 @@ function RatoTOG_Patch()
 	G3A3Green_1.PenetrationClass = 1
 	G3A3Green_1.Cost = 9000
 	G3A3Green_1.Damage = 30
-	G3A3Green_1.MagazineSize = 20
 	G3A3Green_1.Reliability = 90
 	G3A3Green_1.RepairCost = 65
 	G3A3Green_1.AimAccuracy = 4
@@ -480,7 +475,6 @@ function RatoTOG_Patch()
 	G3A3_1.PenetrationClass = 1
 	G3A3_1.Cost = 9000
 	G3A3_1.Damage = 30
-	G3A3_1.MagazineSize = 20
 	G3A3_1.Reliability = 90
 	G3A3_1.RepairCost = 65
 	G3A3_1.AimAccuracy = 4
@@ -574,7 +568,6 @@ function RatoTOG_Patch()
 	Groza_1.PenetrationClass = 1
 	Groza_1.Cost = 4100
 	Groza_1.Damage = 25
-	Groza_1.MagazineSize = 20
 	Groza_1.Reliability = 70
 	Groza_1.RepairCost = 80
 	Groza_1.AimAccuracy = 5
@@ -661,7 +654,6 @@ function RatoTOG_Patch()
 	HK33A2_1.PenetrationClass = 1
 	HK33A2_1.Cost = 14500
 	HK33A2_1.Damage = 24
-	HK33A2_1.MagazineSize = 10
 	HK33A2_1.Reliability = 90
 	HK33A2_1.RepairCost = 80
 	HK33A2_1.AimAccuracy = 5
@@ -773,7 +765,6 @@ function RatoTOG_Patch()
 	HK53_1.PenetrationClass = 1
 	HK53_1.Cost = 13850
 	HK53_1.Damage = 22
-	HK53_1.MagazineSize = 10
 	HK53_1.Reliability = 87
 	HK53_1.RepairCost = 80
 	HK53_1.AimAccuracy = 4
@@ -880,7 +871,6 @@ function RatoTOG_Patch()
 	M70D_1.PenetrationClass = 1
 	M70D_1.Cost = 3100
 	M70D_1.Damage = 26
-	M70D_1.MagazineSize = 30
 	M70D_1.Reliability = 60
 	M70D_1.RepairCost = 25
 	M70D_1.AimAccuracy = 3
@@ -974,7 +964,6 @@ function RatoTOG_Patch()
 	M70_1.PenetrationClass = 1
 	M70_1.Cost = 3100
 	M70_1.Damage = 26
-	M70_1.MagazineSize = 30
 	M70_1.Reliability = 70
 	M70_1.RepairCost = 20
 	M70_1.AimAccuracy = 3
@@ -1068,7 +1057,6 @@ function RatoTOG_Patch()
 	RK62_1.PenetrationClass = 1
 	RK62_1.Cost = 3100
 	RK62_1.Damage = 26
-	RK62_1.MagazineSize = 30
 	RK62_1.Reliability = 85
 	RK62_1.RepairCost = 25
 	RK62_1.AimAccuracy = 3
@@ -1162,7 +1150,6 @@ function RatoTOG_Patch()
 	RK95_1.PenetrationClass = 1
 	RK95_1.Cost = 5500
 	RK95_1.Damage = 26
-	RK95_1.MagazineSize = 30
 	RK95_1.Reliability = 90
 	RK95_1.RepairCost = 15
 	RK95_1.AimAccuracy = 4
@@ -1257,7 +1244,6 @@ function RatoTOG_Patch()
 	STG44R_1.PenetrationClass = 1
 	STG44R_1.Cost = 2200
 	STG44R_1.Damage = 25
-	STG44R_1.MagazineSize = 30
 	STG44R_1.Reliability = 73
 	STG44R_1.RepairCost = 80
 	STG44R_1.AimAccuracy = 3
@@ -1346,7 +1332,6 @@ function RatoTOG_Patch()
 	TAR21_1.PenetrationClass = 1
 	TAR21_1.Cost = 13000
 	TAR21_1.Damage = 24
-	TAR21_1.MagazineSize = 30
 	TAR21_1.Reliability = 80
 	TAR21_1.RepairCost = 80
 	TAR21_1.AimAccuracy = 5
@@ -1427,7 +1412,6 @@ function RatoTOG_Patch()
 	P08_1.PenetrationClass = 1
 	P08_1.Cost = 890
 	P08_1.Damage = 17
-	P08_1.MagazineSize = 8
 	P08_1.Reliability = 60
 	P08_1.RepairCost = 80
 	P08_1.AimAccuracy = 3
@@ -1504,7 +1488,6 @@ function RatoTOG_Patch()
 	USP_1.PenetrationClass = 1
 	USP_1.Cost = 1900
 	USP_1.Damage = 17
-	USP_1.MagazineSize = 12
 	USP_1.Reliability = 90
 	USP_1.RepairCost = 70
 	USP_1.AimAccuracy = 3
@@ -1586,7 +1569,6 @@ function RatoTOG_Patch()
 	M1911_1.PenetrationClass = 1
 	M1911_1.Cost = 3500
 	M1911_1.Damage = 22
-	M1911_1.MagazineSize = 7
 	M1911_1.Reliability = 65
 	M1911_1.RepairCost = 70
 	M1911_1.AimAccuracy = 3
@@ -1667,7 +1649,6 @@ function RatoTOG_Patch()
 	VikingMP446_1.PenetrationClass = 1
 	VikingMP446_1.Cost = 2200
 	VikingMP446_1.Damage = 18
-	VikingMP446_1.MagazineSize = 12
 	VikingMP446_1.Reliability = 90
 	VikingMP446_1.RepairCost = 60
 	VikingMP446_1.AimAccuracy = 3
@@ -1742,7 +1723,6 @@ function RatoTOG_Patch()
 	MAC11_1.PenetrationClass = 1
 	MAC11_1.Cost = 3500
 	MAC11_1.Damage = 17
-	MAC11_1.MagazineSize = 32
 	MAC11_1.Reliability = 75
 	MAC11_1.RepairCost = 80
 	MAC11_1.AimAccuracy = 2
@@ -1830,7 +1810,6 @@ function RatoTOG_Patch()
 	PP91_1.PenetrationClass = 1
 	PP91_1.Cost = 3500
 	PP91_1.Damage = 17
-	PP91_1.MagazineSize = 20
 	PP91_1.Reliability = 80
 	PP91_1.RepairCost = 50
 	PP91_1.AimAccuracy = 2
@@ -1990,7 +1969,6 @@ function RatoTOG_Patch()
 	HK23ECamo_1.PenetrationClass = 1
 	HK23ECamo_1.Cost = 18250
 	HK23ECamo_1.Damage = 24
-	HK23ECamo_1.MagazineSize = 100
 	HK23ECamo_1.Reliability = 90
 	HK23ECamo_1.RepairCost = 80
 	HK23ECamo_1.AimAccuracy = 3
@@ -2106,7 +2084,6 @@ function RatoTOG_Patch()
 	HK23E_1.PenetrationClass = 1
 	HK23E_1.Cost = 18250
 	HK23E_1.Damage = 24
-	HK23E_1.MagazineSize = 100
 	HK23E_1.Reliability = 88
 	HK23E_1.RepairCost = 80
 	HK23E_1.AimAccuracy = 3
@@ -2221,7 +2198,6 @@ function RatoTOG_Patch()
 	PKM_1.PenetrationClass = 1
 	PKM_1.Cost = 12000
 	PKM_1.Damage = 32
-	PKM_1.MagazineSize = 100
 	PKM_1.Reliability = 85
 	PKM_1.RepairCost = 80
 	PKM_1.AimAccuracy = 2
@@ -2312,7 +2288,6 @@ function RatoTOG_Patch()
 	RPD_1.PenetrationClass = 1
 	RPD_1.Cost = 5400
 	RPD_1.Damage = 25
-	RPD_1.MagazineSize = 100
 	RPD_1.Reliability = 77
 	RPD_1.RepairCost = 80
 	RPD_1.AimAccuracy = 2
@@ -2407,7 +2382,6 @@ function RatoTOG_Patch()
 	Delisle_1.PenetrationClass = 1
 	Delisle_1.Cost = 5000
 	Delisle_1.Damage = 22
-	Delisle_1.MagazineSize = 7
 	Delisle_1.Reliability = 60
 	Delisle_1.RepairCost = 70
 	Delisle_1.AimAccuracy = 4
@@ -2501,7 +2475,6 @@ function RatoTOG_Patch()
 	Gewehr43_1.PenetrationClass = 1
 	Gewehr43_1.Cost = 2100
 	Gewehr43_1.Damage = 28
-	Gewehr43_1.MagazineSize = 10
 	Gewehr43_1.Reliability = 50
 	Gewehr43_1.RepairCost = 80
 	Gewehr43_1.AimAccuracy = 4
@@ -2582,7 +2555,6 @@ function RatoTOG_Patch()
 	M1Garand_2.PenetrationClass = 1
 	M1Garand_2.Cost = 3500
 	M1Garand_2.Damage = 29
-	M1Garand_2.MagazineSize = 8
 	M1Garand_2.Reliability = 80
 	M1Garand_2.RepairCost = 80
 	M1Garand_2.AimAccuracy = 5
@@ -2654,7 +2626,6 @@ function RatoTOG_Patch()
 	M76_1.PenetrationClass = 1
 	M76_1.Cost = 6500
 	M76_1.Damage = 29
-	M76_1.MagazineSize = 10
 	M76_1.Reliability = 45
 	M76_1.RepairCost = 70
 	M76_1.AimAccuracy = 6
@@ -2744,7 +2715,6 @@ function RatoTOG_Patch()
 	Mosin_1.PenetrationClass = 1
 	Mosin_1.Cost = 2400
 	Mosin_1.Damage = 31
-	Mosin_1.MagazineSize = 8
 	Mosin_1.Reliability = 50
 	Mosin_1.RepairCost = 80
 	Mosin_1.AimAccuracy = 5
@@ -2826,7 +2796,6 @@ function RatoTOG_Patch()
 	Papovka2SKS_1.PenetrationClass = 1
 	Papovka2SKS_1.Cost = 2700
 	Papovka2SKS_1.Damage = 26
-	Papovka2SKS_1.MagazineSize = 10
 	Papovka2SKS_1.Reliability = 76
 	Papovka2SKS_1.RepairCost = 30
 	Papovka2SKS_1.AimAccuracy = 3
@@ -2946,7 +2915,6 @@ function RatoTOG_Patch()
 	PapovkaSKS_1.PenetrationClass = 1
 	PapovkaSKS_1.Cost = 2700
 	PapovkaSKS_1.Damage = 26
-	PapovkaSKS_1.MagazineSize = 10
 	PapovkaSKS_1.Reliability = 76
 	PapovkaSKS_1.RepairCost = 30
 	PapovkaSKS_1.AimAccuracy = 3
@@ -3066,7 +3034,6 @@ function RatoTOG_Patch()
 	SKS_1.PenetrationClass = 1
 	SKS_1.Cost = 2500
 	SKS_1.Damage = 26
-	SKS_1.MagazineSize = 10
 	SKS_1.Reliability = 82
 	SKS_1.RepairCost = 80
 	SKS_1.AimAccuracy = 3
@@ -3155,7 +3122,6 @@ function RatoTOG_Patch()
 	SSG69_1.PenetrationClass = 1
 	SSG69_1.Cost = 7600
 	SSG69_1.Damage = 30
-	SSG69_1.MagazineSize = 5
 	SSG69_1.Reliability = 40
 	SSG69_1.RepairCost = 80
 	SSG69_1.AimAccuracy = 6
@@ -3242,7 +3208,6 @@ function RatoTOG_Patch()
 	Type56A_1.PenetrationClass = 1
 	Type56A_1.Cost = 2950
 	Type56A_1.Damage = 26
-	Type56A_1.MagazineSize = 10
 	Type56A_1.Reliability = 70
 	Type56A_1.RepairCost = 30
 	Type56A_1.AimAccuracy = 3
@@ -3346,7 +3311,6 @@ function RatoTOG_Patch()
 	Type56B_1.PenetrationClass = 1
 	Type56B_1.Cost = 2950
 	Type56B_1.Damage = 26
-	Type56B_1.MagazineSize = 10
 	Type56B_1.Reliability = 70
 	Type56B_1.RepairCost = 30
 	Type56B_1.AimAccuracy = 3
@@ -3450,7 +3414,6 @@ function RatoTOG_Patch()
 	Type56C_1.PenetrationClass = 1
 	Type56C_1.Cost = 2950
 	Type56C_1.Damage = 26
-	Type56C_1.MagazineSize = 10
 	Type56C_1.Reliability = 70
 	Type56C_1.RepairCost = 30
 	Type56C_1.AimAccuracy = 3
@@ -3554,7 +3517,6 @@ function RatoTOG_Patch()
 	Type56D_1.PenetrationClass = 1
 	Type56D_1.Cost = 2950
 	Type56D_1.Damage = 26
-	Type56D_1.MagazineSize = 10
 	Type56D_1.Reliability = 70
 	Type56D_1.RepairCost = 30
 	Type56D_1.AimAccuracy = 3
@@ -3658,7 +3620,6 @@ function RatoTOG_Patch()
 	VSK94_1.PenetrationClass = 1
 	VSK94_1.Cost = 5500
 	VSK94_1.Damage = 24
-	VSK94_1.MagazineSize = 20
 	VSK94_1.Reliability = 55
 	VSK94_1.RepairCost = 80
 	VSK94_1.AimAccuracy = 4
@@ -3748,7 +3709,6 @@ function RatoTOG_Patch()
 	VSS_1.PenetrationClass = 1
 	VSS_1.Cost = 8600
 	VSS_1.Damage = 26
-	VSS_1.MagazineSize = 10
 	VSS_1.Reliability = 70
 	VSS_1.RepairCost = 90
 	VSS_1.AimAccuracy = 6
@@ -3852,7 +3812,6 @@ function RatoTOG_Patch()
 	MicroUZI_1.PenetrationClass = 1
 	MicroUZI_1.Cost = 3100
 	MicroUZI_1.Damage = 16
-	MicroUZI_1.MagazineSize = 20
 	MicroUZI_1.Reliability = 70
 	MicroUZI_1.RepairCost = 80
 	MicroUZI_1.AimAccuracy = 2
@@ -3944,7 +3903,6 @@ function RatoTOG_Patch()
 	P90_2.PenetrationClass = 1
 	P90_2.Cost = 10900
 	P90_2.Damage = 17
-	P90_2.MagazineSize = 50
 	P90_2.Reliability = 85
 	P90_2.RepairCost = 80
 	P90_2.AimAccuracy = 4
@@ -4033,7 +3991,6 @@ function RatoTOG_Patch()
 	StenMK2_1.PenetrationClass = 1
 	StenMK2_1.Cost = 1900
 	StenMK2_1.Damage = 17
-	StenMK2_1.MagazineSize = 32
 	StenMK2_1.Reliability = 65
 	StenMK2_1.RepairCost = 40
 	StenMK2_1.AimAccuracy = 2
@@ -4100,7 +4057,6 @@ function RatoTOG_Patch()
 	UMP_1.PenetrationClass = 1
 	UMP_1.Cost = 4500
 	UMP_1.Damage = 22
-	UMP_1.MagazineSize = 30
 	UMP_1.Reliability = 75
 	UMP_1.RepairCost = 80
 	UMP_1.AimAccuracy = 2
@@ -4179,7 +4135,6 @@ function RatoTOG_Patch()
 	VigM2_1.PenetrationClass = 1
 	VigM2_1.Cost = 900
 	VigM2_1.Damage = 18
-	VigM2_1.MagazineSize = 32
 	VigM2_1.Reliability = 62
 	VigM2_1.RepairCost = 75
 	VigM2_1.AimAccuracy = 2
