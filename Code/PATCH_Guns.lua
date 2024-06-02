@@ -8,7 +8,6 @@ end
 -- ========== THIS IS AN AUTOMATICALLY GENERATED FILE! ==========
 
 function RatoTOG_Patch()
-	AN94_1.Icon = "Mod/KKh3Yhf/Images/AN94_icon.png"
 	AN94_1.RestockWeight = 25
 	AN94_1.ReloadAP = 3000
 	AN94_1.ShootAP = 2000
@@ -104,7 +103,6 @@ function RatoTOG_Patch()
 <image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> Unique 2 shot burst function at 1800 rounds per minute]])
 	AN94_1.PenetrationClass = 1
 
-	B93RR_1.Icon = "Mod/KKh3Yhf/Images/B93RR_icon.png"
 	B93RR_1.RestockWeight = 50
 	B93RR_1.ReloadAP = 4000
 	B93RR_1.ShootAP = 3000
@@ -189,7 +187,6 @@ function RatoTOG_Patch()
 <image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> Selective fire burst mode leads to less recoil]])
 	B93RR_1.PenetrationClass = 1
 
-	Glock17_1.Icon = "Mod/KKh3Yhf/Images/Glock17_icon.png"
 	Glock17_1.RestockWeight = 100
 	Glock17_1.ReloadAP = 3000
 	Glock17_1.ShootAP = 4000
@@ -267,7 +264,6 @@ function RatoTOG_Patch()
 <image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> Swapping to this weapon is free, as long it is not dual-wielded]])
 	Glock17_1.PenetrationClass = 1
 
-	SteyrScout_1.Icon = "Mod/KKh3Yhf/Images/SteyrScout_icon.png"
 	SteyrScout_1.RestockWeight = 50
 	SteyrScout_1.ReloadAP = 3000
 	SteyrScout_1.ShootAP = 4000
@@ -368,7 +364,6 @@ function RatoTOG_Patch()
 ]])
 	SteyrScout_1.PenetrationClass = 1
 
-	G3A3Green_1.Icon = "Mod/KKh3Yhf/Images/G3A3Green_icon.png"
 	G3A3Green_1.RestockWeight = 30
 	G3A3Green_1.ReloadAP = 3000
 	G3A3Green_1.ShootAP = 4000
@@ -461,7 +456,6 @@ function RatoTOG_Patch()
 	G3A3Green_1.AdditionalHint = T(334688337888, [[<description_hints>]])
 	G3A3Green_1.PenetrationClass = 1
 
-	G3A3_1.Icon = "Mod/KKh3Yhf/Images/G3A3Saudi_icon.png"
 	G3A3_1.RestockWeight = 30
 	G3A3_1.ReloadAP = 3000
 	G3A3_1.ShootAP = 4000
@@ -554,7 +548,6 @@ function RatoTOG_Patch()
 	G3A3_1.AdditionalHint = T(540692805911, [[<description_hints>]])
 	G3A3_1.PenetrationClass = 1
 
-	Groza_1.Icon = "Mod/KKh3Yhf/Images/Groza_icon_1.png"
 	Groza_1.RestockWeight = 60
 	Groza_1.ReloadAP = 4000
 	Groza_1.ShootAP = 4000
@@ -640,7 +633,6 @@ function RatoTOG_Patch()
 	Groza_1.AdditionalHint = T(727933339009, [[<description_hints>]])
 	Groza_1.PenetrationClass = 1
 
-	HK33A2_1.Icon = "Mod/KKh3Yhf/Images/HK33_icon.png"
 	HK33A2_1.RestockWeight = 50
 	HK33A2_1.ReloadAP = 3000
 	HK33A2_1.ShootAP = 4000
@@ -751,7 +743,6 @@ function RatoTOG_Patch()
 	HK33A2_1.AdditionalHint = T(630164376246, [[<description_hints>]])
 	HK33A2_1.PenetrationClass = 1
 
-	HK53_1.Icon = "Mod/KKh3Yhf/Images/HK53_icon.png"
 	HK53_1.RestockWeight = 30
 	HK53_1.ReloadAP = 3000
 	HK53_1.ShootAP = 3000
@@ -857,7 +848,6 @@ function RatoTOG_Patch()
 	HK53_1.__parents[1] = "SubmachineGun"
 	HK53_1.PenetrationClass = 1
 
-	M70D_1.Icon = "Mod/KKh3Yhf/Images/M70D_icon.png"
 	M70D_1.RestockWeight = 40
 	M70D_1.ReloadAP = 3000
 	M70D_1.ShootAP = 4000
@@ -950,7 +940,6 @@ function RatoTOG_Patch()
 	M70D_1.AdditionalHint = T(530524583318, [[<description_hints>]])
 	M70D_1.PenetrationClass = 1
 
-	M70_1.Icon = "Mod/KKh3Yhf/Images/M70_icon.png"
 	M70_1.RestockWeight = 60
 	M70_1.ReloadAP = 3000
 	M70_1.ShootAP = 4000
@@ -1043,7 +1032,6 @@ function RatoTOG_Patch()
 	M70_1.AdditionalHint = T(943877456040, [[<description_hints>]])
 	M70_1.PenetrationClass = 1
 
-	RK62_1.Icon = "Mod/KKh3Yhf/Images/RK62_icon.png"
 	RK62_1.RestockWeight = 40
 	RK62_1.ReloadAP = 3000
 	RK62_1.ShootAP = 4000
@@ -1136,7 +1124,6 @@ function RatoTOG_Patch()
 	RK62_1.AdditionalHint = T(347255431158, [[<description_hints>]])
 	RK62_1.PenetrationClass = 1
 
-	RK95_1.Icon = "Mod/KKh3Yhf/Images/RK95_icon.png"
 	RK95_1.RestockWeight = 60
 	RK95_1.ReloadAP = 3000
 	RK95_1.ShootAP = 4000
@@ -1230,7 +1217,6 @@ function RatoTOG_Patch()
 	RK95_1.AdditionalHint = T(266083134551, [[<description_hints>]])
 	RK95_1.PenetrationClass = 1
 
-	STG44R_1.Icon = "Mod/KKh3Yhf/Images/STG44_icon_r.png"
 	STG44R_1.RestockWeight = 40
 	STG44R_1.ReloadAP = 3000
 	STG44R_1.ShootAP = 4000
@@ -1318,7 +1304,6 @@ function RatoTOG_Patch()
 <image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> A relic of war]])
 	STG44R_1.PenetrationClass = 1
 
-	TAR21_1.Icon = "Mod/KKh3Yhf/Images/TAR21_icon.png"
 	TAR21_1.RestockWeight = 20
 	TAR21_1.ReloadAP = 4000
 	TAR21_1.ShootAP = 4000
@@ -1398,7 +1383,6 @@ function RatoTOG_Patch()
 	TAR21_1.AdditionalHint = T(292214856686, [[<description_hints>]])
 	TAR21_1.PenetrationClass = 1
 
-	P08_1.Icon = "Mod/KKh3Yhf/Images/P08_icon.png"
 	P08_1.RestockWeight = 40
 	P08_1.ReloadAP = 4000
 	P08_1.ShootAP = 4000
@@ -1474,7 +1458,6 @@ function RatoTOG_Patch()
 <image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> Swapping to this weapon is free, as long it is not dual-wielded]])
 	P08_1.PenetrationClass = 1
 
-	USP_1.Icon = "Mod/KKh3Yhf/Images/USP_icon.png"
 	USP_1.RestockWeight = 80
 	USP_1.ReloadAP = 3000
 	USP_1.ShootAP = 4000
@@ -1555,7 +1538,6 @@ function RatoTOG_Patch()
 <image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> Swapping to this weapon is free, as long it is not dual-wielded.]])
 	USP_1.PenetrationClass = 1
 
-	M1911_1.Icon = "Mod/KKh3Yhf/Images/M1911_icon.png"
 	M1911_1.RestockWeight = 60
 	M1911_1.ReloadAP = 3000
 	M1911_1.ShootAP = 4000
@@ -1635,7 +1617,6 @@ function RatoTOG_Patch()
 	M1911_1.AdditionalHint = T(566181481232, [[<description_hints>]])
 	M1911_1.PenetrationClass = 1
 
-	VikingMP446_1.Icon = "Mod/KKh3Yhf/Images/Viking_icon.png"
 	VikingMP446_1.RestockWeight = 60
 	VikingMP446_1.ReloadAP = 3000
 	VikingMP446_1.ShootAP = 4000
@@ -1709,7 +1690,6 @@ function RatoTOG_Patch()
 	VikingMP446_1.AdditionalHint = T(746490991929, [[<description_hints>]])
 	VikingMP446_1.PenetrationClass = 1
 
-	MAC11_1.Icon = "Mod/KKh3Yhf/Images/Mac11_icon.png"
 	MAC11_1.RestockWeight = 70
 	MAC11_1.ReloadAP = 3000
 	MAC11_1.ShootAP = 3000
@@ -1796,7 +1776,6 @@ function RatoTOG_Patch()
 	MAC11_1.AdditionalHint = T(681827100466, [[<description_hints>]])
 	MAC11_1.PenetrationClass = 1
 
-	PP91_1.Icon = "Mod/KKh3Yhf/Images/PP91_icon.png"
 	PP91_1.RestockWeight = 60
 	PP91_1.ReloadAP = 3000
 	PP91_1.ShootAP = 3000
@@ -1881,7 +1860,6 @@ function RatoTOG_Patch()
 	PP91_1.AdditionalHint = T(183411732483, [[<description_hints>]])
 	PP91_1.PenetrationClass = 1
 
-	M79SAW2_1.Icon = "Mod/KKh3Yhf/Images/M79SAWEDOFF_icon.png"
 	M79SAW2_1.RestockWeight = 40
 	M79SAW2_1.object_class = "GrenadeLauncher"
 	M79SAW2_1.ScrapParts = 16
@@ -1918,7 +1896,6 @@ function RatoTOG_Patch()
 <image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> Slow rate of Fire]])
 	M79SAW2_1.PenetrationClass = 1
 
-	M79SAW_1.Icon = "Mod/KKh3Yhf/Images/M79SAW_icon.png"
 	M79SAW_1.RestockWeight = 75
 	M79SAW_1.object_class = "GrenadeLauncher"
 	M79SAW_1.ScrapParts = 16
@@ -1955,7 +1932,6 @@ function RatoTOG_Patch()
 <image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> Slow rate of Fire]])
 	M79SAW_1.PenetrationClass = 1
 
-	HK23ECamo_1.Icon = "Mod/KKh3Yhf/Images/HK23ECamo_icon.png"
 	HK23ECamo_1.RestockWeight = 30
 	HK23ECamo_1.ReloadAP = 5000
 	HK23ECamo_1.ShootAP = 4000
@@ -2070,7 +2046,6 @@ function RatoTOG_Patch()
 	HK23ECamo_1.AdditionalHint = T(230948710696, [[<description_hints>]])
 	HK23ECamo_1.PenetrationClass = 1
 
-	HK23E_1.Icon = "Mod/KKh3Yhf/Images/HK23E_icon.png"
 	HK23E_1.RestockWeight = 35
 	HK23E_1.ReloadAP = 5000
 	HK23E_1.ShootAP = 4000
@@ -2185,7 +2160,6 @@ function RatoTOG_Patch()
 	HK23E_1.AdditionalHint = T(390378831477, [[<description_hints>]])
 	HK23E_1.PenetrationClass = 1
 
-	PKM_1.Icon = "Mod/KKh3Yhf/Images/PKM_icon.png"
 	PKM_1.RestockWeight = 40
 	PKM_1.ReloadAP = 5000
 	PKM_1.ShootAP = 4000
@@ -2274,7 +2248,6 @@ function RatoTOG_Patch()
 	PKM_1.AdditionalHint = T(921786310095, [[<description_hints>]])
 	PKM_1.PenetrationClass = 1
 
-	RPD_1.Icon = "Mod/KKh3Yhf/Images/RPD_icon.png"
 	RPD_1.RestockWeight = 80
 	RPD_1.ReloadAP = 5000
 	RPD_1.ShootAP = 4000
@@ -2368,7 +2341,6 @@ function RatoTOG_Patch()
 	RPD_1.AdditionalHint = T(862873342222, [[<description_hints>]])
 	RPD_1.PenetrationClass = 1
 
-	Delisle_1.Icon = "Mod/KKh3Yhf/Images/DeLisle_icon.png"
 	Delisle_1.RestockWeight = 20
 	Delisle_1.ReloadAP = 3000
 	Delisle_1.ShootAP = 4000
@@ -2461,7 +2433,6 @@ function RatoTOG_Patch()
 	Delisle_1.AdditionalHint = T(528620989138, [[<description_hints>]])
 	Delisle_1.PenetrationClass = 1
 
-	Gewehr43_1.Icon = "Mod/KKh3Yhf/Images/G43_icon1.png"
 	Gewehr43_1.RestockWeight = 40
 	Gewehr43_1.ReloadAP = 4000
 	Gewehr43_1.ShootAP = 4000
@@ -2541,7 +2512,6 @@ function RatoTOG_Patch()
 	Gewehr43_1.AdditionalHint = T(538484376797, [[<description_hints>]])
 	Gewehr43_1.PenetrationClass = 1
 
-	M1Garand_2.Icon = "Mod/KKh3Yhf/Images/M1Garand_icon_r.png"
 	M1Garand_2.RestockWeight = 90
 	M1Garand_2.ReloadAP = 3000
 	M1Garand_2.ShootAP = 4000
@@ -2612,7 +2582,6 @@ function RatoTOG_Patch()
 	M1Garand_2.__parents[1] = "AssaultRifle"
 	M1Garand_2.PenetrationClass = 1
 
-	M76_1.Icon = "Mod/KKh3Yhf/Images/M76_icon.png"
 	M76_1.RestockWeight = 100
 	M76_1.ReloadAP = 3000
 	M76_1.ShootAP = 4000
@@ -2701,7 +2670,6 @@ function RatoTOG_Patch()
 	M76_1.AdditionalHint = T(542588930667, [[<description_hints>]])
 	M76_1.PenetrationClass = 1
 
-	Mosin_1.Icon = "Mod/KKh3Yhf/Images/Mosin_Icon.png"
 	Mosin_1.RestockWeight = 100
 	Mosin_1.ReloadAP = 3000
 	Mosin_1.ShootAP = 4000
@@ -2782,7 +2750,6 @@ function RatoTOG_Patch()
 	Mosin_1.AdditionalHint = T(471813286018, [[<description_hints>]])
 	Mosin_1.PenetrationClass = 1
 
-	Papovka2SKS_1.Icon = "Mod/KKh3Yhf/Images/Papovka_icon_light.png"
 	Papovka2SKS_1.RestockWeight = 20
 	Papovka2SKS_1.ReloadAP = 3000
 	Papovka2SKS_1.ShootAP = 4000
@@ -2901,7 +2868,6 @@ function RatoTOG_Patch()
 	Papovka2SKS_1.__parents[1] = "AssaultRifle"
 	Papovka2SKS_1.PenetrationClass = 1
 
-	PapovkaSKS_1.Icon = "Mod/KKh3Yhf/Images/Papovka_icon_dark.png"
 	PapovkaSKS_1.RestockWeight = 25
 	PapovkaSKS_1.ReloadAP = 3000
 	PapovkaSKS_1.ShootAP = 4000
@@ -3020,7 +2986,6 @@ function RatoTOG_Patch()
 	PapovkaSKS_1.__parents[1] = "AssaultRifle"
 	PapovkaSKS_1.PenetrationClass = 1
 
-	SKS_1.Icon = "Mod/KKh3Yhf/Images/SKS_icon.png"
 	SKS_1.RestockWeight = 90
 	SKS_1.ReloadAP = 3000
 	SKS_1.ShootAP = 4000
@@ -3108,7 +3073,6 @@ function RatoTOG_Patch()
 	SKS_1.__parents[1] = "AssaultRifle"
 	SKS_1.PenetrationClass = 1
 
-	SSG69_1.Icon = "Mod/KKh3Yhf/Images/SSG69_icon.png"
 	SSG69_1.RestockWeight = 80
 	SSG69_1.ReloadAP = 3000
 	SSG69_1.ShootAP = 4000
@@ -3194,7 +3158,6 @@ function RatoTOG_Patch()
 	SSG69_1.AdditionalHint = T(787968005557, [[<description_hints>]])
 	SSG69_1.PenetrationClass = 1
 
-	Type56A_1.Icon = "Mod/KKh3Yhf/Images/Type56a_icon.png"
 	Type56A_1.RestockWeight = 10
 	Type56A_1.ReloadAP = 3000
 	Type56A_1.ShootAP = 4000
@@ -3297,7 +3260,6 @@ function RatoTOG_Patch()
 	Type56A_1.__parents[1] = "AssaultRifle"
 	Type56A_1.PenetrationClass = 1
 
-	Type56B_1.Icon = "Mod/KKh3Yhf/Images/Type56b_icon.png"
 	Type56B_1.RestockWeight = 10
 	Type56B_1.ReloadAP = 3000
 	Type56B_1.ShootAP = 4000
@@ -3400,7 +3362,6 @@ function RatoTOG_Patch()
 	Type56B_1.__parents[1] = "AssaultRifle"
 	Type56B_1.PenetrationClass = 1
 
-	Type56C_1.Icon = "Mod/KKh3Yhf/Images/Type56c_icon.png"
 	Type56C_1.RestockWeight = 10
 	Type56C_1.ReloadAP = 3000
 	Type56C_1.ShootAP = 4000
@@ -3503,7 +3464,6 @@ function RatoTOG_Patch()
 	Type56C_1.__parents[1] = "AssaultRifle"
 	Type56C_1.PenetrationClass = 1
 
-	Type56D_1.Icon = "Mod/KKh3Yhf/Images/Type56d_icon.png"
 	Type56D_1.RestockWeight = 100
 	Type56D_1.ReloadAP = 3000
 	Type56D_1.ShootAP = 4000
@@ -3606,7 +3566,6 @@ function RatoTOG_Patch()
 	Type56D_1.__parents[1] = "AssaultRifle"
 	Type56D_1.PenetrationClass = 1
 
-	VSK94_1.Icon = "Mod/KKh3Yhf/Images/VSK94_icon.png"
 	VSK94_1.RestockWeight = 20
 	VSK94_1.ReloadAP = 3000
 	VSK94_1.ShootAP = 4000
@@ -3695,7 +3654,6 @@ function RatoTOG_Patch()
 	VSK94_1.AdditionalHint = T(500671780217, [[<description_hints>]])
 	VSK94_1.PenetrationClass = 1
 
-	VSS_1.Icon = "Mod/KKh3Yhf/Images/VSS_icon.png"
 	VSS_1.RestockWeight = 100
 	VSS_1.ReloadAP = 2000
 	VSS_1.ShootAP = 4000
@@ -3798,7 +3756,6 @@ function RatoTOG_Patch()
 <image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> Silent Attacks]])
 	VSS_1.PenetrationClass = 1
 
-	MicroUZI_1.Icon = "Mod/KKh3Yhf/Images/MicroUZI_icon.png"
 	MicroUZI_1.RestockWeight = 40
 	MicroUZI_1.ReloadAP = 3000
 	MicroUZI_1.ShootAP = 3000
@@ -3977,7 +3934,6 @@ function RatoTOG_Patch()
 	P90_2.AdditionalHint = T(157356398627, [[<description_hints>]])
 	P90_2.PenetrationClass = 1
 
-	StenMK2_1.Icon = "Mod/KKh3Yhf/Images/Sten_icon.png"
 	StenMK2_1.RestockWeight = 50
 	StenMK2_1.ReloadAP = 3000
 	StenMK2_1.ShootAP = 3000
@@ -4043,7 +3999,6 @@ function RatoTOG_Patch()
 	StenMK2_1.AdditionalHint = T(615691579287, [[<description_hints>]])
 	StenMK2_1.PenetrationClass = 1
 
-	UMP_1.Icon = "Mod/KKh3Yhf/Images/HKUMP.png"
 	UMP_1.RestockWeight = 50
 	UMP_1.ReloadAP = 3000
 	UMP_1.ShootAP = 3000
@@ -4121,7 +4076,6 @@ function RatoTOG_Patch()
 	UMP_1.AdditionalHint = T(863330837058, [[<description_hints>]])
 	UMP_1.PenetrationClass = 1
 
-	VigM2_1.Icon = "Mod/KKh3Yhf/Images/VigM2_icon.png"
 	VigM2_1.RestockWeight = 150
 	VigM2_1.ReloadAP = 3000
 	VigM2_1.ShootAP = 3000
