@@ -2472,7 +2472,7 @@ function RatoTOG_Patch()
 	Gewehr43_1.ScrapParts = 8
 	Gewehr43_1.PenetrationClass = 1
 	Gewehr43_1.Cost = 2100
-	Gewehr43_1.Damage = 28
+	Gewehr43_1.Damage = 30
 	Gewehr43_1.MagazineSize = 10
 	Gewehr43_1.Reliability = 50
 	Gewehr43_1.RepairCost = 80
@@ -2504,7 +2504,7 @@ function RatoTOG_Patch()
 	Gewehr43_1.is_vanilla_firearm = false
 	Gewehr43_1.fxClass = "PSG1"
 	Gewehr43_1.ItemType = "AssaultRifle"
-	Gewehr43_1.wep_base_recoil_mul = 92
+	Gewehr43_1.wep_base_recoil_mul = 93
 	Gewehr43_1.rat_scope_block = false
 	Gewehr43_1.ComponentSlots = {
 		{
@@ -2552,7 +2552,7 @@ function RatoTOG_Patch()
 	M1Garand_2.ScrapParts = 9
 	M1Garand_2.PenetrationClass = 1
 	M1Garand_2.Cost = 3500
-	M1Garand_2.Damage = 29
+	M1Garand_2.Damage = 31
 	M1Garand_2.MagazineSize = 8
 	M1Garand_2.Reliability = 80
 	M1Garand_2.RepairCost = 80
@@ -2585,7 +2585,7 @@ function RatoTOG_Patch()
 	M1Garand_2.is_vanilla_firearm = false
 	M1Garand_2.fxClass = "Gewehr98"
 	M1Garand_2.ItemType = "AssaultRifle"
-	M1Garand_2.wep_base_recoil_mul = 85
+	M1Garand_2.wep_base_recoil_mul = 90
 	M1Garand_2.rat_scope_block = false
 	M1Garand_2.ComponentSlots = {
 		{
@@ -3119,7 +3119,7 @@ function RatoTOG_Patch()
 	SSG69_1.ScrapParts = 8
 	SSG69_1.PenetrationClass = 1
 	SSG69_1.Cost = 7600
-	SSG69_1.Damage = 30
+	SSG69_1.Damage = 31
 	SSG69_1.MagazineSize = 5
 	SSG69_1.Reliability = 40
 	SSG69_1.RepairCost = 80
