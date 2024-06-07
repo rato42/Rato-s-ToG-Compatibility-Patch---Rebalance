@@ -5923,6 +5923,105 @@ return {
 			group = "Scope",
 			id = "RAT_TOG_uv_dot_rpk_mount",
 		}),
+		PlaceObj('ModItemWeaponComponent', {
+			AdditionalCosts = {
+				PlaceObj('WeaponComponentCost', {
+					'Amount', 1,
+					'Type', "FineSteelPipe",
+				}),
+			},
+			Cost = 40,
+			DisplayName = T(773319633177, --[[ModItemWeaponComponent RAT_TOG_SteyrS_Barrel_ext_556 DisplayName]] "5.56x45mm Extended Barrel"),
+			Icon = "Mod/KKh3Yhf/Images/SteyrScout_Barrel_ext.png",
+			ModificationDifficulty = 10,
+			ModificationEffects = {
+				"IncreaseRange",
+				"IncreaseAimAccuracy",
+				"longbarrel",
+				"ReduceDamage",
+				"ChangeCaliberTo556",
+				"StanceAPincrease",
+				"DecreaseOverwatchAngle",
+			},
+			Parameters = {
+				PlaceObj('PresetParamNumber', {
+					'Name', "RangeIncrease",
+					'Value', 4,
+					'Tag', "<RangeIncrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "DamageReduced",
+					'Value', 5,
+					'Tag', "<DamageReduced>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "AimAccuracyIncrease",
+					'Value', 2,
+					'Tag', "<AimAccuracyIncrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "APincrease",
+					'Value', 1,
+					'Tag', "<APincrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "OverwatchAngleDecrease",
+					'Value', 90,
+					'Tag', "<OverwatchAngleDecrease>",
+				}),
+			},
+			Slot = "Barrel",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "SteyrScout_1",
+					Entity = "SteyrS_Barrel_ext",
+					Slot = "Barrel",
+					param_bindings = false,
+				}),
+			},
+			group = "Default",
+			id = "RAT_TOG_SteyrS_Barrel_ext_556",
+		}),
+		PlaceObj('ModItemWeaponComponent', {
+			AdditionalCosts = {
+				PlaceObj('WeaponComponentCost', {
+					'Amount', 1,
+					'Type', "FineSteelPipe",
+				}),
+			},
+			Cost = 20,
+			DisplayName = T(277303998628, --[[ModItemWeaponComponent RAT_TOG_SteyrS_Barrel_def_555 DisplayName]] "5.56x45mm Barrel"),
+			Icon = "Mod/KKh3Yhf/Images/SteyrScout_Barrel_def.png",
+			ModificationDifficulty = 10,
+			ModificationEffects = {
+				"ChangeCaliberTo556",
+				"ReduceDamage",
+				"IncreaseOverwatchAngle",
+			},
+			Parameters = {
+				PlaceObj('PresetParamNumber', {
+					'Name', "DamageReduced",
+					'Value', 6,
+					'Tag', "<DamageReduced>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "OverwatchAngleIncrease",
+					'Value', 110,
+					'Tag', "<OverwatchAngleIncrease>",
+				}),
+			},
+			Slot = "Barrel",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "SteyrScout_1",
+					Entity = "SteyrS_Barrel_def",
+					Slot = "Barrel",
+					param_bindings = false,
+				}),
+			},
+			group = "Default",
+			id = "RAT_TOG_SteyrS_Barrel_def_555",
+		}),
 		}),
 	PlaceObj('ModItemWeaponComponent', {
 		Cost = 2,

@@ -270,7 +270,7 @@ function RatoTOG_Patch()
 	SteyrScout_1.RestockWeight = 50
 	SteyrScout_1.ReloadAP = 3000
 	SteyrScout_1.ShootAP = 4000
-	SteyrScout_1.OverwatchAngle = 1069
+	SteyrScout_1.OverwatchAngle = 970
 	SteyrScout_1.LargeItem = 1
 	SteyrScout_1.WeaponRange = 28
 	SteyrScout_1.AvailableAttacks = {"SingleShot", "CancelShot"}
@@ -279,7 +279,7 @@ function RatoTOG_Patch()
 	SteyrScout_1.ScrapParts = 14
 	SteyrScout_1.PenetrationClass = 1
 	SteyrScout_1.Cost = 9800
-	SteyrScout_1.Damage = 24
+	SteyrScout_1.Damage = 30
 	SteyrScout_1.MagazineSize = 5
 	SteyrScout_1.Reliability = 55
 	SteyrScout_1.RepairCost = 80
@@ -318,7 +318,8 @@ function RatoTOG_Patch()
 			SlotType = 'Barrel',
 			DefaultComponent = 'SteyrS_Barrel_def_1',
 			Modifiable = true,
-			AvailableComponents = {'SteyrS_Barrel_def_1', 'SteyrS_Barrel_ext_1'},
+			AvailableComponents = {
+				'SteyrS_Barrel_def_1', 'SteyrS_Barrel_ext_1', 'RAT_TOG_SteyrS_Barrel_ext_556', 'RAT_TOG_SteyrS_Barrel_def_555'},
 		}, {
 			CanBeEmpty = true,
 			SlotType = 'Bipod',
