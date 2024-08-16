@@ -8,7 +8,7 @@ return PlaceObj('ModDef', {
 			'id', "cfahRED",
 			'title', "[JA 1.3] Rato's Gameplay Balance and Overhaul 3",
 			'version_major', 3,
-			'version_minor', 30,
+			'version_minor', 50,
 		}),
 		PlaceObj('ModDependency', {
 			'id', "KKh3Yhf",
@@ -21,7 +21,7 @@ return PlaceObj('ModDef', {
 	'author', "rato",
 	'version_major', 1,
 	'version_minor', 19,
-	'version', 2906,
+	'version', 2908,
 	'lua_revision', 233360,
 	'saved_with_revision', 350233,
 	'code', {
@@ -39,8 +39,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1717777910,
-	'code_hash', -5587770016835712794,
+	'saved', 1723788655,
+	'code_hash', -2366028122803694382,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "Caliber",

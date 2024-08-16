@@ -161,7 +161,7 @@ return {
 			'comment', "rat",
 			'object_class', "GrenadeLauncher",
 			'Reliability', 98,
-			'Caliber', "22m_grenade",
+			'Caliber', "22mm_WP",
 			'AttackAP', 4000,
 			'Icon', "UI/Icons/Upgrades/m16_grenade_launcher",
 			'DisplayName', T(933210081002, --[[ModItemInventoryItemCompositeDef rat_22mmUnderslungGrenadeLauncher DisplayName]] "Underslung Launcher"),
@@ -4408,7 +4408,7 @@ return {
 			},
 			Cost = 20,
 			DisplayName = T(883158887679, --[[ModItemWeaponComponent RAT_TOG_vigilanceRS DisplayName]] '"Vigilante" Reflex Sight 1.5x'),
-			Icon = "UI/Icons/Upgrades/scope_reflex",
+			Icon = "Mod/KQkEVHf/Icons/Upgrades/ToC_Scope_kentaur.png",
 			ModificationDifficulty = 10,
 			ModificationEffects = {
 				"OpportunityAttackBonusCth",
@@ -4548,13 +4548,13 @@ return {
 					param_bindings = false,
 				}),
 				PlaceObj('WeaponComponentVisual', {
-					Entity = "WeaponAttA_ScopeReflex",
+					Entity = "ToC_Scope_Kent6",
 					Slot = "Mount",
 					param_bindings = false,
 				}),
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "VSS_1",
-					Entity = "WeaponAttA_ScopeReflex",
+					Entity = "ToC_Scope_Kent6",
 					Slot = "Scope",
 					param_bindings = false,
 				}),
@@ -4583,7 +4583,7 @@ return {
 			},
 			Cost = 20,
 			DisplayName = T(600871761815, --[[ModItemWeaponComponent RAT_TOG_vigilanceRS_rpk_mount DisplayName]] '"Vigilante" Reflex Sight 1.5x'),
-			Icon = "UI/Icons/Upgrades/scope_reflex",
+			Icon = "Mod/KQkEVHf/Icons/Upgrades/ToC_Scope_kentaur.png",
 			ModificationDifficulty = 10,
 			ModificationEffects = {
 				"OpportunityAttackBonusCth",
@@ -4711,13 +4711,13 @@ return {
 					param_bindings = false,
 				}),
 				PlaceObj('WeaponComponentVisual', {
-					Entity = "WeaponAttA_ScopeReflex",
+					Entity = "ToC_Scope_Kent6",
 					Slot = "Mount",
 					param_bindings = false,
 				}),
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "VSS_1",
-					Entity = "WeaponAttA_ScopeReflex",
+					Entity = "ToC_Scope_Kent6",
 					Slot = "Mount",
 					param_bindings = false,
 				}),
