@@ -2,13 +2,13 @@ return PlaceObj('ModDef', {
 	'title', "Rato's ToG Compatibility Patch & Rebalance",
 	'description', "[h1](Partial) Compatibility patch for Rato's Gameplay Balance and Overhaul and Tons of Guns[/h1]\n\n	\nWill balance and patch a number of guns of ToG to work with Rato's Mod. \n\n\nIt is recommended to start a fresh game. Will cause compatibility issues on a already ToG enabled save.\n\nPatched Weapons:\n\nRifles:\n[list]\n[*]AN 94\n[*]SKS\n[*]Papovka\n[*]Type 56\n[*]STG44\n[*]Gewehr 43\n[*]Groza\n[*]M1 Garand\n[*]HK33A2\n[*]G3A3\n[*]M70\n[*]TAR 21\n[*]RK 95\n[*]RK 62\n\n[/list]\nPrecision Rifles:\n[list]\n[*]Mosin Carbine\n[*]VSS Vintorez\n[*]SSG 69\n[*]Steyr Scout Elite\n[*]M76\n[*]Delisle\n[*]VSK94\n[/list]\n\nSMGs:\n[list]\n[*]P90\n[*]Micro Uzi\n[*]Sten MK2\n[*]Mac11\n[*]HK53\n[*]UMP\n[*]PP91\n[*]Vigneron M2\n[/list]\n\nPistols:\n[list]\n[*]Glock17\n[*]USP\n[*]Viking Mp446\n[*]B93R\n[*]P 08 Luger\n[*]M1911\n[/list]\n\nMachine Guns:\n[list]\n[*]RPD\n[*]PKM\n[*]HK23E\n[/list]\n\n\n\nSome other changes:\nChanges some components installation logic.\nPapovka Grenade Launcher now blocks the gun from shooting, and appends a grenade to the muzzle\n\n\n[b]Also includes new calibers[/b]\n[list]\n\nFrom Rato's Mod:\n[*]5.45x39\n[*]7.62x54R\n[*]7.92x57\n\nExclusive for this patch:\n[*]7.92x33 Kurz\n[*]5.7x28\n[*]22 mm HE grenade for the Papovka launcher\n[*]9x39mm\n[*]45 ACP\n[/list]\n\n\n[b]Works with Random Enemy Weapons[/b]: I recommend using the 75% chance of Default Weapon for now.\n\nUnpatched weapons won't drop and won't appear on Bobby Rays\n\nImportant: If you use DiceMan Adaptative Difficulty, you will need to turn OFF the dynamic equipment option. Or unpatched guns will drop.\n\n[b]Big thanks to Archimedes, the creator of ToG, and to Wittzard for helping the mod community with a lot of coding stuff[/b]",
 	'image', "Mod/Dau6w/Images/tog.PNG",
-	'last_changes', "1.18 \n\nfixed some guns being in the wrong class\nincreased damage for 9mm smgs by 1\nsligthly improved MicroUzi recoil",
+	'last_changes', "1.19\n\nSteyr Scout caliber changed to .308 Winchester, stats updated\nAdd barrel modifications to change Steyr Scout to 5.56\nFixed Explosion effects for the 22mm grenades",
 	'dependencies', {
 		PlaceObj('ModDependency', {
 			'id', "cfahRED",
 			'title', "[JA 1.3] Rato's Gameplay Balance and Overhaul 3",
 			'version_major', 3,
-			'version_minor', 30,
+			'version_minor', 50,
 		}),
 		PlaceObj('ModDependency', {
 			'id', "KKh3Yhf",
@@ -20,8 +20,8 @@ return PlaceObj('ModDef', {
 	'id', "Dau6w",
 	'author', "rato",
 	'version_major', 1,
-	'version_minor', 18,
-	'version', 2892,
+	'version_minor', 19,
+	'version', 2913,
 	'lua_revision', 233360,
 	'saved_with_revision', 350233,
 	'code', {
@@ -31,53 +31,21 @@ return PlaceObj('ModDef', {
 		"Code/REW_table.lua",
 		"Code/FUNCTION_bipod_change.lua",
 		"Code/PATCH_Guns.lua",
-		"Code/PATCH_ammo.lua",
-		"Code/BOBBY_bobby_category.lua",
 		"Code/WEAPON_COMPONENTS_components.lua",
 		"Code/FUNCTION_grenade_launcher_22.lua",
 		"Code/explosion_inherit.lua",
-		"InventoryItem/_45ACP_Basic.lua",
-		"InventoryItem/_45ACP_AP.lua",
-		"InventoryItem/_45ACP_HP.lua",
-		"InventoryItem/_45ACP_Match.lua",
-		"InventoryItem/_45ACP_Tracer.lua",
-		"InventoryItem/_45ACP_Subsonic.lua",
-		"InventoryItem/_45ACP_Shock.lua",
-		"InventoryItem/_792kurz_Basic.lua",
-		"InventoryItem/_939_Basic.lua",
-		"InventoryItem/_939_SPP.lua",
-		"InventoryItem/_939_AP.lua",
-		"InventoryItem/_57x28_AP.lua",
-		"InventoryItem/_57x28_HP.lua",
-		"InventoryItem/_57x28_Tracer.lua",
-		"InventoryItem/_57x28_Match.lua",
 		"InventoryItem/_22m_HE.lua",
 		"InventoryItem/rat_22mmUnderslungGrenadeLauncher.lua",
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1716149474,
-	'code_hash', -1499599475722528765,
+	'saved', 1723839702,
+	'code_hash', -182646322363870619,
 	'affected_resources', {
-		PlaceObj('ModResourcePreset', {
-			'Class', "Caliber",
-			'Id', "792x33",
-			'ClassDisplayName', "Caliber mod",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "Caliber",
-			'Id', "9x39",
-			'ClassDisplayName', "Caliber mod",
-		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "Caliber",
 			'Id', "22m_grenade",
 			'ClassDisplayName', "Caliber mod",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "RatBunker_STG44_1",
-			'ClassDisplayName', "Loot definition",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
@@ -86,22 +54,7 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "Bunker_Junk_1",
-			'ClassDisplayName', "Loot definition",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
 			'Id', "RatBunker_GewerS_1",
-			'ClassDisplayName', "Loot definition",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Bunker_MP40_1",
-			'ClassDisplayName', "Loot definition",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Bunker_G98_1",
 			'ClassDisplayName', "Loot definition",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -115,163 +68,13 @@ return PlaceObj('ModDef', {
 			'ClassDisplayName', "ActionFX Object",
 		}),
 		PlaceObj('ModResourcePreset', {
-			'Class', "Caliber",
-			'Id', "45ACP",
-			'ClassDisplayName', "Caliber mod",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_45ACP_Basic",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_45ACP_AP",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_45ACP_HP",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_45ACP_Match",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_45ACP_Tracer",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_45ACP_Subsonic",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_45ACP_Shock",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_792kurz_Basic",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_939_Basic",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_939_SPP",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_939_AP",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_57x28_AP",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_57x28_HP",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_57x28_Tracer",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "InventoryItemCompositeDef",
-			'Id', "_57x28_Match",
-			'ClassDisplayName', "Inventory item",
-		}),
-		PlaceObj('ModResourcePreset', {
 			'Class', "InventoryItemCompositeDef",
 			'Id', "_22m_HE",
 			'ClassDisplayName', "Inventory item",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "CraftOperationsRecipeDef",
-			'Id', "Kurz_craft",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
 			'Id', "_22mmhe_craft",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "_45basic",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "939_basic",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "57_basic",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "_45shock",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "_45hp",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "57_hp",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "_45tracer",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "57_tracer",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "_45_ss",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "_45_match",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "57_match",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "_45ap",
-			'ClassDisplayName', "Crafting operation recipe",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "CraftOperationsRecipeDef",
-			'Id', "57_ap",
 			'ClassDisplayName', "Crafting operation recipe",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -497,6 +300,16 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "WeaponComponent",
 			'Id', "RAT_TOG_uv_dot_rpk_mount",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "RAT_TOG_SteyrS_Barrel_ext_556",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "RAT_TOG_SteyrS_Barrel_def_555",
 			'ClassDisplayName', "Weapon component",
 		}),
 		PlaceObj('ModResourcePreset', {
