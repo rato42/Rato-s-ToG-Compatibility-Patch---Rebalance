@@ -1,5 +1,4 @@
-
-SlotDependencies = {
+--[[SlotDependencies = {
 				--Barrel = "Handguard",
 				Muzzle = "Barrel", 
 				Bipod = "Barrel",
@@ -34,12 +33,6 @@ function FirearmBase:UpdateVisualObj(vis)
   if IsKindOf(self, "RK62_1") or IsKindOf(self, "RK95_1") then
 	SlotDependencies_copy["Barrel"] = "Handguard"
   end
-	-- if self.zzDependencies then
-		-- SlotDependencies_copy[self.zzDependencies[1].zzSlot] = self.zzDependencies[1].zzDependent
-
-	-- end
-  
-  
   ------------------------------------
   if 0 < #componentSlots then
 	-----------------------
@@ -122,4 +115,4 @@ function FirearmBase:UpdateVisualObj(vis)
     end
   end
   self:UpdateColorMod(vis)
-end
+end]] 

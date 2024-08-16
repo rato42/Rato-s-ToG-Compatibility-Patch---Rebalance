@@ -12,7 +12,7 @@ function rat_22mmUnderslungGrenadeLauncher:UpdateRocket()
 	if not self or not self.parent_weapon or not self.parent_weapon.visual_obj or not self.Caliber then
 		return
 	end
-	if not self.Caliber == "22mm_WP" or self.Caliber == "22mm_Nato" then
+	if not self.Caliber == '22m_grenade' then
 		return
 	end
 
