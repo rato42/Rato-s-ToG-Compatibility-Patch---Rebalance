@@ -1,3 +1,9 @@
+function OnMsg.ClassesPostBuilt()
+	-- KKh3Yhf: ToG
+	SharedModEnv["KKh3Yhf"].zzChangeList = SharedModEnv["KKh3Yhf"].zzChangeList or {}
+	SharedModEnv["KKh3Yhf"].zzChangeList["Groza_1"] = "762WP"
+end
+
 -- ========== THIS IS AN AUTOMATICALLY GENERATED FILE! ==========
 function OnMsg.ClassesGenerate()
 	print("RATMOD - Starting TOG patch")
