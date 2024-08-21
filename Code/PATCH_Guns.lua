@@ -1,26 +1,23 @@
 function OnMsg.ClassesPostBuilt()
-	-- KKh3Yhf: ToG
-	SharedModEnv["KKh3Yhf"].zzChangeList = SharedModEnv["KKh3Yhf"].zzChangeList or {}
-
-	SharedModEnv["KKh3Yhf"].zzChangeList["Groza_1"] = "9x39"
-	SharedModEnv["KKh3Yhf"].zzChangeList["VSK94_1"] = "9x39"
-	SharedModEnv["KKh3Yhf"].zzChangeList["VSS_1"] = "9x39"
-
-	SharedModEnv["KKh3Yhf"].zzChangeList["AN94_1"] = "5_45x39"
-
-	SharedModEnv["KKh3Yhf"].zzChangeList["P90_2"] = "5_7x28"
-
-	SharedModEnv["KKh3Yhf"].zzChangeList["STG44R_1"] = "7_92x33"
-
-	SharedModEnv["KKh3Yhf"].zzChangeList["PKM_1"] = "7_62x54R"
-	SharedModEnv["KKh3Yhf"].zzChangeList["Mosin_1"] = "7_62x54R"
-
-	SharedModEnv["KKh3Yhf"].zzChangeList["Gewehr43_1"] = "7_92x57"
-	SharedModEnv["KKh3Yhf"].zzChangeList["M76_1"] = "7_92x57"
-
-	SharedModEnv["KKh3Yhf"].zzChangeList["Delisle_1"] = "45ACP"
-	SharedModEnv["KKh3Yhf"].zzChangeList["M1911_1"] = "45ACP"
-	SharedModEnv["KKh3Yhf"].zzChangeList["UMP_1"] = "45ACP"
+	SharedModEnv["KKh3Yhf"].zzChangeList = {
+		['SteyrScout_1'] = '308Win',
+		['MAC11_1'] = '380ACP',
+		['SSG69_1'] = '308Win',
+		['AN94_1'] = '5_45x39',
+		['UMP_1'] = '45ACP',
+		['VSS_1'] = '9x39',
+		['M76_1'] = '7_92x57',
+		['Groza_1'] = '9x39',
+		['M1Garand_2'] = '30-60',
+		['P90_2'] = '5_7x28',
+		['Gewehr43_1'] = '7_92x57',
+		['M1911_1'] = '45ACP',
+		['STG44R_1'] = '7_92x33',
+		['VSK94_1'] = '9x39',
+		['Delisle_1'] = '45ACP',
+		['PKM_1'] = '7_62x54R',
+		['Mosin_1'] = '7_62x54R',
+	}
 end
 
 -- ========== THIS IS AN AUTOMATICALLY GENERATED FILE! ==========
