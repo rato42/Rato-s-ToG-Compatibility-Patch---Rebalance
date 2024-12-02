@@ -27,14 +27,14 @@ return PlaceObj('ModDef', {
 	'author', "rato",
 	'version_major', 1,
 	'version_minor', 20,
-	'version', 3182,
+	'version', 3184,
 	'lua_revision', 233360,
 	'saved_with_revision', 350233,
 	'code', {
 		"Code/FUNCTION_CombatActions.lua",
 		"Code/REW_table.lua",
 		"Code/FUNCTION_bipod_change.lua",
-		"Code/PATCH_Guns.lua",
+		"Code/PATCH_TOG_Guns.lua",
 		"Code/PATCHs_Call.lua",
 		"Code/WEAPON_COMPONENTS_components.lua",
 		"Code/PATCH_TOGComponents.lua",
@@ -47,8 +47,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1733108095,
-	'code_hash', -3906636350789643860,
+	'saved', 1733112543,
+	'code_hash', -4119211352525390989,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "Caliber",
@@ -213,11 +213,6 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "WeaponComponent",
 			'Id', "ToG_Comp_AR_Barrel_Long_1_SMG",
-			'ClassDisplayName', "Weapon component",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "WeaponComponent",
-			'Id', "foldable_StockNormal",
 			'ClassDisplayName', "Weapon component",
 		}),
 		PlaceObj('ModResourcePreset', {

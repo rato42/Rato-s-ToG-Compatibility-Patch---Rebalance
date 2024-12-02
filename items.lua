@@ -16,8 +16,8 @@ return {
 		'CodeFileName', "Code/FUNCTION_bipod_change.lua",
 	}),
 	PlaceObj('ModItemCode', {
-		'name', "PATCH_Guns",
-		'CodeFileName', "Code/PATCH_Guns.lua",
+		'name', "PATCH_TOG_Guns",
+		'CodeFileName', "Code/PATCH_TOG_Guns.lua",
 	}),
 	PlaceObj('ModItemCode', {
 		'name', "PATCHs_Call",
@@ -684,7 +684,7 @@ return {
 			},
 		}),
 		PlaceObj('ModItemWeaponComponent', {
-			DisplayName = T(543796475383, --[[ModItemWeaponComponent _Master_B93RR_grip_fld_1 DisplayName]] "Grip"),
+			DisplayName = T(543796475383, --[[ModItemWeaponComponent _Master_B93RR_grip_fld_TOG DisplayName]] "Grip"),
 			Icon = "Mod/KKh3Yhf/Images/B93RR_grip_fld.png",
 			ModificationDifficulty = -25,
 			ModificationEffects = {
@@ -1374,148 +1374,6 @@ return {
 			comment = "rat",
 			group = "Barrel",
 			id = "ToG_Comp_AR_Barrel_Long_1_SMG",
-		}),
-		PlaceObj('ModItemWeaponComponent', {
-			Cost = 5,
-			DisplayName = T(382271022950, --[[ModItemWeaponComponent foldable_StockNormal DisplayName]] "Default Stock"),
-			Icon = "UI/Icons/Upgrades/default_stock",
-			ModificationDifficulty = 0,
-			ModificationEffects = {
-				"zzStockEquipped",
-			},
-			Slot = "Stock",
-			Visuals = {
-				PlaceObj('WeaponComponentVisual', {
-					ApplyTo = "AK47",
-					Entity = "WeaponAttA_WoodenStockAK47",
-					Slot = "Stock",
-					param_bindings = false,
-				}),
-				PlaceObj('WeaponComponentVisual', {
-					ApplyTo = "AK74",
-					Entity = "WeaponAttA_WoodenStockAK47",
-					Slot = "Stock",
-					param_bindings = false,
-				}),
-				PlaceObj('WeaponComponentVisual', {
-					ApplyTo = "RPK74",
-					Entity = "WeaponAttA_StockRPK74_02",
-					Slot = "Stock",
-					param_bindings = false,
-				}),
-				PlaceObj('WeaponComponentVisual', {
-					ApplyTo = "Galil",
-					Entity = "WeaponAttA_StockGalil_01",
-					Slot = "Stock",
-					param_bindings = false,
-				}),
-				PlaceObj('WeaponComponentVisual', {
-					ApplyTo = "Galil_FlagHill",
-					Entity = "WeaponAttA_StockGalil_01",
-					Slot = "Stock",
-					param_bindings = false,
-				}),
-				PlaceObj('WeaponComponentVisual', {
-					ApplyTo = "M24Sniper",
-					Entity = "WeaponAttA_BasicStockM24",
-					ModifyRightHandGrip = true,
-					Slot = "Stock",
-					param_bindings = false,
-				}),
-				PlaceObj('WeaponComponentVisual', {
-					ApplyTo = "DragunovSVD",
-					Entity = "WeaponAttA_StockDragunov_02",
-					Slot = "Stock",
-					param_bindings = false,
-				}),
-				PlaceObj('WeaponComponentVisual', {
-					ApplyTo = "Gewehr98",
-					Entity = "WeaponAttA_BasicStockM24",
-					Slot = "Stock",
-					param_bindings = false,
-				}),
-				PlaceObj('WeaponComponentVisual', {
-					ApplyTo = "PSG1",
-					Entity = "WeaponAttA_StockPSG_Plastic",
-					Icon = "UI/Icons/Upgrades/psg_stock_light",
-					Slot = "Stock",
-					param_bindings = false,
-				}),
-				PlaceObj('WeaponComponentVisual', {
-					ApplyTo = "Winchester1894",
-					Entity = "WeaponAttA_BasicStockM24",
-					Slot = "Stock",
-					param_bindings = false,
-				}),
-				PlaceObj('WeaponComponentVisual', {
-					ApplyTo = "MP5",
-					Entity = "WeaponAttA_StockMP5_Extended",
-					Icon = "UI/Icons/Upgrades/MP5_stock_light",
-					Slot = "Stock",
-					param_bindings = false,
-				}),
-				PlaceObj('WeaponComponentVisual', {
-					ApplyTo = "MP5K",
-					Entity = "WeaponAttA_StockMP5_Extended",
-					Icon = "UI/Icons/Upgrades/MP5_stock_light",
-					Slot = "Stock",
-					param_bindings = false,
-				}),
-				PlaceObj('WeaponComponentVisual', {
-					ApplyTo = "M14SAW",
-					Entity = "WeaponAttA_StockM14_Heavy",
-					Slot = "Stock",
-					param_bindings = false,
-				}),
-				PlaceObj('WeaponComponentVisual', {
-					ApplyTo = "M14SAW_AUTO",
-					Entity = "WeaponAttA_StockM14_Heavy",
-					Slot = "Stock",
-					param_bindings = false,
-				}),
-				PlaceObj('WeaponComponentVisual', {
-					ApplyTo = "FNFAL",
-					Entity = "WeaponAttA_StockFNFal_02",
-					Slot = "Stock",
-					param_bindings = false,
-				}),
-				PlaceObj('WeaponComponentVisual', {
-					ApplyTo = "FNMinimi",
-					Entity = "WeaponAttA_StockFNMinimi_01",
-					Slot = "Stock",
-					param_bindings = false,
-				}),
-				PlaceObj('WeaponComponentVisual', {
-					ApplyTo = "HK21",
-					Entity = "WeaponAttA_StockHK21_01",
-					Slot = "Stock",
-					param_bindings = false,
-				}),
-				PlaceObj('WeaponComponentVisual', {
-					ApplyTo = "M4Commando",
-					Entity = "WeaponAttA_StockCAR15_02",
-					Slot = "Stock",
-					param_bindings = false,
-				}),
-				PlaceObj('WeaponComponentVisual', {
-					ApplyTo = "M16A2",
-					Entity = "WeaponAttA_StockM16_01",
-					Slot = "Stock",
-					param_bindings = false,
-				}),
-				PlaceObj('WeaponComponentVisual', {
-					ApplyTo = "G36",
-					Entity = "WeaponAttA_StockHKG36_01",
-					Slot = "Stock",
-					param_bindings = false,
-				}),
-			},
-			comment = "------------------------------------------- REMOVE AND PATCH",
-			group = "Firearm - Heavy",
-			id = "foldable_StockNormal",
-			zzFoldingPair = {
-				"StockFolded",
-			},
 		}),
 		PlaceObj('ModItemWeaponComponent', {
 			AdditionalCosts = {

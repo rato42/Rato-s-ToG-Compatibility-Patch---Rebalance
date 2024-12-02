@@ -3,10 +3,16 @@ function OnMsg.ClassesGenerate()
     print("RATMOD - Starting TOG patch")
     RatoTOG_Patch()
     print("RATMOD - TOG patch successful")
+    --- RevMag
+    GBOTOG_RevMag_CreateMagazine()
+    GBOTOG_RevMag_CreateMagazine_manual()
 end
 
 function OnMsg.ModsReloaded()
     RatoTOGComponents()
+    --- RevMag
+    GBOTOG_RevMag_WeaponComponentVisualPatch_manual()
+    GBOTOG_RevMag_WeaponComponentVisualPatch()
 end
 
 -- Change Zulib Calibers
@@ -40,14 +46,4 @@ function OnMsg.ModsReloaded()
     disable_unpatched_shop()
 end
 disable_unpatched_shop()
-
---- RevMag
-function OnMsg.ModsReloaded()
-    GBOTOG_RevMag_WeaponComponentVisualPatch_manual()
-    GBOTOG_RevMag_WeaponComponentVisualPatch()
-end
-function OnMsg.ClassesGenerate()
-    GBOTOG_RevMag_CreateMagazine()
-    GBOTOG_RevMag_CreateMagazine_manual()
-end
 
