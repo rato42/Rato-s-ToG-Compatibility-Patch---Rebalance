@@ -2,7 +2,7 @@ return PlaceObj('ModDef', {
 	'title', "Rato's ToG Compatibility Patch & Rebalance",
 	'description', "[h1](Partial) Compatibility patch for Rato's Gameplay Balance and Overhaul and Tons of Guns[/h1]\n\n	\nWill balance and patch a number of guns of ToG to work with Rato's Mod. \n\n\nIt is recommended to start a fresh game. Will cause compatibility issues on a already ToG enabled save.\n\nPatched Weapons:\n\nRifles:\n[list]\n[*]AN 94\n[*]SKS\n[*]Papovka\n[*]Type 56\n[*]STG44\n[*]Gewehr 43\n[*]Groza\n[*]M1 Garand\n[*]HK33A2\n[*]G3A3\n[*]M70\n[*]TAR 21\n[*]RK 95\n[*]RK 62\n\n[/list]\nPrecision Rifles:\n[list]\n[*]Mosin Carbine\n[*]VSS Vintorez\n[*]SSG 69\n[*]Steyr Scout Elite\n[*]M76\n[*]Delisle\n[*]VSK94\n[/list]\n\nSMGs:\n[list]\n[*]P90\n[*]Micro Uzi\n[*]Sten MK2\n[*]Mac11\n[*]HK53\n[*]UMP\n[*]PP91\n[*]Vigneron M2\n[/list]\n\nPistols:\n[list]\n[*]Glock17\n[*]USP\n[*]Viking Mp446\n[*]B93R\n[*]P 08 Luger\n[*]M1911\n[/list]\n\nMachine Guns:\n[list]\n[*]RPD\n[*]PKM\n[*]HK23E\n[/list]\n\n\n\nSome other changes:\nChanges some components installation logic.\nPapovka Grenade Launcher now blocks the gun from shooting, and appends a grenade to the muzzle\n\n\n[b]Also includes new calibers from Zulib[/b]\n\n[b]Works with Random Enemy Weapons[/b]: I recommend using the 75% chance of Default Weapon for now.\n\nUnpatched weapons won't drop and won't appear on Bobby Rays\n\nImportant: If you use DiceMan Adaptative Difficulty, you will need to turn OFF the dynamic equipment option. Or unpatched guns will drop.\n\n[b]Big thanks to Archimedes, the creator of ToG, and to Wittzard for helping the mod community with a lot of coding stuff[/b]",
 	'image', "Mod/Dau6w/Images/tog.PNG",
-	'last_changes', "1.20\n\nIncreased range of all firearms by 4\nLowered SKS family weapons price",
+	'last_changes', "1.20\n\nIncreased range of all firearms by 4\nLowered SKS family weapons price\n\n\nFixed Deslile having 0 noise",
 	'dependencies', {
 		PlaceObj('ModDependency', {
 			'id', "cfahRED",
@@ -27,7 +27,7 @@ return PlaceObj('ModDef', {
 	'author', "rato",
 	'version_major', 1,
 	'version_minor', 20,
-	'version', 3142,
+	'version', 3182,
 	'lua_revision', 233360,
 	'saved_with_revision', 350233,
 	'code', {
@@ -37,6 +37,7 @@ return PlaceObj('ModDef', {
 		"Code/PATCH_Guns.lua",
 		"Code/PATCHs_Call.lua",
 		"Code/WEAPON_COMPONENTS_components.lua",
+		"Code/PATCH_TOGComponents.lua",
 		"Code/FUNCTION_grenade_launcher_22.lua",
 		"Code/COMPATIBILITY_RevMag.lua",
 		"Code/PATCH_compatibilityRevMag.lua",
@@ -46,8 +47,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1732855996,
-	'code_hash', 6637513868693167318,
+	'saved', 1733108095,
+	'code_hash', -3906636350789643860,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "Caliber",
@@ -106,6 +107,116 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "WeaponComponent",
+			'Id', "_Master_StockFolded_TOG",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "_Master_GrenadeLauncherFolded_TOG",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "_Master_GrenadeLauncherUnfolded_TOG",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "_Master_StockNormalUnfolded_TOG",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "_Master_StockNormalFolded_TOG",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "_Master_BayonetFolded_TOG",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "_Master_BayonetUnfolded_TOG",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "_Master_StockLightUnfolded_TOG",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "_Master_B93RR_grip_fld_TOG",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "_Master_Handguard_ext_TOG",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "_Master_Handguard_short_TOG",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "RAT_short_barrel_master",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "_Master_ReceiverBurst_TOG",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "_Master_ReceiverFullAuto_TOG",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "_Master_SSG69_Scope_TOG",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "_Master_GW43_Scope_TOG",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "_Master_SteyrS_Scope_TOG",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "_Master_m76_scope_TOG",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "_Master_VigM2_Stock_fld_TOG",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "_Master_VigM2_Stock_unfld_TOG",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "_Master_PSO-1M2_Scope_TOG",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "ToG_Comp_AR_Barrel_Long_1_SMG",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
 			'Id', "foldable_StockNormal",
 			'ClassDisplayName', "Weapon component",
 		}),
@@ -127,16 +238,6 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "WeaponComponent",
 			'Id', "RAT_pap_compensator",
-			'ClassDisplayName', "Weapon component",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "WeaponComponent",
-			'Id', "_Rat_Bay_unfolded_master",
-			'ClassDisplayName', "Weapon component",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "WeaponComponent",
-			'Id', "StockFolded_1",
 			'ClassDisplayName', "Weapon component",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -1001,11 +1102,6 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "WeaponComponent",
-			'Id', "RAT_short_barrel_master",
-			'ClassDisplayName', "Weapon component",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "WeaponComponent",
 			'Id', "Papovka2_Barrel_shrt_1",
 			'ClassDisplayName', "Weapon component",
 		}),
@@ -1066,11 +1162,6 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "WeaponComponent",
-			'Id', "_Rat_bay_folded_master",
-			'ClassDisplayName', "Weapon component",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "WeaponComponent",
 			'Id', "Papovka2_Bay_fld_1",
 			'ClassDisplayName', "Weapon component",
 		}),
@@ -1081,22 +1172,12 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "WeaponComponent",
-			'Id', "_Rat_grn_unfolded_master",
-			'ClassDisplayName', "Weapon component",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "WeaponComponent",
 			'Id', "Papovka2_Grnd_unfld_1",
 			'ClassDisplayName', "Weapon component",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "WeaponComponent",
 			'Id', "Papovka_Grnd_fld_1",
-			'ClassDisplayName', "Weapon component",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "WeaponComponent",
-			'Id', "_Rat_Grn_Folded_master",
 			'ClassDisplayName', "Weapon component",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -1952,11 +2033,6 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "WeaponComponent",
 			'Id', "ToG_Comp_AR_Barrel_Long_1",
-			'ClassDisplayName', "Weapon component",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "WeaponComponent",
-			'Id', "ToG_Comp_AR_Barrel_Long_1_SMG",
 			'ClassDisplayName', "Weapon component",
 		}),
 		PlaceObj('ModResourcePreset', {

@@ -5,6 +5,10 @@ function OnMsg.ClassesGenerate()
     print("RATMOD - TOG patch successful")
 end
 
+function OnMsg.ModsReloaded()
+    RatoTOGComponents()
+end
+
 -- Change Zulib Calibers
 function OnMsg.ClassesPostBuilt()
     SharedModEnv["KKh3Yhf"].zzChangeList = {
@@ -29,8 +33,12 @@ function OnMsg.ClassesPostBuilt()
 end
 
 ---- Disable unpatched guns
-function OnMsg.DataLoaded() disable_unpatched_shop() end
-function OnMsg.ModsReloaded() disable_unpatched_shop() end
+function OnMsg.DataLoaded()
+    disable_unpatched_shop()
+end
+function OnMsg.ModsReloaded()
+    disable_unpatched_shop()
+end
 disable_unpatched_shop()
 
 --- RevMag

@@ -28,6 +28,10 @@ return {
 		'CodeFileName', "Code/WEAPON_COMPONENTS_components.lua",
 	}),
 	PlaceObj('ModItemCode', {
+		'name', "PATCH_TOGComponents",
+		'CodeFileName', "Code/PATCH_TOGComponents.lua",
+	}),
+	PlaceObj('ModItemCode', {
 		'name', "FUNCTION_grenade_launcher_22",
 		'CodeFileName', "Code/FUNCTION_grenade_launcher_22.lua",
 	}),
@@ -352,6 +356,1026 @@ return {
 			'PBbonus_base', 0,
 		}),
 		PlaceObj('ModItemWeaponComponent', {
+			Cost = 15,
+			DisplayName = T(630328241510, --[[ModItemWeaponComponent _Master_StockFolded_TOG DisplayName]] "Folded Stock"),
+			Icon = "Mod/KKh3Yhf/Images/AN94_Stock_fld_icon.png",
+			ModificationDifficulty = 20,
+			ModificationEffects = {
+				"ReduceAimAccuracy",
+				"no_stock",
+				"StanceAPdecrease",
+				"IncreaseOverwatchAngle",
+				"hipfire_no_stock",
+				"Enable_RunAndGun",
+				"zzStockEquipped",
+			},
+			Parameters = {
+				PlaceObj('PresetParamNumber', {
+					'Name', "AimAccuracyDecrease",
+					'Value', 3,
+					'Tag', "<AimAccuracyDecrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "OverwatchAngleIncrease",
+					'Value', 115,
+					'Tag', "<OverwatchAngleIncrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "APdecrease",
+					'Value', 1,
+					'Tag', "<APdecrease>",
+				}),
+			},
+			Slot = "Stock",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "AN94_1",
+					Entity = "AN94_Stock_fld",
+					Slot = "Stock",
+					param_bindings = false,
+				}),
+			},
+			group = "Firearm - Heavy",
+			id = "_Master_StockFolded_TOG",
+			zzFoldingPair = {
+				"AN94_Stock_def_1",
+			},
+		}),
+		PlaceObj('ModItemWeaponComponent', {
+			DisplayName = T(462091831128, --[[ModItemWeaponComponent _Master_GrenadeLauncherFolded_TOG DisplayName]] "Rifle Grenade Launcher (PAP M59)"),
+			Icon = "Mod/KKh3Yhf/Images/Papovka_grndl_fld_dark.png",
+			ModificationDifficulty = -25,
+			ModificationEffects = {
+				"zzGrndlEquipped",
+			},
+			Slot = "Mountfront",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "PapovkaSKS_1",
+					Entity = "Papovka_GrndL_def",
+					Slot = "Mountfront",
+					param_bindings = false,
+				}),
+				PlaceObj('WeaponComponentVisual', {
+					Entity = "Papovka_GrndL_def",
+					Slot = "Mountfront",
+					param_bindings = false,
+				}),
+			},
+			group = "Firearm - Heavy",
+			id = "_Master_GrenadeLauncherFolded_TOG",
+			zzFoldingPair = {
+				"Papovka_Grnd_unfld_1",
+			},
+		}),
+		PlaceObj('ModItemWeaponComponent', {
+			BlockSlots = {
+				"Bipod",
+			},
+			DisplayName = T(650657516441, --[[ModItemWeaponComponent _Master_GrenadeLauncherUnfolded_TOG DisplayName]] "Rifle Grenade Launcher (PAP M59)"),
+			EnableWeapon = "rat_22mmUnderslungGrenadeLauncher",
+			Icon = "Mod/KKh3Yhf/Images/Papovka_grndl_unfld_dark.png",
+			ModificationDifficulty = -25,
+			ModificationEffects = {
+				"RAT_TOG_22m_launcher",
+				"DecreaseOverwatchAngle",
+				"DecreaseAimAccuracy",
+				"zzGrndlEquipped",
+			},
+			Parameters = {
+				PlaceObj('PresetParamNumber', {
+					'Name', "OverwatchAngleDecrease",
+					'Value', 90,
+					'Tag', "<OverwatchAngleDecrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "AimAccuracyDecrease",
+					'Value', 1,
+					'Tag', "<AimAccuracyDecrease>",
+				}),
+			},
+			Slot = "Mountfront",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "PapovkaSKS_1",
+					Entity = "Papovka_Grnd_unfld",
+					Slot = "Mountfront",
+					param_bindings = false,
+				}),
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "Papovka2SKS_1",
+					Entity = "Papovka_Grnd_unfld",
+					Slot = "Mountfront",
+					param_bindings = false,
+				}),
+				PlaceObj('WeaponComponentVisual', {
+					Entity = "Papovka_Grnd_unfld",
+					Slot = "Mountfront",
+					param_bindings = false,
+				}),
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "PapovkaSKS_1",
+					Entity = "Papovka_Bay_fld",
+					Slot = "Bipod",
+					param_bindings = false,
+				}),
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "Papovka2SKS_1",
+					Entity = "Papovka2_Bay_fld",
+					Slot = "Bipod",
+					param_bindings = false,
+				}),
+				PlaceObj('WeaponComponentVisual', {
+					Entity = "Type56c_Bayonet_fld",
+					Slot = "Bipod",
+					param_bindings = false,
+				}),
+			},
+			group = "Firearm - Heavy",
+			id = "_Master_GrenadeLauncherUnfolded_TOG",
+			zzFoldingPair = {
+				"Papovka_Grnd_fld_1",
+			},
+		}),
+		PlaceObj('ModItemWeaponComponent', {
+			Cost = 5,
+			DisplayName = T(486111190007, --[[ModItemWeaponComponent _Master_StockNormalUnfolded_TOG DisplayName]] "Default Stock"),
+			Icon = "Mod/KKh3Yhf/Images/AN94_Stock_unfld_icon.png",
+			ModificationDifficulty = 0,
+			ModificationEffects = {
+				"zzStockEquipped",
+			},
+			Slot = "Stock",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "AN94_1",
+					Entity = "AN94_Stock_def",
+					Slot = "Stock",
+					param_bindings = false,
+				}),
+			},
+			group = "Firearm - Heavy",
+			id = "_Master_StockNormalUnfolded_TOG",
+			zzFoldingPair = {
+				"AN94_Stock_fld_1",
+			},
+		}),
+		PlaceObj('ModItemWeaponComponent', {
+			Comment = "consider reducing or disabling aiming?",
+			DisplayName = T(158573039273, --[[ModItemWeaponComponent _Master_StockNormalFolded_TOG DisplayName]] "Folded Stock"),
+			Icon = "Mod/cfahRED/Images/folded2 2.png",
+			ModificationDifficulty = "-999",
+			ModificationEffects = {
+				"ReduceAimAccuracy",
+				"no_stock",
+				"StanceAPdecrease",
+				"IncreaseOverwatchAngle",
+				"hipfire_no_stock",
+				"Enable_RunAndGun",
+				"zzStockEquipped",
+			},
+			Parameters = {
+				PlaceObj('PresetParamNumber', {
+					'Name', "AimAccuracyDecrease",
+					'Value', 2,
+					'Tag', "<AimAccuracyDecrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "APdecrease",
+					'Value', 1,
+					'Tag', "<APdecrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "OverwatchAngleIncrease",
+					'Value', 115,
+					'Tag', "<OverwatchAngleIncrease>",
+				}),
+			},
+			Slot = "Stock",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "G36",
+					Entity = "WeaponAttA_StockHKG36_02",
+					Slot = "Stock",
+					param_bindings = false,
+				}),
+			},
+			comment = "----------- STOCK",
+			group = "Stock",
+			id = "_Master_StockNormalFolded_TOG",
+			param_bindings = {},
+			zzFoldingPair = {
+				"foldable_StockNormal",
+			},
+		}),
+		PlaceObj('ModItemWeaponComponent', {
+			DisplayName = T(667268936832, --[[ModItemWeaponComponent _Master_BayonetFolded_TOG DisplayName]] "Fold Bayonet (PAP M59)"),
+			Icon = "Mod/KKh3Yhf/Images/Papovka_bay_fld_dark.png",
+			ModificationDifficulty = -25,
+			ModificationEffects = {
+				"zzBayonetEquipped",
+			},
+			Parameters = {
+				PlaceObj('PresetParamNumber', {
+					'Name', "AimAccuracyIncrease",
+					'Value', 1,
+					'Tag', "<AimAccuracyIncrease>",
+				}),
+			},
+			Slot = "Bipod",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "PapovkaSKS_1",
+					Entity = "Papovka_Bay_fld",
+					Slot = "Bipod",
+					param_bindings = false,
+				}),
+				PlaceObj('WeaponComponentVisual', {
+					Entity = "Papovka_Bay_fld",
+					Slot = "Bipod",
+					param_bindings = false,
+				}),
+			},
+			group = "Firearm - Heavy",
+			id = "_Master_BayonetFolded_TOG",
+			zzFoldingPair = {
+				"Papovka_Bay_unfld_1",
+			},
+		}),
+		PlaceObj('ModItemWeaponComponent', {
+			DisplayName = T(451883199091, --[[ModItemWeaponComponent _Master_BayonetUnfolded_TOG DisplayName]] "Unfold Bayonet"),
+			EnableWeapon = "SKS_Bay_M_2",
+			Icon = "Mod/KKh3Yhf/Images/Papovka_bay_unfld_dark.png",
+			ModificationDifficulty = -25,
+			ModificationEffects = {
+				"Bayonet",
+				"DecreaseAimAccuracy",
+				"DecreaseOverwatchAngle",
+				"zzBayonetEquipped",
+			},
+			Parameters = {
+				PlaceObj('PresetParamNumber', {
+					'Name', "OverwatchAngleDecrease",
+					'Value', 88,
+					'Tag', "<OverwatchAngleDecrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "AimAccuracyDecrease",
+					'Value', 1,
+					'Tag', "<AimAccuracyDecrease>",
+				}),
+			},
+			Slot = "Bipod",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "PapovkaSKS_1",
+					Entity = "Papovka_Bay_unfld",
+					Slot = "Bipod",
+					param_bindings = false,
+				}),
+				PlaceObj('WeaponComponentVisual', {
+					Entity = "Papovka_Bay_unfld",
+					Slot = "Bipod",
+					param_bindings = false,
+				}),
+			},
+			group = "Firearm - Heavy",
+			id = "_Master_BayonetUnfolded_TOG",
+			zzFoldingPair = {
+				"Papovka_Bay_fld_1",
+			},
+		}),
+		PlaceObj('ModItemWeaponComponent', {
+			DisplayName = T(519388018544, --[[ModItemWeaponComponent _Master_StockLightUnfolded_TOG DisplayName]] "Unfold Stock"),
+			Icon = "Mod/KKh3Yhf/Images/M70_stock_unfld.png",
+			ModificationDifficulty = -25,
+			ModificationEffects = {
+				"light_stock_aim_reduce",
+				"StanceAPdecrease",
+				"stocklight_effect_recoil",
+				"hipfire_light_stock",
+				"zzStockEquipped",
+			},
+			Parameters = {
+				PlaceObj('PresetParamNumber', {
+					'Name', "AimAccuracyDecrease",
+					'Value', 2,
+					'Tag', "<AimAccuracyDecrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "APdecrease",
+					'Value', 1,
+					'Tag', "<APdecrease>",
+				}),
+			},
+			Slot = "Stock",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "M70_1",
+					Entity = "M70_stock_unfld",
+					Slot = "Stock",
+					param_bindings = false,
+				}),
+			},
+			group = "Stock",
+			id = "_Master_StockLightUnfolded_TOG",
+			zzFoldingPair = {
+				"M70_stock_fld_1",
+			},
+		}),
+		PlaceObj('ModItemWeaponComponent', {
+			DisplayName = T(543796475383, --[[ModItemWeaponComponent _Master_B93RR_grip_fld_1 DisplayName]] "Grip"),
+			Icon = "Mod/KKh3Yhf/Images/B93RR_grip_fld.png",
+			ModificationDifficulty = -25,
+			ModificationEffects = {
+				"ReduceReloadAP",
+			},
+			Parameters = {
+				PlaceObj('PresetParamNumber', {
+					'Name', "ReloadAPDecrease",
+					'Value', 1,
+					'Tag', "<ReloadAPDecrease>",
+				}),
+			},
+			Slot = "Under",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "B93RR_1",
+					Entity = "B93R_grip_fld",
+					Slot = "Stock",
+					param_bindings = false,
+				}),
+			},
+			group = "Underslung",
+			id = "_Master_B93RR_grip_fld_TOG",
+			zzFoldingPair = {
+				"B93RR_grip_unfld_1",
+			},
+		}),
+		PlaceObj('ModItemWeaponComponent', {
+			Cost = 25,
+			DisplayName = T(336371510588, --[[ModItemWeaponComponent _Master_Handguard_ext_TOG DisplayName]] "Extended Handguard"),
+			Icon = "Mod/KKh3Yhf/Images/RK62_Handguard_ext.png",
+			ModificationDifficulty = 10,
+			ModificationEffects = {
+				"DecreaseOverwatchAngle",
+				"handguard_ext",
+				"IncreaseAimAccuracy",
+			},
+			Parameters = {
+				PlaceObj('PresetParamNumber', {
+					'Name', "OverwatchAngleDecrease",
+					'Value', 90,
+					'Tag', "<OverwatchAngleDecrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "AimAccuracyIncrease",
+					'Value', 1,
+					'Tag', "<AimAccuracyIncrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "pb_bonus_hg",
+					'Value', -3,
+					'Tag', "<pb_bonus_hg>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "hipfire_mul",
+					'Value', 90,
+					'Tag', "<hipfire_mul>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "snapshot_mul",
+					'Value', 110,
+					'Tag', "<snapshot_mul>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "recoil_mul",
+					'Value', 95,
+					'Tag', "<recoil_mul>",
+				}),
+			},
+			Slot = "Handguard",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "RK62_1",
+					Entity = "RK62_Handguard_ext",
+					Slot = "Handguard",
+					param_bindings = false,
+				}),
+			},
+			group = "Handguard",
+			id = "_Master_Handguard_ext_TOG",
+		}),
+		PlaceObj('ModItemWeaponComponent', {
+			Cost = 25,
+			DisplayName = T(413491715992, --[[ModItemWeaponComponent _Master_Handguard_short_TOG DisplayName]] "Short Handguard"),
+			Icon = "Mod/KKh3Yhf/Images/RK62_Handguard_shrt.png",
+			ModificationDifficulty = 10,
+			ModificationEffects = {
+				"IncreaseOverwatchAngle",
+				"handguard_short",
+			},
+			Parameters = {
+				PlaceObj('PresetParamNumber', {
+					'Name', "OverwatchAngleIncrease",
+					'Value', 110,
+					'Tag', "<OverwatchAngleIncrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "pb_bonus_hg",
+					'Value', 2,
+					'Tag', "<pb_bonus_hg>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "hipfire_mul",
+					'Value', 110,
+					'Tag', "<hipfire_mul>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "snapshot_mul",
+					'Value', 90,
+					'Tag', "<snapshot_mul>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "recoil_mul",
+					'Value', 105,
+					'Tag', "<recoil_mul>",
+				}),
+			},
+			Slot = "Handguard",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "RK62_1",
+					Entity = "RK62_Handguard_shrt",
+					Slot = "Handguard",
+					param_bindings = false,
+				}),
+			},
+			group = "Handguard",
+			id = "_Master_Handguard_short_TOG",
+		}),
+		PlaceObj('ModItemWeaponComponent', {
+			AdditionalCosts = {
+				PlaceObj('WeaponComponentCost', {
+					'Amount', 1,
+					'Type', "FineSteelPipe",
+				}),
+			},
+			Cost = 15,
+			DisplayName = T(320253951369, --[[ModItemWeaponComponent RAT_short_barrel_master DisplayName]] "Short Barrel (PAP M59)"),
+			Icon = "Mod/KKh3Yhf/Images/Papovka_barrel_shrt_light.png_dark.png",
+			ModificationDifficulty = 0,
+			ModificationEffects = {
+				"ReduceRange",
+				"shortbarrel",
+				"RAT_TOG_ReduceDamage",
+				"IncreaseOverwatchAngle",
+			},
+			Parameters = {
+				PlaceObj('PresetParamNumber', {
+					'Name', "RangeDecrease",
+					'Value', 4,
+					'Tag', "<RangeDecrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "OverwatchAngleIncrease",
+					'Value', 135,
+					'Tag', "<OverwatchAngleIncrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "DamageReduced",
+					'Value', 1,
+					'Tag', "<DamageReduced>",
+				}),
+			},
+			Slot = "Barrel",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "PapovkaSKS_1",
+					Entity = "Papovka_Barrel_shrt",
+					Slot = "Barrel",
+					param_bindings = false,
+				}),
+				PlaceObj('WeaponComponentVisual', {
+					Entity = "Papovka_Barrel_shrt",
+					Slot = "Barrel",
+					param_bindings = false,
+				}),
+			},
+			group = "Firearm - Heavy",
+			id = "RAT_short_barrel_master",
+		}),
+		PlaceObj('ModItemWeaponComponent', {
+			Cost = 30,
+			DisplayName = T(760008341813, --[[ModItemWeaponComponent _Master_ReceiverBurst_TOG DisplayName]] "Custom Trigger Group"),
+			Icon = "Mod/KKh3Yhf/Images/HK33_grip_classic.png",
+			ModificationDifficulty = 20,
+			ModificationEffects = {
+				"NoFullAuto",
+				"Reduce_recoil_burst_delta",
+			},
+			Parameters = {
+				PlaceObj('PresetParamNumber', {
+					'Name', "BurstRecoilDeltaMul",
+					'Value', 90,
+					'Tag', "<BurstRecoilDeltaMul>",
+				}),
+			},
+			Slot = "General",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "HK33A2_1",
+					Entity = "hk33_lower_classic",
+					Slot = "General",
+					param_bindings = false,
+				}),
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "HK53_1",
+					Entity = "hk33_lower_classic",
+					Slot = "General",
+					param_bindings = false,
+				}),
+			},
+			group = "Firearm - Heavy",
+			id = "_Master_ReceiverBurst_TOG",
+		}),
+		PlaceObj('ModItemWeaponComponent', {
+			Cost = 30,
+			DisplayName = T(565684549054, --[[ModItemWeaponComponent _Master_ReceiverFullAuto_TOG DisplayName]] "Modern Receiver"),
+			Icon = "Mod/KKh3Yhf/Images/HK33_grip_modern.png",
+			ModificationDifficulty = 20,
+			ModificationEffects = {
+				"EnableFullAuto",
+			},
+			Slot = "General",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "HK33A2_1",
+					Entity = "hk33_lower_modern",
+					Slot = "General",
+					param_bindings = false,
+				}),
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "HK53_1",
+					Entity = "hk33_lower_modern",
+					Slot = "General",
+					param_bindings = false,
+				}),
+			},
+			group = "Firearm - Heavy",
+			id = "_Master_ReceiverFullAuto_TOG",
+		}),
+		PlaceObj('ModItemWeaponComponent', {
+			AdditionalCosts = {
+				PlaceObj('WeaponComponentCost', {
+					'Amount', 1,
+					'Type', "OpticalLens",
+				}),
+			},
+			Cost = 20,
+			DisplayName = T(889153609477, --[[ModItemWeaponComponent _Master_SSG69_Scope_TOG DisplayName]] "ZF 84 6x"),
+			Icon = "Mod/KKh3Yhf/Images/SSG69_Scope_icon.png",
+			ModificationDifficulty = 10,
+			ModificationEffects = {
+				"IncreaseRange",
+				"IncreaseMaxAimActions",
+				"CritBonusWhenFullyAimed",
+				"ScopePenalty3",
+				"DecreaseOverwatchAngle",
+			},
+			Parameters = {
+				PlaceObj('PresetParamNumber', {
+					'Name', "RangeIncrease",
+					'Value', 16,
+					'Tag', "<RangeIncrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "MaxAimActionsIncrease",
+					'Value', 1,
+					'Tag', "<MaxAimActionsIncrease>",
+				}),
+				PlaceObj('PresetParamPercent', {
+					'Name', "crit",
+					'Value', 20,
+					'Tag', "<crit>%",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "OverwatchAngleDecrease",
+					'Value', 60,
+					'Tag', "<OverwatchAngleDecrease>",
+				}),
+			},
+			Slot = "Scope",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "SSG69_1",
+					Entity = "SSG69_Scope",
+					Slot = "Scope",
+					param_bindings = false,
+				}),
+			},
+			group = "Scope",
+			id = "_Master_SSG69_Scope_TOG",
+		}),
+		PlaceObj('ModItemWeaponComponent', {
+			AdditionalCosts = {
+				PlaceObj('WeaponComponentCost', {
+					'Amount', 1,
+					'Type', "OpticalLens",
+				}),
+			},
+			Cost = 25,
+			DisplayName = T(691087939058, --[[ModItemWeaponComponent _Master_GW43_Scope_TOG DisplayName]] "ZF-4 Scope x1.5"),
+			Icon = "Mod/KKh3Yhf/Images/G43_Scope_icon.png",
+			ModificationDifficulty = 0,
+			ModificationEffects = {
+				"AccuracyBonusWhenAimed",
+				"DecreaseOverwatchAngle",
+				"IncreaseRange",
+			},
+			Parameters = {
+				PlaceObj('PresetParamNumber', {
+					'Name', "RangeIncrease",
+					'Value', 4,
+					'Tag', "<RangeIncrease>",
+				}),
+				PlaceObj('PresetParamPercent', {
+					'Name', "bonus_cth",
+					'Value', 5,
+					'Tag', "<bonus_cth>%",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "OverwatchAngleDecrease",
+					'Value', 85,
+					'Tag', "<OverwatchAngleDecrease>",
+				}),
+			},
+			Slot = "Scope",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "Gewehr43_1",
+					Entity = "G43_Scope",
+					Slot = "Scope",
+					param_bindings = false,
+				}),
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "STG44R_1",
+					Entity = "G43_Scope",
+					Slot = "Scope",
+					param_bindings = false,
+				}),
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "FG42_1",
+					Entity = "G43_Scope",
+					Slot = "Scope",
+					param_bindings = false,
+				}),
+				PlaceObj('WeaponComponentVisual', {
+					Entity = "G43_Scope",
+					Slot = "Scope",
+					param_bindings = false,
+				}),
+			},
+			comment = "-----------------------ok",
+			group = "Firearm - Heavy",
+			id = "_Master_GW43_Scope_TOG",
+		}),
+		PlaceObj('ModItemWeaponComponent', {
+			AdditionalCosts = {
+				PlaceObj('WeaponComponentCost', {
+					'Amount', 1,
+					'Type', "OpticalLens",
+				}),
+			},
+			Cost = 35,
+			DisplayName = T(697900714013, --[[ModItemWeaponComponent _Master_SteyrS_Scope_TOG DisplayName]] "Crossfire II 4x"),
+			Icon = "Mod/KKh3Yhf/Images/SteyrScout_Scope.png",
+			ModificationDifficulty = 0,
+			ModificationEffects = {
+				"pso_dragunov_scope",
+				"IncreaseMaxAimActions",
+				"ScopePenalty2",
+				"scout_scope_crit",
+				"IncreaseRange",
+				"DecreaseOverwatchAngle",
+			},
+			Parameters = {
+				PlaceObj('PresetParamNumber', {
+					'Name', "RangeIncrease",
+					'Value', 10,
+					'Tag', "<RangeIncrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "OverwatchAngleDecrease",
+					'Value', 60,
+					'Tag', "<OverwatchAngleDecrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "APincrease",
+					'Value', 1,
+					'Tag', "<APincrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "MaxAimActionsIncrease",
+					'Value', 1,
+					'Tag', "<MaxAimActionsIncrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "critical_head",
+					'Value', 15,
+					'Tag', "<critical_head>",
+				}),
+			},
+			Slot = "Scope",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "SteyrScout_1",
+					Entity = "SteyrS_Scope",
+					Slot = "Scope",
+					param_bindings = false,
+				}),
+			},
+			group = "Firearm - Heavy",
+			id = "_Master_SteyrS_Scope_TOG",
+		}),
+		PlaceObj('ModItemWeaponComponent', {
+			AdditionalCosts = {
+				PlaceObj('WeaponComponentCost', {
+					'Amount', 1,
+					'Type', "OpticalLens",
+				}),
+			},
+			Cost = 20,
+			DisplayName = T(472698687206, --[[ModItemWeaponComponent _Master_m76_scope_TOG DisplayName]] "ZRAK x4 Scope"),
+			Icon = "Mod/KKh3Yhf/Images/M76_scope.png",
+			ModificationDifficulty = 0,
+			ModificationEffects = {
+				"IncreaseMaxAimActions",
+				"IncreaseRange",
+				"DecreaseOverwatchAngle",
+				"ScopePenalty2",
+				"pso_dragunov_scope",
+				"zrak_scope_crit",
+			},
+			Parameters = {
+				PlaceObj('PresetParamNumber', {
+					'Name', "MaxAimActionsIncrease",
+					'Value', 1,
+					'Tag', "<MaxAimActionsIncrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "RangeIncrease",
+					'Value', 10,
+					'Tag', "<RangeIncrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "OverwatchAngleDecrease",
+					'Value', 68,
+					'Tag', "<OverwatchAngleDecrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "crit_torso",
+					'Value', 12,
+					'Tag', "<crit_torso>",
+				}),
+			},
+			Slot = "Scope",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "M76_1",
+					Entity = "m76_scope",
+					Slot = "Scope",
+					param_bindings = false,
+				}),
+			},
+			group = "Scope",
+			id = "_Master_m76_scope_TOG",
+		}),
+		PlaceObj('ModItemWeaponComponent', {
+			DisplayName = T(196420279745, --[[ModItemWeaponComponent _Master_VigM2_Stock_fld_TOG DisplayName]] "Folded Stock"),
+			Icon = "Mod/KKh3Yhf/Images/VigM2_stock_fld.png",
+			ModificationDifficulty = -25,
+			ModificationEffects = {
+				"vigneron_folded_PB",
+				"zzStockEquipped",
+				"IncreaseOverwatchAngle",
+			},
+			Parameters = {
+				PlaceObj('PresetParamNumber', {
+					'Name', "OverwatchAngleIncrease",
+					'Value', 107,
+					'Tag', "<OverwatchAngleIncrease>",
+				}),
+			},
+			Slot = "Stock",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "VigM2_1",
+					Entity = "VigM2_Stock_fld",
+					Slot = "Stock",
+					param_bindings = false,
+				}),
+			},
+			group = "Stock",
+			id = "_Master_VigM2_Stock_fld_TOG",
+			zzFoldingPair = {
+				"VigM2_Stock_unfld_1",
+			},
+		}),
+		PlaceObj('ModItemWeaponComponent', {
+			DisplayName = T(126346920217, --[[ModItemWeaponComponent _Master_VigM2_Stock_unfld_TOG DisplayName]] "Unfold Stock"),
+			Icon = "Mod/KKh3Yhf/Images/VigM2_stock_hlffld.png",
+			ModificationDifficulty = -25,
+			ModificationEffects = {
+				"IncreaseAimAccuracy",
+				"zzStockEquipped",
+			},
+			Parameters = {
+				PlaceObj('PresetParamNumber', {
+					'Name', "AimAccuracyIncrease",
+					'Value', 2,
+					'Tag', "<AimAccuracyIncrease>",
+				}),
+			},
+			Slot = "Stock",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "VigM2_1",
+					Entity = "VigM2_Stock_unfld",
+					Slot = "Stock",
+					param_bindings = false,
+				}),
+			},
+			group = "Stock",
+			id = "_Master_VigM2_Stock_unfld_TOG",
+			zzFoldingPair = {
+				"VigM2_Stock_fld_1",
+			},
+		}),
+		PlaceObj('ModItemWeaponComponent', {
+			AdditionalCosts = {
+				PlaceObj('WeaponComponentCost', {
+					'Amount', 1,
+					'Type', "OpticalLens",
+				}),
+			},
+			Cost = 35,
+			DisplayName = T(929718451843, --[[ModItemWeaponComponent _Master_PSO-1M2_Scope_TOG DisplayName]] "PSO-1M2-1 Scope 4x"),
+			Icon = "Mod/KKh3Yhf/Images/VSS_Scope_icon.png",
+			ModificationDifficulty = 10,
+			ModificationEffects = {
+				"pso_dragunov_scope",
+				"IncreaseRange",
+				"ScopePenalty2",
+				"DecreaseOverwatchAngle",
+				"StealthKillBonusPerAim",
+				"IncreaseMaxAimActions",
+			},
+			Parameters = {
+				PlaceObj('PresetParamNumber', {
+					'Name', "RangeIncrease",
+					'Value', 10,
+					'Tag', "<RangeIncrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "OverwatchAngleDecrease",
+					'Value', 60,
+					'Tag', "<OverwatchAngleDecrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "APincrease",
+					'Value', 1,
+					'Tag', "<APincrease>",
+				}),
+				PlaceObj('PresetParamPercent', {
+					'Name', "stealth_kill_bonus",
+					'Value', 6,
+					'Tag', "<stealth_kill_bonus>%",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "MaxAimActionsIncrease",
+					'Value', 1,
+					'Tag', "<MaxAimActionsIncrease>",
+				}),
+			},
+			Slot = "Scope",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "VSS_1",
+					Entity = "VSS_Scope_def",
+					Slot = "Scope",
+					param_bindings = false,
+				}),
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "VSK94_1",
+					Entity = "VSS_Scope_def",
+					Slot = "Mount",
+					param_bindings = false,
+				}),
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "VSS_1",
+					Entity = "VSS_irons_def",
+					Slot = "Mount",
+					param_bindings = false,
+				}),
+				PlaceObj('WeaponComponentVisual', {
+					Entity = "VSS_Scope_def",
+					Slot = "Scope",
+					param_bindings = false,
+				}),
+			},
+			comment = "--------------------ok - maybe change description crit bonus",
+			group = "Scope",
+			id = "_Master_PSO-1M2_Scope_TOG",
+		}),
+		PlaceObj('ModItemWeaponComponent', {
+			AdditionalCosts = {
+				PlaceObj('WeaponComponentCost', {
+					'Amount', 1,
+					'Type', "FineSteelPipe",
+				}),
+			},
+			Cost = 35,
+			DisplayName = T(119456042859, --[[ModItemWeaponComponent ToG_Comp_AR_Barrel_Long_1_SMG DisplayName]] "Extended Barrel"),
+			Icon = "UI/Icons/Upgrades/galil_barrel_long",
+			ModificationDifficulty = 0,
+			ModificationEffects = {
+				"IncreaseRange",
+				"IncreaseAimAccuracy",
+				"longbarrel",
+				"DecreaseOverwatchAngle",
+			},
+			Parameters = {
+				PlaceObj('PresetParamNumber', {
+					'Name', "RangeIncrease",
+					'Value', 2,
+					'Tag', "<RangeIncrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "DamageIncrease",
+					'Value', 1,
+					'Tag', "<DamageIncrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "AimAccuracyIncrease",
+					'Value', 1,
+					'Tag', "<AimAccuracyIncrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "OverwatchAngleDecrease",
+					'Value', 92,
+					'Tag', "<OverwatchAngleDecrease>",
+				}),
+			},
+			Slot = "Barrel",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "Fn2000_1",
+					Entity = "WeaponAttA_BarrelUzi_02",
+					Slot = "Barrel",
+					param_bindings = false,
+				}),
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "HK_SL8_1",
+					Entity = "WeaponAttA_BarrelUzi_02",
+					Slot = "Barrel",
+					param_bindings = false,
+				}),
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "UMP_1",
+					Entity = "WeaponAttA_BarrelUzi_02",
+					Slot = "Barrel",
+					param_bindings = false,
+				}),
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "Groza_1",
+					Entity = "WeaponAttA_BarrelUzi_02",
+					Slot = "Barrel",
+					param_bindings = false,
+				}),
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "M1Garand_1",
+					Entity = "WeaponAttA_BarrelUzi_02",
+					Slot = "Barrel",
+					param_bindings = false,
+				}),
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "P90_2",
+					Entity = "WeaponAttA_BarrelUzi_02",
+					Slot = "Barrel",
+					param_bindings = false,
+				}),
+				PlaceObj('WeaponComponentVisual', {
+					Entity = "WeaponAttA_BarrelUzi_02",
+					Slot = "Barrel",
+					param_bindings = false,
+				}),
+			},
+			comment = "rat",
+			group = "Barrel",
+			id = "ToG_Comp_AR_Barrel_Long_1_SMG",
+		}),
+		PlaceObj('ModItemWeaponComponent', {
 			Cost = 5,
 			DisplayName = T(382271022950, --[[ModItemWeaponComponent foldable_StockNormal DisplayName]] "Default Stock"),
 			Icon = "UI/Icons/Upgrades/default_stock",
@@ -554,7 +1578,7 @@ return {
 			Parameters = {
 				PlaceObj('PresetParamPercent', {
 					'Name', "NoiseMultiplier",
-					'Value', 40,
+					'Value', 30,
 					'Tag', "<NoiseMultiplier>%",
 				}),
 				PlaceObj('PresetParamNumber', {
@@ -606,7 +1630,7 @@ return {
 			Parameters = {
 				PlaceObj('PresetParamPercent', {
 					'Name', "NoiseMultiplier",
-					'Value', 40,
+					'Value', 30,
 					'Tag', "<NoiseMultiplier>%",
 				}),
 				PlaceObj('PresetParamNumber', {
@@ -657,97 +1681,6 @@ return {
 			id = "RAT_pap_compensator",
 		}),
 		PlaceObj('ModItemWeaponComponent', {
-			DisplayName = T(451883199091, --[[ModItemWeaponComponent _Rat_Bay_unfolded_master DisplayName]] "Unfold Bayonet"),
-			EnableWeapon = "SKS_Bay_M_2",
-			Icon = "Mod/KKh3Yhf/Images/Papovka_bay_unfld_dark.png",
-			ModificationDifficulty = -25,
-			ModificationEffects = {
-				"Bayonet",
-				"DecreaseAimAccuracy",
-				"DecreaseOverwatchAngle",
-				"zzBayonetEquipped",
-			},
-			Parameters = {
-				PlaceObj('PresetParamNumber', {
-					'Name', "OverwatchAngleDecrease",
-					'Value', 88,
-					'Tag', "<OverwatchAngleDecrease>",
-				}),
-				PlaceObj('PresetParamNumber', {
-					'Name', "AimAccuracyDecrease",
-					'Value', 1,
-					'Tag', "<AimAccuracyDecrease>",
-				}),
-			},
-			Slot = "Bipod",
-			Visuals = {
-				PlaceObj('WeaponComponentVisual', {
-					ApplyTo = "PapovkaSKS_1",
-					Entity = "Papovka_Bay_unfld",
-					Slot = "Bipod",
-					param_bindings = false,
-				}),
-				PlaceObj('WeaponComponentVisual', {
-					Entity = "Papovka_Bay_unfld",
-					Slot = "Bipod",
-					param_bindings = false,
-				}),
-			},
-			group = "Firearm - Heavy",
-			id = "_Rat_Bay_unfolded_master",
-			zzFoldingPair = {
-				"Papovka_Bay_fld_1",
-			},
-		}),
-		PlaceObj('ModItemWeaponComponent', {
-			Comment = "consider reducing or disabling aiming?",
-			DisplayName = T(158573039273, --[[ModItemWeaponComponent StockFolded_1 DisplayName]] "Folded Stock"),
-			Icon = "Mod/cfahRED/Images/folded2 2.png",
-			ModificationDifficulty = "-999",
-			ModificationEffects = {
-				"ReduceAimAccuracy",
-				"no_stock",
-				"StanceAPdecrease",
-				"IncreaseOverwatchAngle",
-				"hipfire_no_stock",
-				"Enable_RunAndGun",
-				"zzStockEquipped",
-			},
-			Parameters = {
-				PlaceObj('PresetParamNumber', {
-					'Name', "AimAccuracyDecrease",
-					'Value', 2,
-					'Tag', "<AimAccuracyDecrease>",
-				}),
-				PlaceObj('PresetParamNumber', {
-					'Name', "APdecrease",
-					'Value', 1,
-					'Tag', "<APdecrease>",
-				}),
-				PlaceObj('PresetParamNumber', {
-					'Name', "OverwatchAngleIncrease",
-					'Value', 115,
-					'Tag', "<OverwatchAngleIncrease>",
-				}),
-			},
-			Slot = "Stock",
-			Visuals = {
-				PlaceObj('WeaponComponentVisual', {
-					ApplyTo = "G36",
-					Entity = "WeaponAttA_StockHKG36_02",
-					Slot = "Stock",
-					param_bindings = false,
-				}),
-			},
-			comment = "----------- STOCK",
-			group = "Stock",
-			id = "StockFolded_1",
-			param_bindings = {},
-			zzFoldingPair = {
-				"foldable_StockNormal",
-			},
-		}),
-		PlaceObj('ModItemWeaponComponent', {
 			DisplayName = T(422988819615, --[[ModItemWeaponComponent component_22mm_grenade DisplayName]] "grenade"),
 			Slot = "Muzzle",
 			Visuals = {
@@ -780,7 +1713,7 @@ return {
 			Parameters = {
 				PlaceObj('PresetParamPercent', {
 					'Name', "NoiseMultiplier",
-					'Value', 40,
+					'Value', 30,
 					'Tag', "<NoiseMultiplier>%",
 				}),
 				PlaceObj('PresetParamNumber', {
@@ -1112,7 +2045,7 @@ return {
 			Parameters = {
 				PlaceObj('PresetParamPercent', {
 					'Name', "NoiseMultiplier",
-					'Value', 40,
+					'Value', 30,
 					'Tag', "<NoiseMultiplier>%",
 				}),
 				PlaceObj('PresetParamNumber', {
@@ -1158,7 +2091,7 @@ return {
 			Parameters = {
 				PlaceObj('PresetParamPercent', {
 					'Name', "NoiseMultiplier",
-					'Value', 40,
+					'Value', 30,
 					'Tag', "<NoiseMultiplier>%",
 				}),
 				PlaceObj('PresetParamNumber', {
@@ -6437,9 +7370,6 @@ return {
 		Cost = 2,
 		DisplayName = T(440922653350, --[[ModItemWeaponComponent DeLisle_barrel_def_1 DisplayName]] "Default Barrel"),
 		ModificationDifficulty = -25,
-		ModificationEffects = {
-			"SilentShots",
-		},
 		Slot = "Barrel",
 		Visuals = {
 			PlaceObj('WeaponComponentVisual', {
@@ -9136,7 +10066,7 @@ return {
 		Icon = "Mod/KKh3Yhf/Images/HK23E_muzzle_def.png",
 		ModificationDifficulty = 0,
 		ModificationEffects = {
-			"AccuracyBonusSameTarget",
+			"compensator_effect",
 		},
 		Parameters = {
 			PlaceObj('PresetParamPercent', {
@@ -10608,56 +11538,6 @@ return {
 			}),
 		},
 		Cost = 15,
-		DisplayName = T(771407192480, --[[ModItemWeaponComponent RAT_short_barrel_master DisplayName]] "Short Barrel (PAP M59)"),
-		Icon = "Mod/KKh3Yhf/Images/Papovka_barrel_shrt_light.png_dark.png",
-		ModificationDifficulty = 0,
-		ModificationEffects = {
-			"ReduceRange",
-			"shortbarrel",
-			"RAT_TOG_ReduceDamage",
-			"IncreaseOverwatchAngle",
-		},
-		Parameters = {
-			PlaceObj('PresetParamNumber', {
-				'Name', "RangeDecrease",
-				'Value', 4,
-				'Tag', "<RangeDecrease>",
-			}),
-			PlaceObj('PresetParamNumber', {
-				'Name', "OverwatchAngleIncrease",
-				'Value', 135,
-				'Tag', "<OverwatchAngleIncrease>",
-			}),
-			PlaceObj('PresetParamNumber', {
-				'Name', "DamageReduced",
-				'Value', 1,
-				'Tag', "<DamageReduced>",
-			}),
-		},
-		Slot = "Barrel",
-		Visuals = {
-			PlaceObj('WeaponComponentVisual', {
-				ApplyTo = "PapovkaSKS_1",
-				Entity = "Papovka_Barrel_shrt",
-				Slot = "Barrel",
-				param_bindings = false,
-			}),
-			PlaceObj('WeaponComponentVisual', {
-				Entity = "Papovka_Barrel_shrt",
-				Slot = "Barrel",
-				param_bindings = false,
-			}),
-		},
-		id = "RAT_short_barrel_master",
-	}),
-	PlaceObj('ModItemWeaponComponent', {
-		AdditionalCosts = {
-			PlaceObj('WeaponComponentCost', {
-				'Amount', 1,
-				'Type', "FineSteelPipe",
-			}),
-		},
-		Cost = 15,
 		DisplayName = T(417615947149, --[[ModItemWeaponComponent Papovka2_Barrel_shrt_1 DisplayName]] "Short Barrel (PAP M59)"),
 		Icon = "Mod/KKh3Yhf/Images/Papovka_barrel_shrt_light.png",
 		ModificationDifficulty = 0,
@@ -11105,39 +11985,6 @@ return {
 		},
 	}),
 	PlaceObj('ModItemWeaponComponent', {
-		DisplayName = T(467299421405, --[[ModItemWeaponComponent _Rat_bay_folded_master DisplayName]] "Fold Bayonet (PAP M59)"),
-		Icon = "Mod/KKh3Yhf/Images/Papovka_bay_fld_dark.png",
-		ModificationDifficulty = -25,
-		ModificationEffects = {
-			"zzBayonetEquipped",
-		},
-		Parameters = {
-			PlaceObj('PresetParamNumber', {
-				'Name', "AimAccuracyIncrease",
-				'Value', 1,
-				'Tag', "<AimAccuracyIncrease>",
-			}),
-		},
-		Slot = "Bipod",
-		Visuals = {
-			PlaceObj('WeaponComponentVisual', {
-				ApplyTo = "PapovkaSKS_1",
-				Entity = "Papovka_Bay_fld",
-				Slot = "Bipod",
-				param_bindings = false,
-			}),
-			PlaceObj('WeaponComponentVisual', {
-				Entity = "Papovka_Bay_fld",
-				Slot = "Bipod",
-				param_bindings = false,
-			}),
-		},
-		id = "_Rat_bay_folded_master",
-		zzFoldingPair = {
-			"Papovka_Bay_unfld_1",
-		},
-	}),
-	PlaceObj('ModItemWeaponComponent', {
 		DisplayName = T(907603995257, --[[ModItemWeaponComponent Papovka2_Bay_fld_1 DisplayName]] "Fold Bayonet (PAP M59)"),
 		Icon = "Mod/KKh3Yhf/Images/Papovka_bay_unfld_light.png",
 		ModificationDifficulty = -25,
@@ -11242,74 +12089,6 @@ return {
 		BlockSlots = {
 			"Bipod",
 		},
-		DisplayName = T(221827954249, --[[ModItemWeaponComponent _Rat_grn_unfolded_master DisplayName]] "Rifle Grenade Launcher (PAP M59)"),
-		EnableWeapon = "rat_22mmUnderslungGrenadeLauncher",
-		Icon = "Mod/KKh3Yhf/Images/Papovka_grndl_unfld_dark.png",
-		ModificationDifficulty = -25,
-		ModificationEffects = {
-			"RAT_TOG_22m_launcher",
-			"DecreaseOverwatchAngle",
-			"DecreaseAimAccuracy",
-			"zzGrndlEquipped",
-		},
-		Parameters = {
-			PlaceObj('PresetParamNumber', {
-				'Name', "OverwatchAngleDecrease",
-				'Value', 90,
-				'Tag', "<OverwatchAngleDecrease>",
-			}),
-			PlaceObj('PresetParamNumber', {
-				'Name', "AimAccuracyDecrease",
-				'Value', 1,
-				'Tag', "<AimAccuracyDecrease>",
-			}),
-		},
-		Slot = "Mountfront",
-		Visuals = {
-			PlaceObj('WeaponComponentVisual', {
-				ApplyTo = "PapovkaSKS_1",
-				Entity = "Papovka_Grnd_unfld",
-				Slot = "Mountfront",
-				param_bindings = false,
-			}),
-			PlaceObj('WeaponComponentVisual', {
-				ApplyTo = "Papovka2SKS_1",
-				Entity = "Papovka_Grnd_unfld",
-				Slot = "Mountfront",
-				param_bindings = false,
-			}),
-			PlaceObj('WeaponComponentVisual', {
-				Entity = "Papovka_Grnd_unfld",
-				Slot = "Mountfront",
-				param_bindings = false,
-			}),
-			PlaceObj('WeaponComponentVisual', {
-				ApplyTo = "PapovkaSKS_1",
-				Entity = "Papovka_Bay_fld",
-				Slot = "Bipod",
-				param_bindings = false,
-			}),
-			PlaceObj('WeaponComponentVisual', {
-				ApplyTo = "Papovka2SKS_1",
-				Entity = "Papovka2_Bay_fld",
-				Slot = "Bipod",
-				param_bindings = false,
-			}),
-			PlaceObj('WeaponComponentVisual', {
-				Entity = "Type56c_Bayonet_fld",
-				Slot = "Bipod",
-				param_bindings = false,
-			}),
-		},
-		id = "_Rat_grn_unfolded_master",
-		zzFoldingPair = {
-			"Papovka_Grnd_fld_1",
-		},
-	}),
-	PlaceObj('ModItemWeaponComponent', {
-		BlockSlots = {
-			"Bipod",
-		},
 		DisplayName = T(554723802870, --[[ModItemWeaponComponent Papovka2_Grnd_unfld_1 DisplayName]] "Rifle Grenade Launcher (PAP M59)"),
 		EnableWeapon = "rat_22mmUnderslungGrenadeLauncher",
 		Icon = "Mod/KKh3Yhf/Images/Papovka_grndl_unfld_light.png",
@@ -11396,32 +12175,6 @@ return {
 			}),
 		},
 		id = "Papovka_Grnd_fld_1",
-		zzFoldingPair = {
-			"Papovka_Grnd_unfld_1",
-		},
-	}),
-	PlaceObj('ModItemWeaponComponent', {
-		DisplayName = T(773553469219, --[[ModItemWeaponComponent _Rat_Grn_Folded_master DisplayName]] "Rifle Grenade Launcher (PAP M59)"),
-		Icon = "Mod/KKh3Yhf/Images/Papovka_grndl_fld_dark.png",
-		ModificationDifficulty = -25,
-		ModificationEffects = {
-			"zzGrndlEquipped",
-		},
-		Slot = "Mountfront",
-		Visuals = {
-			PlaceObj('WeaponComponentVisual', {
-				ApplyTo = "PapovkaSKS_1",
-				Entity = "Papovka_GrndL_def",
-				Slot = "Mountfront",
-				param_bindings = false,
-			}),
-			PlaceObj('WeaponComponentVisual', {
-				Entity = "Papovka_GrndL_def",
-				Slot = "Mountfront",
-				param_bindings = false,
-			}),
-		},
-		id = "_Rat_Grn_Folded_master",
 		zzFoldingPair = {
 			"Papovka_Grnd_unfld_1",
 		},
@@ -17417,93 +18170,6 @@ return {
 		comment = "*** Ingame item AssaultRifle Barrel long ***",
 		group = "Barrel",
 		id = "ToG_Comp_AR_Barrel_Long_1",
-	}),
-	PlaceObj('ModItemWeaponComponent', {
-		AdditionalCosts = {
-			PlaceObj('WeaponComponentCost', {
-				'Amount', 1,
-				'Type', "FineSteelPipe",
-			}),
-		},
-		Cost = 35,
-		DisplayName = T(776833182368, --[[ModItemWeaponComponent ToG_Comp_AR_Barrel_Long_1_SMG DisplayName]] "Extended Barrel"),
-		Icon = "UI/Icons/Upgrades/galil_barrel_long",
-		ModificationDifficulty = 0,
-		ModificationEffects = {
-			"IncreaseRange",
-			"IncreaseAimAccuracy",
-			"longbarrel",
-			"DecreaseOverwatchAngle",
-		},
-		Parameters = {
-			PlaceObj('PresetParamNumber', {
-				'Name', "RangeIncrease",
-				'Value', 2,
-				'Tag', "<RangeIncrease>",
-			}),
-			PlaceObj('PresetParamNumber', {
-				'Name', "DamageIncrease",
-				'Value', 1,
-				'Tag', "<DamageIncrease>",
-			}),
-			PlaceObj('PresetParamNumber', {
-				'Name', "AimAccuracyIncrease",
-				'Value', 1,
-				'Tag', "<AimAccuracyIncrease>",
-			}),
-			PlaceObj('PresetParamNumber', {
-				'Name', "OverwatchAngleDecrease",
-				'Value', 92,
-				'Tag', "<OverwatchAngleDecrease>",
-			}),
-		},
-		Slot = "Barrel",
-		Visuals = {
-			PlaceObj('WeaponComponentVisual', {
-				ApplyTo = "Fn2000_1",
-				Entity = "WeaponAttA_BarrelUzi_02",
-				Slot = "Barrel",
-				param_bindings = false,
-			}),
-			PlaceObj('WeaponComponentVisual', {
-				ApplyTo = "HK_SL8_1",
-				Entity = "WeaponAttA_BarrelUzi_02",
-				Slot = "Barrel",
-				param_bindings = false,
-			}),
-			PlaceObj('WeaponComponentVisual', {
-				ApplyTo = "UMP_1",
-				Entity = "WeaponAttA_BarrelUzi_02",
-				Slot = "Barrel",
-				param_bindings = false,
-			}),
-			PlaceObj('WeaponComponentVisual', {
-				ApplyTo = "Groza_1",
-				Entity = "WeaponAttA_BarrelUzi_02",
-				Slot = "Barrel",
-				param_bindings = false,
-			}),
-			PlaceObj('WeaponComponentVisual', {
-				ApplyTo = "M1Garand_1",
-				Entity = "WeaponAttA_BarrelUzi_02",
-				Slot = "Barrel",
-				param_bindings = false,
-			}),
-			PlaceObj('WeaponComponentVisual', {
-				ApplyTo = "P90_2",
-				Entity = "WeaponAttA_BarrelUzi_02",
-				Slot = "Barrel",
-				param_bindings = false,
-			}),
-			PlaceObj('WeaponComponentVisual', {
-				Entity = "WeaponAttA_BarrelUzi_02",
-				Slot = "Barrel",
-				param_bindings = false,
-			}),
-		},
-		comment = "rat",
-		group = "Barrel",
-		id = "ToG_Comp_AR_Barrel_Long_1_SMG",
 	}),
 	PlaceObj('ModItemWeaponComponent', {
 		AdditionalCosts = {
