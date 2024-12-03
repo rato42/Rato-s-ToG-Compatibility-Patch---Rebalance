@@ -909,7 +909,7 @@ return {
 				}),
 				PlaceObj('PresetParamPercent', {
 					'Name', "bonus_cth",
-					'Value', 5,
+					'Value', 15,
 					'Tag', "<bonus_cth>%",
 				}),
 				PlaceObj('PresetParamNumber', {
