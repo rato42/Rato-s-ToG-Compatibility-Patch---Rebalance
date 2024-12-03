@@ -1,22 +1,29 @@
 function OnMsg.RevisedMagPropsAddedToFirearms()
-    REV_SetupWeapon(B93RR_1, 'B93RR_1_9mm', 'B93RR_1_Magazine', 'MagNormal', {'MagNormal', 'MagLarge'})
+    REV_SetupWeapon(B93RR_1, 'B93RR_1_9mm', 'B93RR_1_Magazine', 'MagNormal',
+                    {'MagNormal', 'MagLarge'})
     REV_SetupWeapon(USP_1, 'USP_1_9mm', 'USP_1_Magazine', 'MagNormal', {'MagNormal', 'MagLarge'})
-    REV_SetupWeapon(VikingMP446_1, 'VikingMP446_1_9mm', 'VikingMP446_1_Magazine', 'MagNormal', {'MagNormal', 'MagLarge'})
+    REV_SetupWeapon(VikingMP446_1, 'VikingMP446_1_9mm', 'VikingMP446_1_Magazine', 'MagNormal',
+                    {'MagNormal', 'MagLarge'})
     REV_SetupWeapon(PKM_1, 'PKM_1_7_62x54R', 'PKM_1_Magazine', 'MagLarger', {'MagLarger'})
     REV_SetupWeapon(RPD_1, 'RPD_1_762WP', 'RPD_1_Magazine', 'MagLarger', {'MagLarger'})
-    REV_SetupWeapon(Gewehr43_1, 'Gewehr43_1_7_92x57', 'Gewehr43_1_Magazine', 'MagNormal', {'MagNormal', 'MagLarge'})
+    REV_SetupWeapon(Gewehr43_1, 'Gewehr43_1_7_92x57', 'Gewehr43_1_Magazine', 'MagNormal',
+                    {'MagNormal', 'MagLarge'})
     REV_SetupWeapon(P08_1, 'P08_1_9mm', 'P08_1_Magazine', 'MagNormal', {'MagNormal', 'MagLarge'})
-    REV_SetupWeapon(M1911_1, 'M1911_1_45ACP', 'M1911_1_Magazine', 'MagNormal', {'MagNormal', 'MagLarge'})
+    REV_SetupWeapon(M1911_1, 'M1911_1_45ACP', 'M1911_1_Magazine', 'MagNormal',
+                    {'MagNormal', 'MagLarge'})
     REV_SetupWeapon(M76_1, 'M76_1_7_92x57', 'M76_1_Magazine', 'MagNormal', {'MagNormal'})
     REV_SetupWeapon(MAC11_1, 'MAC11_1_380ACP', 'MAC11_1_Magazine', 'MagNormal', {'MagNormal'})
-    REV_SetupWeapon(MicroUZI_1, 'MicroUZI_1_9mm', 'MicroUZI_1_Magazine', 'MagNormal', {'MagNormal', 'MagLarge'})
+    REV_SetupWeapon(MicroUZI_1, 'MicroUZI_1_9mm', 'MicroUZI_1_Magazine', 'MagNormal',
+                    {'MagNormal', 'MagLarge'})
     REV_SetupWeapon(PP91_1, 'PP91_1_9mm', 'PP91_1_Magazine', 'MagNormal', {'MagNormal', 'MagLarge'})
     REV_SetupWeapon(VigM2_1, 'VigM2_1_9mm', 'VigM2_1_Magazine', 'MagNormal', {'MagNormal'})
     REV_SetupWeapon(Delisle_1, 'Delisle_1_45ACP', 'Delisle_1_Magazine', 'MagNormal', {'MagNormal'})
-    REV_SetupWeapon(SSG69_1, 'SSG69_1_308Win', 'SSG69_1_Magazine', 'MagNormal', {'MagNormal', 'MagLarge'})
+    REV_SetupWeapon(SSG69_1, 'SSG69_1_308Win', 'SSG69_1_Magazine', 'MagNormal',
+                    {'MagNormal', 'MagLarge'})
     REV_SetupWeapon(HK23E_1, 'HK23E_1_556', 'HK23E_1_Magazine', 'MagLarger', {'MagLarger'})
     REV_SetupWeapon(HK23ECamo_1, 'HK23E_1_556', 'HK23E_1_Magazine', 'MagLarger', {'MagLarger'})
-    REV_SetupWeapon(SteyrScout_1, 'SteyrScout_1_308Win', 'SteyrScout_1_Magazine', 'MagNormal', {'MagNormal'})
+    REV_SetupWeapon(SteyrScout_1, 'SteyrScout_1_308Win', 'SteyrScout_1_Magazine', 'MagNormal',
+                    {'MagNormal'})
     REV_SetupWeapon(StenMK2_1, 'StenMK2_1_9mm', 'StenMK2_1_Magazine', 'MagNormal', {'MagNormal'})
     REV_SetupWeapon(STG44R_1, 'STG44R_1_7_92x33', 'STG44R_1_Magazine', 'MagNormal', {'MagNormal'})
 end
@@ -25,6 +32,7 @@ function GBOTOG_RevMag_CreateMagazine()
     if not IsMod_loaded('URkxyfE') then
         return
     end
+
     UndefineClass('B93RR_1_Magazine')
     DefineClass.B93RR_1_Magazine = {
         __parents = {"PistolMag"},
@@ -65,6 +73,7 @@ function GBOTOG_RevMag_CreateMagazine()
         Cost = 89,
         DisplayName = T(365759529263, '93R Magazine')
     }
+
     UndefineClass('B93RR_1_MagazineLarge')
     DefineClass.B93RR_1_MagazineLarge = {
         __parents = {"PistolMag"},
@@ -1145,6 +1154,7 @@ function GBOTOG_RevMag_CreateMagazine()
         Cost = 299,
         DisplayName = T(331234252847, 'Sturmgewehr 44 Magazine')
     }
+
 end
 local map = {
     ["MagLarger"] = {
@@ -1327,4 +1337,20 @@ local map = {
 }
 function GBOTOG_RevMag_WeaponComponentVisualPatch()
     RatTOG_RevMag_ApplyMap(map)
+end
+
+function GBOTOG_RevMag_AddClassesToInventoryItemDefs()
+    if not IsMod_loaded('URkxyfE') then
+        return
+    end
+    local classes = {
+        'B93RR_1_Magazine', 'USP_1_Magazine', 'VikingMP446_1_Magazine', 'PKM_1_Magazine',
+        'RPD_1_Magazine', 'Gewehr43_1_Magazine', 'P08_1_Magazine', 'M1911_1_Magazine',
+        'M76_1_Magazine', 'MAC11_1_Magazine', 'MicroUZI_1_Magazine', 'PP91_1_Magazine',
+        'VigM2_1_Magazine', 'Delisle_1_Magazine', 'SSG69_1_Magazine', 'HK23E_1_Magazine',
+        'SteyrScout_1_Magazine', 'StenMK2_1_Magazine', 'STG44R_1_Magazine'
+    }
+    for _, id in ipairs(classes) do
+        InventoryItemDefs[id] = g_Classes[id]
+    end
 end

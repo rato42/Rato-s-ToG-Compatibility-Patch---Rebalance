@@ -3,9 +3,18 @@ function OnMsg.ClassesGenerate()
     print("RATMOD - Starting TOG patch")
     RatoTOG_Patch()
     print("RATMOD - TOG patch successful")
+end
+
+function OnMsg.ClassesPreprocess()
     --- RevMag
     GBOTOG_RevMag_CreateMagazine()
     GBOTOG_RevMag_CreateMagazine_manual()
+end
+
+function OnMsg.DataLoaded()
+    --- RevMag
+    GBOTOG_RevMag_AddClassesToInventoryItemDefs()
+    GBOTOG_RevMag_AddClassesToInventoryItemDefs_manual()
 end
 
 function OnMsg.ModsReloaded()
