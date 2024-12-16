@@ -287,6 +287,73 @@ return {
 	PlaceObj('ModItemFolder', {
 		'name', "Components and other Rat Stuff",
 	}, {
+		PlaceObj('ModItemWeaponComponent', {
+			AdditionalCosts = {
+				PlaceObj('WeaponComponentCost', {
+					'Amount', 1,
+					'Type', "OpticalLens",
+				}),
+				PlaceObj('WeaponComponentCost', {
+					'Amount', 2,
+					'Type', "Microchip",
+				}),
+			},
+			Cost = 40,
+			DisplayName = T(771427837559, --[[ModItemWeaponComponent TAR21_Scope_Rflx_1 DisplayName]] "ITL MARS 1x"),
+			EnableAimFX = true,
+			Icon = "Mod/KKh3Yhf/Images/TAR21_Scope_icon.png",
+			ModificationDifficulty = 20,
+			ModificationEffects = {
+				"IncreaseOverwatchAngle",
+				"hipfire_dot_effect_laser",
+				"IncreaseCritChangeScaled",
+				"critical_per_aim_laser",
+				"reflex_sight_close_range",
+				"AccuracyBonusWhenAimed",
+			},
+			Parameters = {
+				PlaceObj('PresetParamNumber', {
+					'Name', "bonus_cth",
+					'Value', 10,
+					'Tag', "<bonus_cth>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "OverwatchAngleIncrease",
+					'Value', 130,
+					'Tag', "<OverwatchAngleIncrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "Close_bonus",
+					'Value', 5,
+					'Tag', "<Close_bonus>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "snap_reduc",
+					'Value', 20,
+					'Tag', "<snap_reduc>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "CritChangeScaledIncrease",
+					'Value', 10,
+					'Tag', "<CritChangeScaledIncrease>",
+				}),
+			},
+			Slot = "Scope",
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "TAR21_1",
+					Entity = "Tar_Scope3",
+					Slot = "Scope",
+					param_bindings = false,
+				}),
+			},
+			comment = "should be moved to patching",
+			group = "Scope",
+			id = "TAR21_Scope_Rflx_1",
+			zzFoldingPair = {
+				"A91_762_barrel_def_1",
+			},
+		}),
 		PlaceObj('ModItemInventoryItemCompositeDef', {
 			'Group', "Firearm - Heavy",
 			'Id', "rat_22mmUnderslungGrenadeLauncher",
