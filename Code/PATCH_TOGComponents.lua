@@ -1025,6 +1025,7 @@ function RatoTOGComponents()
 	WeaponComponents["m76_scope_1"].ModificationEffects = table.copy(WeaponComponents["_Master_m76_scope_TOG"].ModificationEffects)
 	WeaponComponents["m76_scope_1"].Parameters = table.copy(WeaponComponents["_Master_m76_scope_TOG"].Parameters)
 	WeaponComponents["m76_scope_1"].Visuals = table.copy(WeaponComponents["_Master_m76_scope_TOG"].Visuals)
+	WeaponComponents["m76_scope_1"].BlockSlots = {}
 	WeaponComponents["m76_scope_1"].DisplayName = table.copy(WeaponComponents["_Master_m76_scope_TOG"].DisplayName)
 	WeaponComponents["m76_scope_1"]:PostLoad()
 	WeaponComponents["RK62_Handguard_ext_1"].ModificationEffects = table.copy(WeaponComponents["_Master_Handguard_ext_TOG"].ModificationEffects)
