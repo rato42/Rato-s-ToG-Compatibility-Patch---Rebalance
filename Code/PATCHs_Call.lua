@@ -11,18 +11,36 @@ function OnMsg.ClassesPreprocess()
     GBOTOG_RevMag_CreateMagazine_manual()
 end
 
+local function disable_old_ammo()
+    if g_Classes['_57x28mm'] then
+        g_Classes['_57x28mm'].CanAppearInShop = false
+    end
+end
+
 function OnMsg.DataLoaded()
+
+    ---- Disable unpatched guns
+    disable_unpatched_shop()
+    disable_old_ammo()
     --- RevMag
     GBOTOG_RevMag_AddClassesToInventoryItemDefs()
     GBOTOG_RevMag_AddClassesToInventoryItemDefs_manual()
 end
 
 function OnMsg.ModsReloaded()
+    GBOTOG_patch_PresetsClass()
     RatoTOGComponents()
+    ---- Disable unpatched guns
+    disable_unpatched_shop()
+    disable_old_ammo()
     --- RevMag
     GBOTOG_RevMag_WeaponComponentVisualPatch_manual()
     GBOTOG_RevMag_WeaponComponentVisualPatch()
 end
+
+---- Disable unpatched guns
+disable_unpatched_shop()
+disable_old_ammo()
 
 -- Change Zulib Calibers
 function OnMsg.ClassesPostBuilt()
@@ -46,13 +64,3 @@ function OnMsg.ClassesPostBuilt()
         ['Mosin_1'] = '7_62x54R'
     }
 end
-
----- Disable unpatched guns
-function OnMsg.DataLoaded()
-    disable_unpatched_shop()
-end
-function OnMsg.ModsReloaded()
-    disable_unpatched_shop()
-end
-disable_unpatched_shop()
-

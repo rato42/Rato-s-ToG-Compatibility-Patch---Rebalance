@@ -4,10 +4,6 @@ return {
 		id = "22m_grenade",
 	}),
 	PlaceObj('ModItemCode', {
-		'name', "FUNCTION_CombatActions",
-		'CodeFileName', "Code/FUNCTION_CombatActions.lua",
-	}),
-	PlaceObj('ModItemCode', {
 		'name', "REW_table",
 		'CodeFileName', "Code/REW_table.lua",
 	}),
@@ -16,8 +12,24 @@ return {
 		'CodeFileName', "Code/FUNCTION_bipod_change.lua",
 	}),
 	PlaceObj('ModItemCode', {
+		'name', "FUNCTION_CombatActions",
+		'CodeFileName', "Code/FUNCTION_CombatActions.lua",
+	}),
+	PlaceObj('ModItemCode', {
+		'name', "FUNCTION_grenade_launcher_22",
+		'CodeFileName', "Code/FUNCTION_grenade_launcher_22.lua",
+	}),
+	PlaceObj('ModItemCode', {
 		'name', "PATCH_TOG_Guns",
 		'CodeFileName', "Code/PATCH_TOG_Guns.lua",
+	}),
+	PlaceObj('ModItemCode', {
+		'name', "PATCH_TOGComponents",
+		'CodeFileName', "Code/PATCH_TOGComponents.lua",
+	}),
+	PlaceObj('ModItemCode', {
+		'name', "PATCH_Presets",
+		'CodeFileName', "Code/PATCH_Presets.lua",
 	}),
 	PlaceObj('ModItemCode', {
 		'name', "PATCHs_Call",
@@ -26,14 +38,6 @@ return {
 	PlaceObj('ModItemCode', {
 		'name', "WEAPON_COMPONENTS_components",
 		'CodeFileName', "Code/WEAPON_COMPONENTS_components.lua",
-	}),
-	PlaceObj('ModItemCode', {
-		'name', "PATCH_TOGComponents",
-		'CodeFileName', "Code/PATCH_TOGComponents.lua",
-	}),
-	PlaceObj('ModItemCode', {
-		'name', "FUNCTION_grenade_launcher_22",
-		'CodeFileName', "Code/FUNCTION_grenade_launcher_22.lua",
 	}),
 	PlaceObj('ModItemFolder', {
 		'name', "RevisedMagsCompatibility",
