@@ -9,12 +9,16 @@ function GBOTOG_patch_PresetsClass()
         Type56C_1 = "AssaultRifle",
         Type56D_1 = "AssaultRifle",
         M1Garand_2 = "AssaultRifle",
-        HK53_1 = "SubmachineGun"
+        HK53_1 = "SubmachineGun",
+        Gewehr43_1 = "AssaultRifle"
     }
 
     ForEachPreset("InventoryItemCompositeDef", function(p)
         if preset_table[p.id] then
             p.object_class = preset_table[p.id]
+
+        elseif p.id == "_57x28mm" then
+            p.CanAppearInShop = false
         end
     end)
 end
