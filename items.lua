@@ -2346,6 +2346,12 @@ return {
 						Slot = "Muzzle",
 						param_bindings = false,
 					}),
+					PlaceObj('WeaponComponentVisual', {
+						ApplyTo = "PKM_1",
+						Entity = "placeholder_7",
+						Slot = "Muzzle",
+						param_bindings = false,
+					}),
 				},
 				group = "Muzzle",
 				id = "RAT_TOG_compensator",

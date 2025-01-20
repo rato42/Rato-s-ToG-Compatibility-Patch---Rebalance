@@ -25,6 +25,8 @@ function OnMsg.DataLoaded()
     --- RevMag
     GBOTOG_RevMag_AddClassesToInventoryItemDefs()
     GBOTOG_RevMag_AddClassesToInventoryItemDefs_manual()
+    GBOTOG_RevMag_WeaponComponentVisualPatch_manual()
+    GBOTOG_RevMag_WeaponComponentVisualPatch()
 end
 
 function OnMsg.ModsReloaded()
@@ -61,6 +63,7 @@ function OnMsg.ClassesPostBuilt()
         ['VSK94_1'] = '9x39',
         ['Delisle_1'] = '45ACP',
         ['PKM_1'] = '7_62x54R',
-        ['Mosin_1'] = '7_62x54R'
+        ['Mosin_1'] = '7_62x54R',
+        ['PP91_1'] = '9x18'
     }
 end
