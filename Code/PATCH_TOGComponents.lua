@@ -1267,13 +1267,7 @@ function RatoTOGComponents()
                                                               WeaponComponents["BarrelLong"]
                                                                   .Parameters)
     WeaponComponents["Papovka_Barrel_ext_1"]:PostLoad()
-    WeaponComponents["Papovka_Barrel_shrt_1"].ModificationEffects = table.copy(
-                                                                        WeaponComponents["BarrelLong"]
-                                                                            .ModificationEffects)
-    WeaponComponents["Papovka_Barrel_shrt_1"].Parameters = table.copy(
-                                                               WeaponComponents["BarrelLong"]
-                                                                   .Parameters)
-    WeaponComponents["Papovka_Barrel_shrt_1"]:PostLoad()
+
     WeaponComponents["Papovka2_Barrel_ext_1"].ModificationEffects = table.copy(
                                                                         WeaponComponents["BarrelLong"]
                                                                             .ModificationEffects)
