@@ -3,6 +3,8 @@ function OnMsg.ClassesGenerate()
     print("RATMOD - Starting TOG patch")
     RatoTOG_Patch()
     print("RATMOD - TOG patch successful")
+    --- RevMag
+    RatTOG_RevMag_OnClassesGenerateChangeDefaultMags()
 end
 
 function OnMsg.ClassesPreprocess()

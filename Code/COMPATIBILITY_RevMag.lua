@@ -47,6 +47,30 @@ function OnMsg.RevisedMagPropsAddedToFirearms()
     REV_SetupWeapon(Glock17_1, "Glock", "GlockMagazine", "MagNormal", {"MagNormal", "MagLarge"})
 end
 
+function RatTOG_RevMag_OnClassesGenerateChangeDefaultMags()
+    if not IsMod_loaded('URkxyfE') then
+        return
+    end
+    RatTOG_RevMag_ChangeDefaultMag(PapovkaSKS_1, "SKS_mag")
+    RatTOG_RevMag_ChangeDefaultMag(Papovka2SKS_1, "SKS_mag")
+    RatTOG_RevMag_ChangeDefaultMag(Type56A_1, "SKS_mag")
+    RatTOG_RevMag_ChangeDefaultMag(Type56B_1, "SKS_mag")
+    RatTOG_RevMag_ChangeDefaultMag(Type56C_1, "SKS_mag")
+    RatTOG_RevMag_ChangeDefaultMag(Type56D_1, "SKS_mag")
+end
+
+function RatTOG_RevMag_ChangeDefaultMag(wep_class, mag_id)
+    if wep_class then
+        local compSlots = wep_class.ComponentSlots or {}
+        for i, slot in ipairs(compSlots) do
+            if slot.SlotType == "Magazine" then
+                slot.DefaultComponent = mag_id
+                break
+            end
+        end
+    end
+end
+
 function RatTOG_RevMag_ApplyMap(map)
     if not IsMod_loaded("URkxyfE") then
         return

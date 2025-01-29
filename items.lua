@@ -57,7 +57,7 @@ return {
 			Visuals = {
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "Papovka2SKS_1",
-					Entity = "Papovka_Mag_def",
+					Entity = "Papovka2_Mag_def",
 					Icon = "Mod/KKh3Yhf/Images/Papovka_mag_def.png",
 					Slot = "Magazine",
 					param_bindings = false,
@@ -71,29 +71,33 @@ return {
 				}),
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "Type56A_1",
-					Entity = "Papovka_Mag_def",
+					Entity = "Type56_Mag_def",
 					Icon = "Mod/KKh3Yhf/Images/Papovka_mag_def.png",
+					Offset = point(0, 0, 1),
 					Slot = "Magazine",
 					param_bindings = false,
 				}),
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "Type56B_1",
-					Entity = "Papovka_Mag_def",
+					Entity = "Type56b_Mag_def",
 					Icon = "Mod/KKh3Yhf/Images/Papovka_mag_def.png",
+					Offset = point(0, 0, 1),
 					Slot = "Magazine",
 					param_bindings = false,
 				}),
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "Type56C_1",
-					Entity = "Papovka_Mag_def",
+					Entity = "Type56c_Mag_def",
 					Icon = "Mod/KKh3Yhf/Images/Papovka_mag_def.png",
+					Offset = point(0, 0, 1),
 					Slot = "Magazine",
 					param_bindings = false,
 				}),
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "Type56D_1",
-					Entity = "Papovka_Mag_def",
+					Entity = "Type56d_Mag_def",
 					Icon = "Mod/KKh3Yhf/Images/Papovka_mag_def.png",
+					Offset = point(0, 0, 1),
 					Slot = "Magazine",
 					param_bindings = false,
 				}),
@@ -467,15 +471,14 @@ return {
 			Icon = "Mod/KKh3Yhf/Images/Papovka_grndl_unfld_dark.png",
 			ModificationDifficulty = -25,
 			ModificationEffects = {
-				"RAT_TOG_22m_launcher",
 				"DecreaseOverwatchAngle",
-				"DecreaseAimAccuracy",
+				"RAT_TOG_22m_launcher",
 				"zzGrndlEquipped",
 			},
 			Parameters = {
 				PlaceObj('PresetParamNumber', {
 					'Name', "OverwatchAngleDecrease",
-					'Value', 90,
+					'Value', 95,
 					'Tag', "<OverwatchAngleDecrease>",
 				}),
 				PlaceObj('PresetParamNumber', {
@@ -639,14 +642,13 @@ return {
 			ModificationDifficulty = -25,
 			ModificationEffects = {
 				"Bayonet",
-				"DecreaseAimAccuracy",
 				"DecreaseOverwatchAngle",
 				"zzBayonetEquipped",
 			},
 			Parameters = {
 				PlaceObj('PresetParamNumber', {
 					'Name', "OverwatchAngleDecrease",
-					'Value', 88,
+					'Value', 95,
 					'Tag', "<OverwatchAngleDecrease>",
 				}),
 				PlaceObj('PresetParamNumber', {
@@ -755,7 +757,7 @@ return {
 			Parameters = {
 				PlaceObj('PresetParamNumber', {
 					'Name', "OverwatchAngleDecrease",
-					'Value', 90,
+					'Value', 95,
 					'Tag', "<OverwatchAngleDecrease>",
 				}),
 				PlaceObj('PresetParamNumber', {
@@ -808,7 +810,7 @@ return {
 			Parameters = {
 				PlaceObj('PresetParamNumber', {
 					'Name', "OverwatchAngleIncrease",
-					'Value', 110,
+					'Value', 105,
 					'Tag', "<OverwatchAngleIncrease>",
 				}),
 				PlaceObj('PresetParamNumber', {
@@ -1397,7 +1399,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "OverwatchAngleDecrease",
-						'Value', 92,
+						'Value', 95,
 						'Tag', "<OverwatchAngleDecrease>",
 					}),
 				},
@@ -1537,7 +1539,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "OverwatchAngleDecrease",
-						'Value', 80,
+						'Value', 95,
 						'Tag', "<OverwatchAngleDecrease>",
 					}),
 				},
@@ -1589,7 +1591,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "OverwatchAngleDecrease",
-						'Value', 80,
+						'Value', 95,
 						'Tag', "<OverwatchAngleDecrease>",
 					}),
 				},
@@ -1721,7 +1723,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "OverwatchAngleDecrease",
-						'Value', 80,
+						'Value', 95,
 						'Tag', "<OverwatchAngleDecrease>",
 					}),
 				},
@@ -2053,7 +2055,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "OverwatchAngleDecrease",
-						'Value', 80,
+						'Value', 95,
 						'Tag', "<OverwatchAngleDecrease>",
 					}),
 				},
@@ -2099,7 +2101,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "OverwatchAngleDecrease",
-						'Value', 80,
+						'Value', 95,
 						'Tag', "<OverwatchAngleDecrease>",
 					}),
 				},
@@ -2375,17 +2377,13 @@ return {
 					"DecreaseOverwatchAngle",
 					"IncreaseAimAccuracy",
 					"scope_snapshot",
+					"IncreaseOverwatchAngle",
 				},
 				Parameters = {
 					PlaceObj('PresetParamNumber', {
 						'Name', "RangeIncrease",
 						'Value', 6,
 						'Tag', "<RangeIncrease>",
-					}),
-					PlaceObj('PresetParamNumber', {
-						'Name', "OverwatchAngleDecrease",
-						'Value', 85,
-						'Tag', "<OverwatchAngleDecrease>",
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "AimAccuracyIncrease",
@@ -2396,6 +2394,11 @@ return {
 						'Name', "snap_reduc",
 						'Value', 10,
 						'Tag', "<snap_reduc>",
+					}),
+					PlaceObj('PresetParamNumber', {
+						'Name', "OverwatchAngleIncrease",
+						'Value', 110,
+						'Tag', "<OverwatchAngleIncrease>",
 					}),
 				},
 				Slot = "Scope",
@@ -2570,17 +2573,13 @@ return {
 					"DecreaseOverwatchAngle",
 					"IncreaseAimAccuracy",
 					"scope_snapshot",
+					"IncreaseOverwatchAngle",
 				},
 				Parameters = {
 					PlaceObj('PresetParamNumber', {
 						'Name', "RangeIncrease",
 						'Value', 6,
 						'Tag', "<RangeIncrease>",
-					}),
-					PlaceObj('PresetParamNumber', {
-						'Name', "OverwatchAngleDecrease",
-						'Value', 85,
-						'Tag', "<OverwatchAngleDecrease>",
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "AimAccuracyIncrease",
@@ -2591,6 +2590,11 @@ return {
 						'Name', "snap_reduc",
 						'Value', 10,
 						'Tag', "<snap_reduc>",
+					}),
+					PlaceObj('PresetParamNumber', {
+						'Name', "OverwatchAngleIncrease",
+						'Value', 110,
+						'Tag', "<OverwatchAngleIncrease>",
 					}),
 				},
 				Slot = "Scope",
@@ -3605,7 +3609,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "OverwatchAngleIncrease",
-						'Value', 120,
+						'Value', 125,
 						'Tag', "<OverwatchAngleIncrease>",
 					}),
 					PlaceObj('PresetParamNumber', {
@@ -3775,7 +3779,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "OverwatchAngleIncrease",
-						'Value', 120,
+						'Value', 125,
 						'Tag', "<OverwatchAngleIncrease>",
 					}),
 					PlaceObj('PresetParamNumber', {
@@ -3922,7 +3926,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "OverwatchAngleIncrease",
-						'Value', 110,
+						'Value', 115,
 						'Tag', "<OverwatchAngleIncrease>",
 					}),
 					PlaceObj('PresetParamNumber', {
@@ -4092,7 +4096,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "OverwatchAngleIncrease",
-						'Value', 110,
+						'Value', 115,
 						'Tag', "<OverwatchAngleIncrease>",
 					}),
 					PlaceObj('PresetParamNumber', {
@@ -5217,7 +5221,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "OverwatchAngleIncrease",
-						'Value', 110,
+						'Value', 115,
 						'Tag', "<OverwatchAngleIncrease>",
 					}),
 					PlaceObj('PresetParamNumber', {
@@ -5386,7 +5390,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "OverwatchAngleIncrease",
-						'Value', 110,
+						'Value', 115,
 						'Tag', "<OverwatchAngleIncrease>",
 					}),
 					PlaceObj('PresetParamNumber', {
@@ -5537,7 +5541,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "OverwatchAngleIncrease",
-						'Value', 120,
+						'Value', 125,
 						'Tag', "<OverwatchAngleIncrease>",
 					}),
 					PlaceObj('PresetParamNumber', {
@@ -5712,7 +5716,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "OverwatchAngleIncrease",
-						'Value', 120,
+						'Value', 125,
 						'Tag', "<OverwatchAngleIncrease>",
 					}),
 					PlaceObj('PresetParamNumber', {
@@ -5863,7 +5867,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "OverwatchAngleDecrease",
-						'Value', 75,
+						'Value', 90,
 						'Tag', "<OverwatchAngleDecrease>",
 					}),
 					PlaceObj('PresetParamNumber', {
@@ -6016,7 +6020,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "OverwatchAngleDecrease",
-						'Value', 75,
+						'Value', 90,
 						'Tag', "<OverwatchAngleDecrease>",
 					}),
 					PlaceObj('PresetParamNumber', {

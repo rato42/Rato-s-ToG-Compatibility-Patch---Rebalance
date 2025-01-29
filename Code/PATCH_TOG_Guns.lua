@@ -686,7 +686,7 @@ The Groza saw limited use in 1999 in the Second Chechen War, however they quickl
     P08_1.LargeItem = 0
     P08_1.WeaponRange = 22
     P08_1.AvailableAttacks = {
-        "SingleShot", "DualShot", "LeftHandShot", "RightHandShot", "CancelShot"
+        "SingleShot", "DualShot", "LeftHandShot", "RightHandShot", "CancelShot", "MobileShot"
     }
     P08_1.object_class = "Pistol"
     P08_1.HandSlot = "OneHanded"
@@ -1546,7 +1546,7 @@ The Groza saw limited use in 1999 in the Second Chechen War, however they quickl
     PKM_1.ShootAP = 4000
     PKM_1.OverwatchAngle = 583
     PKM_1.LargeItem = 1
-    PKM_1.WeaponRange = 42
+    PKM_1.WeaponRange = 38
     PKM_1.AvailableAttacks = {"MGBurstFire"}
     PKM_1.object_class = "RPK74"
     PKM_1.HandSlot = "TwoHanded"
@@ -2300,7 +2300,7 @@ The Groza saw limited use in 1999 in the Second Chechen War, however they quickl
     RPD_1.ShootAP = 4000
     RPD_1.OverwatchAngle = 632
     RPD_1.LargeItem = 1
-    RPD_1.WeaponRange = 38
+    RPD_1.WeaponRange = 34
     RPD_1.AvailableAttacks = {"MGBurstFire"}
     RPD_1.object_class = "MachineGun"
     RPD_1.HandSlot = "TwoHanded"
@@ -3955,7 +3955,7 @@ The UMP has been adopted for use by various countries including Brazil, Canada, 
     HK23E_1.ShootAP = 4000
     HK23E_1.OverwatchAngle = 736
     HK23E_1.LargeItem = 1
-    HK23E_1.WeaponRange = 38
+    HK23E_1.WeaponRange = 34
     HK23E_1.AvailableAttacks = {"MGBurstFire"}
     HK23E_1.object_class = "MachineGun"
     HK23E_1.HandSlot = "TwoHanded"
@@ -4068,7 +4068,7 @@ The UMP has been adopted for use by various countries including Brazil, Canada, 
     HK23ECamo_1.ShootAP = 4000
     HK23ECamo_1.OverwatchAngle = 736
     HK23ECamo_1.LargeItem = 1
-    HK23ECamo_1.WeaponRange = 38
+    HK23ECamo_1.WeaponRange = 34
     HK23ECamo_1.AvailableAttacks = {"MGBurstFire"}
     HK23ECamo_1.object_class = "MachineGun"
     HK23ECamo_1.HandSlot = "TwoHanded"
