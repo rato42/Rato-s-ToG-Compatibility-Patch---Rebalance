@@ -337,7 +337,7 @@ return {
 				}),
 				PlaceObj('PresetParamNumber', {
 					'Name', "snap_reduc",
-					'Value', 20,
+					'Value', 15,
 					'Tag', "<snap_reduc>",
 				}),
 				PlaceObj('PresetParamNumber', {
@@ -402,6 +402,7 @@ return {
 				"hipfire_no_stock",
 				"Enable_RunAndGun",
 				"zzStockEquipped",
+				"ReduceRange",
 			},
 			Parameters = {
 				PlaceObj('PresetParamNumber', {
@@ -411,13 +412,18 @@ return {
 				}),
 				PlaceObj('PresetParamNumber', {
 					'Name', "OverwatchAngleIncrease",
-					'Value', 115,
+					'Value', 108,
 					'Tag', "<OverwatchAngleIncrease>",
 				}),
 				PlaceObj('PresetParamNumber', {
 					'Name', "APdecrease",
 					'Value', 1,
 					'Tag', "<APdecrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "RangeDecrease",
+					'Value', 6,
+					'Tag', "<RangeDecrease>",
 				}),
 			},
 			Slot = "Stock",
@@ -566,6 +572,7 @@ return {
 				"hipfire_no_stock",
 				"Enable_RunAndGun",
 				"zzStockEquipped",
+				"ReduceRange",
 			},
 			Parameters = {
 				PlaceObj('PresetParamNumber', {
@@ -580,8 +587,13 @@ return {
 				}),
 				PlaceObj('PresetParamNumber', {
 					'Name', "OverwatchAngleIncrease",
-					'Value', 115,
+					'Value', 110,
 					'Tag', "<OverwatchAngleIncrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "RangeDecrease",
+					'Value', 6,
+					'Tag', "<RangeDecrease>",
 				}),
 			},
 			Slot = "Stock",
@@ -757,7 +769,7 @@ return {
 			Parameters = {
 				PlaceObj('PresetParamNumber', {
 					'Name', "OverwatchAngleDecrease",
-					'Value', 95,
+					'Value', 97,
 					'Tag', "<OverwatchAngleDecrease>",
 				}),
 				PlaceObj('PresetParamNumber', {
@@ -772,12 +784,12 @@ return {
 				}),
 				PlaceObj('PresetParamNumber', {
 					'Name', "hipfire_mul",
-					'Value', 90,
+					'Value', 95,
 					'Tag', "<hipfire_mul>",
 				}),
 				PlaceObj('PresetParamNumber', {
 					'Name', "snapshot_mul",
-					'Value', 110,
+					'Value', 105,
 					'Tag', "<snapshot_mul>",
 				}),
 				PlaceObj('PresetParamNumber', {
@@ -810,7 +822,7 @@ return {
 			Parameters = {
 				PlaceObj('PresetParamNumber', {
 					'Name', "OverwatchAngleIncrease",
-					'Value', 105,
+					'Value', 103,
 					'Tag', "<OverwatchAngleIncrease>",
 				}),
 				PlaceObj('PresetParamNumber', {
@@ -820,12 +832,12 @@ return {
 				}),
 				PlaceObj('PresetParamNumber', {
 					'Name', "hipfire_mul",
-					'Value', 110,
+					'Value', 105,
 					'Tag', "<hipfire_mul>",
 				}),
 				PlaceObj('PresetParamNumber', {
 					'Name', "snapshot_mul",
-					'Value', 90,
+					'Value', 95,
 					'Tag', "<snapshot_mul>",
 				}),
 				PlaceObj('PresetParamNumber', {
@@ -1475,7 +1487,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "OverwatchAngleIncrease",
-						'Value', 109,
+						'Value', 103,
 						'Tag', "<OverwatchAngleIncrease>",
 					}),
 				},
@@ -2392,7 +2404,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "snap_reduc",
-						'Value', 10,
+						'Value', 5,
 						'Tag', "<snap_reduc>",
 					}),
 					PlaceObj('PresetParamNumber', {
@@ -2588,7 +2600,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "snap_reduc",
-						'Value', 10,
+						'Value', 5,
 						'Tag', "<snap_reduc>",
 					}),
 					PlaceObj('PresetParamNumber', {
@@ -2712,7 +2724,7 @@ return {
 				Parameters = {
 					PlaceObj('PresetParamPercent', {
 						'Name', "bonus_cth_interrupt",
-						'Value', 12,
+						'Value', 10,
 						'Tag', "<bonus_cth_interrupt>%",
 					}),
 					PlaceObj('PresetParamNumber', {
@@ -2727,7 +2739,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "snap_reduc",
-						'Value', 10,
+						'Value', 5,
 						'Tag', "<snap_reduc>",
 					}),
 				},
@@ -2870,7 +2882,7 @@ return {
 				Parameters = {
 					PlaceObj('PresetParamPercent', {
 						'Name', "bonus_cth_interrupt",
-						'Value', 12,
+						'Value', 10,
 						'Tag', "<bonus_cth_interrupt>%",
 					}),
 					PlaceObj('PresetParamNumber', {
@@ -2885,7 +2897,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "snap_reduc",
-						'Value', 10,
+						'Value', 5,
 						'Tag', "<snap_reduc>",
 					}),
 				},
@@ -3619,7 +3631,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "snap_reduc",
-						'Value', 15,
+						'Value', 10,
 						'Tag', "<snap_reduc>",
 					}),
 				},
@@ -3789,7 +3801,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "snap_reduc",
-						'Value', 15,
+						'Value', 10,
 						'Tag', "<snap_reduc>",
 					}),
 				},
@@ -3941,7 +3953,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "snap_reduc",
-						'Value', 25,
+						'Value', 15,
 						'Tag', "<snap_reduc>",
 					}),
 				},
@@ -4111,7 +4123,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "snap_reduc",
-						'Value', 25,
+						'Value', 15,
 						'Tag', "<snap_reduc>",
 					}),
 				},
@@ -5236,7 +5248,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "snap_reduc",
-						'Value', 25,
+						'Value', 15,
 						'Tag', "<snap_reduc>",
 					}),
 				},
@@ -5405,7 +5417,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "snap_reduc",
-						'Value', 25,
+						'Value', 15,
 						'Tag', "<snap_reduc>",
 					}),
 				},
@@ -5551,7 +5563,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "snap_reduc",
-						'Value', 15,
+						'Value', 10,
 						'Tag', "<snap_reduc>",
 					}),
 					PlaceObj('PresetParamNumber', {
@@ -5726,7 +5738,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "snap_reduc",
-						'Value', 15,
+						'Value', 10,
 						'Tag', "<snap_reduc>",
 					}),
 					PlaceObj('PresetParamNumber', {
