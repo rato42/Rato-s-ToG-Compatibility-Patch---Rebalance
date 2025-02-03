@@ -764,7 +764,7 @@ The Groza saw limited use in 1999 in the Second Chechen War, however they quickl
 <newline><newline><style ConversationChoiceNormalRollover ><scale  600>Designed by Georg von Luger <newline><image Mod/KKh3Yhf/Images/designers/GJvLuger.png 1200><newline><style MMOptionEntry>Made in Germany <image UI/Icons/Flags/f_germany.dds 1600>]])
     P08_1.PenetrationClass = 1
     PP91_1.RestockWeight = 60
-    PP91_1.Caliber = "9mm"
+    PP91_1.Caliber = "9x18"
     PP91_1.ReloadAP = 3000
     PP91_1.ShootAP = 3000
     PP91_1.OverwatchAngle = 1528
@@ -785,7 +785,7 @@ The Groza saw limited use in 1999 in the Second Chechen War, however they quickl
     PP91_1.recoil_mechanism = "Blowback"
     PP91_1.APStance = 2
     PP91_1.rat_barrel_len = 170
-    PP91_1.Valuable = 1
+    PP91_1.Valuable = 0
     PP91_1.burst_selective = false
     PP91_1.weigth_held_mul = 117
     PP91_1.PBbonus_base = 11
@@ -1546,7 +1546,7 @@ The Groza saw limited use in 1999 in the Second Chechen War, however they quickl
     PKM_1.ShootAP = 4000
     PKM_1.OverwatchAngle = 583
     PKM_1.LargeItem = 1
-    PKM_1.WeaponRange = 38
+    PKM_1.WeaponRange = 42
     PKM_1.AvailableAttacks = {"MGBurstFire"}
     PKM_1.object_class = "RPK74"
     PKM_1.HandSlot = "TwoHanded"
@@ -1657,7 +1657,7 @@ The Groza saw limited use in 1999 in the Second Chechen War, however they quickl
     M70_1.recoil_mechanism = "Gas_Operated"
     M70_1.APStance = 4
     M70_1.rat_barrel_len = 415
-    M70_1.Valuable = 1
+    M70_1.Valuable = 0
     M70_1.burst_selective = false
     M70_1.weigth_held_mul = 132
     M70_1.PBbonus_base = 3
@@ -1707,11 +1707,9 @@ The Groza saw limited use in 1999 in the Second Chechen War, however they quickl
         }, {
             CanBeEmpty = false,
             SlotType = 'Muzzle',
-            DefaultComponent = 'ToG_VFX_Muzzle',
+            DefaultComponent = 'RAT_TOG_CompensatorNoEntity',
             Modifiable = true,
-            AvailableComponents = {
-                'RAT_TOG_compensator', 'MuzzleBooster', 'RAT_TOG_suppressor', 'ToG_VFX_Muzzle'
-            }
+            AvailableComponents = {'RAT_TOG_CompensatorNoEntity'}
         }, {
             CanBeEmpty = false,
             SlotType = 'Mountfront',
@@ -1736,107 +1734,6 @@ The Groza saw limited use in 1999 in the Second Chechen War, however they quickl
     M70_1.Description = T(960118679815,
                           [[<style PerkststsBold ><scale 500>The M70 is a 7.62×39mm assault rifle. Developed in the Socialist Federal Republic of Yugoslavia during the 1960s, the M70 was an unlicensed derivative of the Soviet AK-47 (specifically the Type 3 variant).<newline><newline>Due to political differences between the Soviet Union and Yugoslavia at the time, namely the latter's refusal to join the Warsaw Pact, Yugoslavia was unable to directly obtain the technical specifications for the AK and opted to reverse engineer the weapon type. Although the M70 was functionally identical to the AK, it had unique in-built features that better enabled it to fire rifle grenades. These included thicker receivers, new latches for the dust cover to ensure it wouldn't be jarred loose by a grenade's discharge, and folding grenade sight brackets over the rifles' gas blocks, which also shut off the gas system when raised.<newline><newline>The M70 became the standard issue infantry weapon in the Yugoslav People's Army in 1970, complementing and later superseding the Zastava M59/66. It remains in use with all former Yugoslav nations, although some are replacing it with more modern designs. Additionally the M70 has been widely exported and encountered often in Africa, Asia and the Middle East.<newline><newline><style MMOptionEntry>Made in Yugoslavia <image Mod/KKh3Yhf/Images/Yugoslavia.png 1600>]])
     M70_1.PenetrationClass = 1
-    M70D_1.RestockWeight = 40
-    M70D_1.Caliber = "762WP"
-    M70D_1.ReloadAP = 3000
-    M70D_1.ShootAP = 4000
-    M70D_1.OverwatchAngle = 1068
-    M70D_1.LargeItem = 1
-    M70D_1.WeaponRange = 30
-    M70D_1.AvailableAttacks = {"BurstFire", "AutoFire", "SingleShot", "CancelShot"}
-    M70D_1.object_class = "AssaultRifle"
-    M70D_1.HandSlot = "TwoHanded"
-    M70D_1.ScrapParts = 10
-    M70D_1.PenetrationClass = 1
-    M70D_1.Cost = 3100
-    M70D_1.Damage = 26
-    M70D_1.MagazineSize = 30
-    M70D_1.Reliability = 60
-    M70D_1.RepairCost = 25
-    M70D_1.AimAccuracy = 3
-    M70D_1.UnitStat = "Marksmanship"
-    M70D_1.recoil_mechanism = "Gas_Operated"
-    M70D_1.APStance = 4
-    M70D_1.rat_barrel_len = 415
-    M70D_1.Valuable = 1
-    M70D_1.burst_selective = false
-    M70D_1.weigth_held_mul = 132
-    M70D_1.PBbonus_base = 3
-    M70D_1.rat_weigth = 4560
-    M70D_1.Weigth = 4560
-    M70D_1.Tier = 1
-    M70D_1.Rat_swap_ap = 3
-    M70D_1.CategoryPair = "AssaultRifles"
-    M70D_1.wep_base_snapshot_mul = 104
-    M70D_1.Rat_cycling = "Auto"
-    M70D_1.CritChanceScaled = 10
-    M70D_1.PointBlankBonus = 1
-    M70D_1.HolsterSlot = "Shoulder"
-    M70D_1.MaxStock = 3
-    M70D_1.CanAppearInShop = false
-    M70D_1.is_tog_patched = true
-    M70D_1.ObjDamageMod = 100
-    M70D_1.Cumbersome = 0
-    M70D_1.PreparedAttackType = "Overwatch"
-    M70D_1.Noise = 20
-    M70D_1.wep_base_hip_mul = 99
-    M70D_1.is_vanilla_firearm = false
-    M70D_1.wep_base_recoil_mul = 97
-    M70D_1.rat_scope_block = false
-    M70D_1.ComponentSlots = {
-        {
-            CanBeEmpty = false,
-            SlotType = 'Stock',
-            DefaultComponent = 'M70D_stock_unfld_1',
-            Modifiable = true,
-            AvailableComponents = {'M70D_stock_unfld_1'}
-        }, {
-            CanBeEmpty = false,
-            SlotType = 'Magazine',
-            DefaultComponent = 'M70D_mag_def_1',
-            Modifiable = true,
-            AvailableComponents = {'M70D_mag_def_1'}
-        }, {
-            CanBeEmpty = true,
-            SlotType = 'Scope',
-            Modifiable = true,
-            AvailableComponents = {
-                'RAT_TOG_ACOG', 'RAT_TOG_WideScope', 'RAT_TOG_LRoptics', 'RAT_TOG_Prism',
-                'RAT_TOG_Reflex', 'RAT_TOG_compactRS', 'RAT_TOG_vigilanceRS', 'RAT_TOG_thermal',
-                'SKS_Scope'
-            }
-        }, {
-            CanBeEmpty = false,
-            SlotType = 'Muzzle',
-            DefaultComponent = 'ToG_VFX_Muzzle',
-            Modifiable = true,
-            AvailableComponents = {
-                'RAT_TOG_compensator', 'MuzzleBooster', 'RAT_TOG_suppressor', 'ToG_VFX_Muzzle'
-            }
-        }, {
-            CanBeEmpty = false,
-            SlotType = 'Mountfront',
-            DefaultComponent = 'M70D_grndl_fld_1',
-            Modifiable = true,
-            AvailableComponents = {'M70D_grndl_fld_1', 'M70D_grndl_unfld_1'}
-        }, {
-            CanBeEmpty = false,
-            SlotType = 'Barrel',
-            DefaultComponent = 'M70D_barrel_def_1',
-            Modifiable = true,
-            AvailableComponents = {'M70D_barrel_shrt_1', 'M70D_barrel_def_1', 'M70D_barrel_ext_1'}
-        }
-    }
-    M70D_1.CritChance = 0
-    M70D_1.Condition = 100
-    M70D_1.unwieldy_weapon = false
-    M70D_1.default_long_barrel = false
-    M70D_1.CanAppearUsed = true
-    M70D_1.pistol_swap = false
-    M70D_1.AdditionalHint = T(530524583318, [[<description_hints>]])
-    M70D_1.Description = T(999437340011,
-                           [[<style PerkststsBold ><scale 500>The M70 is a 7.62×39mm assault rifle. Developed in the Socialist Federal Republic of Yugoslavia during the 1960s, the M70 was an unlicensed derivative of the Soviet AK-47 (specifically the Type 3 variant).<newline><newline>Due to political differences between the Soviet Union and Yugoslavia at the time, namely the latter's refusal to join the Warsaw Pact, Yugoslavia was unable to directly obtain the technical specifications for the AK and opted to reverse engineer the weapon type. Although the M70 was functionally identical to the AK, it had unique in-built features that better enabled it to fire rifle grenades. These included thicker receivers, new latches for the dust cover to ensure it wouldn't be jarred loose by a grenade's discharge, and folding grenade sight brackets over the rifles' gas blocks, which also shut off the gas system when raised.<newline><newline>The M70 became the standard issue infantry weapon in the Yugoslav People's Army in 1970, complementing and later superseding the Zastava M59/66. It remains in use with all former Yugoslav nations, although some are replacing it with more modern designs. Additionally the M70 has been widely exported and encountered often in Africa, Asia and the Middle East.<newline><newline><style MMOptionEntry>Made in Yugoslavia <image Mod/KKh3Yhf/Images/Yugoslavia.png 1600>]])
-    M70D_1.PenetrationClass = 1
     Papovka2SKS_1.RestockWeight = 20
     Papovka2SKS_1.Caliber = "762WP"
     Papovka2SKS_1.ReloadAP = 3000
@@ -2558,7 +2455,7 @@ The Groza saw limited use in 1999 in the Second Chechen War, however they quickl
             SlotType = 'Muzzle',
             DefaultComponent = 'ToG_VFX_Muzzle',
             Modifiable = true,
-            AvailableComponents = {'RAT_TOG_compensator', 'RAT_TOG_suppressor', 'ToG_VFX_Muzzle'}
+            AvailableComponents = {'RAT_TOG_compensator', 'ToG_VFX_Muzzle'}
         }, {
             CanBeEmpty = false,
             SlotType = 'Barrel',
@@ -2668,7 +2565,7 @@ The Groza saw limited use in 1999 in the Second Chechen War, however they quickl
             SlotType = 'Muzzle',
             DefaultComponent = 'ToG_VFX_Muzzle',
             Modifiable = true,
-            AvailableComponents = {'RAT_TOG_compensator', 'RAT_TOG_suppressor', 'ToG_VFX_Muzzle'}
+            AvailableComponents = {'RAT_TOG_compensator', 'ToG_VFX_Muzzle'}
         }, {
             CanBeEmpty = false,
             SlotType = 'Barrel',
@@ -2778,7 +2675,7 @@ The Groza saw limited use in 1999 in the Second Chechen War, however they quickl
             SlotType = 'Muzzle',
             DefaultComponent = 'ToG_VFX_Muzzle',
             Modifiable = true,
-            AvailableComponents = {'RAT_TOG_compensator', 'RAT_TOG_suppressor', 'ToG_VFX_Muzzle'}
+            AvailableComponents = {'RAT_TOG_compensator', 'ToG_VFX_Muzzle'}
         }, {
             CanBeEmpty = false,
             SlotType = 'Barrel',
@@ -3955,7 +3852,7 @@ The UMP has been adopted for use by various countries including Brazil, Canada, 
     HK23E_1.ShootAP = 4000
     HK23E_1.OverwatchAngle = 736
     HK23E_1.LargeItem = 1
-    HK23E_1.WeaponRange = 34
+    HK23E_1.WeaponRange = 32
     HK23E_1.AvailableAttacks = {"MGBurstFire"}
     HK23E_1.object_class = "MachineGun"
     HK23E_1.HandSlot = "TwoHanded"
@@ -4068,7 +3965,7 @@ The UMP has been adopted for use by various countries including Brazil, Canada, 
     HK23ECamo_1.ShootAP = 4000
     HK23ECamo_1.OverwatchAngle = 736
     HK23ECamo_1.LargeItem = 1
-    HK23ECamo_1.WeaponRange = 34
+    HK23ECamo_1.WeaponRange = 32
     HK23ECamo_1.AvailableAttacks = {"MGBurstFire"}
     HK23ECamo_1.object_class = "MachineGun"
     HK23ECamo_1.HandSlot = "TwoHanded"

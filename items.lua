@@ -1551,7 +1551,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "OverwatchAngleDecrease",
-						'Value', 95,
+						'Value', 97,
 						'Tag', "<OverwatchAngleDecrease>",
 					}),
 				},
@@ -1603,7 +1603,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "OverwatchAngleDecrease",
-						'Value', 95,
+						'Value', 97,
 						'Tag', "<OverwatchAngleDecrease>",
 					}),
 				},
@@ -1640,8 +1640,65 @@ return {
 					}),
 				},
 				Slot = "Gassblock",
+				Visuals = {
+					PlaceObj('WeaponComponentVisual', {
+						ApplyTo = "M70_1",
+						Entity = "placeholder_7",
+						Icon = "UI/Icons/Upgrades/AK_compensator",
+						Slot = "Gassblock",
+						param_bindings = false,
+					}),
+					PlaceObj('WeaponComponentVisual', {
+						ApplyTo = "M70D_1",
+						Entity = "placeholder_7",
+						Icon = "UI/Icons/Upgrades/AK_compensator",
+						Slot = "Gassblock",
+						param_bindings = false,
+					}),
+				},
+				comment = "default component with no entity",
 				group = "Firearm - Heavy",
 				id = "RAT_pap_compensator",
+			}),
+			PlaceObj('ModItemWeaponComponent', {
+				DisplayName = T(465995430320, --[[ModItemWeaponComponent RAT_TOG_CompensatorNoEntity DisplayName]] "Compensator"),
+				Icon = "UI/Icons/Upgrades/m16_muzzle",
+				ModificationDifficulty = 0,
+				ModificationEffects = {
+					"compensator_effect",
+				},
+				Parameters = {
+					PlaceObj('PresetParamPercent', {
+						'Name', "cth",
+						'Value', 10,
+						'Tag', "<cth>%",
+					}),
+				},
+				Slot = "Gassblock",
+				Visuals = {
+					PlaceObj('WeaponComponentVisual', {
+						ApplyTo = "M70_1",
+						Entity = "placeholder_7",
+						Icon = "UI/Icons/Upgrades/AK_compensator",
+						Slot = "Muzzle",
+						param_bindings = false,
+					}),
+					PlaceObj('WeaponComponentVisual', {
+						ApplyTo = "M70D_1",
+						Entity = "placeholder_7",
+						Icon = "UI/Icons/Upgrades/AK_compensator",
+						Slot = "Muzzle",
+						param_bindings = false,
+					}),
+					PlaceObj('WeaponComponentVisual', {
+						Entity = "placeholder_7",
+						Slot = "Muzzle",
+						param_bindings = false,
+					}),
+				},
+				comment = "default component with no entity",
+				group = "Firearm - Heavy",
+				id = "RAT_TOG_CompensatorNoEntity",
 			}),
 			PlaceObj('ModItemWeaponComponent', {
 				DisplayName = T(688659107704, --[[ModItemWeaponComponent component_22mm_grenade DisplayName]] "grenade"),
@@ -1735,7 +1792,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "OverwatchAngleDecrease",
-						'Value', 95,
+						'Value', 97,
 						'Tag', "<OverwatchAngleDecrease>",
 					}),
 				},
@@ -2067,7 +2124,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "OverwatchAngleDecrease",
-						'Value', 95,
+						'Value', 97,
 						'Tag', "<OverwatchAngleDecrease>",
 					}),
 				},
@@ -2113,7 +2170,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "OverwatchAngleDecrease",
-						'Value', 95,
+						'Value', 97,
 						'Tag', "<OverwatchAngleDecrease>",
 					}),
 				},
@@ -2724,7 +2781,7 @@ return {
 				Parameters = {
 					PlaceObj('PresetParamPercent', {
 						'Name', "bonus_cth_interrupt",
-						'Value', 10,
+						'Value', 8,
 						'Tag', "<bonus_cth_interrupt>%",
 					}),
 					PlaceObj('PresetParamNumber', {
@@ -2882,7 +2939,7 @@ return {
 				Parameters = {
 					PlaceObj('PresetParamPercent', {
 						'Name', "bonus_cth_interrupt",
-						'Value', 10,
+						'Value', 8,
 						'Tag', "<bonus_cth_interrupt>%",
 					}),
 					PlaceObj('PresetParamNumber', {
@@ -3953,7 +4010,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "snap_reduc",
-						'Value', 15,
+						'Value', 10,
 						'Tag', "<snap_reduc>",
 					}),
 				},
@@ -4123,7 +4180,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "snap_reduc",
-						'Value', 15,
+						'Value', 10,
 						'Tag', "<snap_reduc>",
 					}),
 				},
@@ -5248,7 +5305,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "snap_reduc",
-						'Value', 15,
+						'Value', 10,
 						'Tag', "<snap_reduc>",
 					}),
 				},
@@ -5417,7 +5474,7 @@ return {
 					}),
 					PlaceObj('PresetParamNumber', {
 						'Name', "snap_reduc",
-						'Value', 15,
+						'Value', 10,
 						'Tag', "<snap_reduc>",
 					}),
 				},
