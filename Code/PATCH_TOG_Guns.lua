@@ -2,6 +2,59 @@
 
 function RatoTOG_Patch()
 	print("Running RatoTOG_Patch...")
+	AR10std.RestockWeight = 50
+	AR10std.Caliber = "762NATO"
+	AR10std.ReloadAP = 3000
+	AR10std.ShootAP = 4000
+	AR10std.OverwatchAngle = 1014
+	AR10std.LargeItem = 1
+	AR10std.WeaponRange = 36
+	AR10std.AvailableAttacks = {"BurstFire", "AutoFire", "SingleShot", "CancelShot"}
+	AR10std.object_class = "AssaultRifle"
+	AR10std.HandSlot = "TwoHanded"
+	AR10std.ScrapParts = 10
+	AR10std.PenetrationClass = 1
+	AR10std.Cost = 6300
+	AR10std.Damage = 30
+	AR10std.MagazineSize = 20
+	AR10std.Reliability = 56
+	AR10std.RepairCost = 80
+	AR10std.AimAccuracy = 5
+	AR10std.UnitStat = "Marksmanship"
+	AR10std.recoil_mechanism = "Gas_Operated"
+	AR10std.APStance = 4
+	AR10std.rat_barrel_len = 508
+	AR10std.burst_selective = false
+	AR10std.PBbonus_base = 1
+	AR10std.rat_weigth = 3600
+	AR10std.Weigth = 3600
+	AR10std.Tier = 2
+	AR10std.Rat_swap_ap = 3
+	AR10std.CategoryPair = "AssaultRifles"
+	AR10std.wep_base_snapshot_mul = 95
+	AR10std.Rat_cycling = "Auto"
+	AR10std.CritChanceScaled = 10
+	AR10std.PointBlankBonus = 1
+	AR10std.MaxStock = 3
+	AR10std.CanAppearInShop = true
+	AR10std.is_tog_patched = true
+	AR10std.ObjDamageMod = 100
+	AR10std.Cumbersome = 0
+	AR10std.PreparedAttackType = "Overwatch"
+	AR10std.Noise = 20
+	AR10std.wep_base_hip_mul = 106
+	AR10std.is_vanilla_firearm = false
+	AR10std.wep_base_recoil_mul = 94
+	AR10std.rat_scope_block = false
+	AR10std.ComponentSlots = {{AvailableComponents = {'AR10_barrel_shrt', 'AR10_barrel_def', 'AR10_barrel_ext'}, DefaultComponent = 'AR10_barrel_def', SlotType = 'Barrel', Modifiable = true}, {AvailableComponents = {'RAT_TOG_ACOG', 'RAT_TOG_LRoptics', 'RAT_TOG_Prism', 'RAT_TOG_Reflex', 'RAT_TOG_WideScope', 'RAT_TOG_compactRS', 'RAT_TOG_vigilanceRS'}, CanBeEmpty = true, SlotType = 'Scope', Modifiable = true}, {AvailableComponents = {'RAT_TOG_compensator', 'RAT_TOG_suppressor_762', 'MuzzleBooster', 'ImprovisedSuppressor', 'AR10_muzzle_def'}, DefaultComponent = 'AR10_muzzle_def', SlotType = 'Muzzle', Modifiable = true}, {AvailableComponents = { 'U100_bipod_fld_1'}, CanBeEmpty = true, SlotType = 'Bipod', Modifiable = true}, {AvailableComponents = {'AR10_mag_def', 'AR10_mag_dual'}, DefaultComponent = 'AR10_mag_def', SlotType = 'Magazine', Modifiable = true}, {AvailableComponents = {'AR10_stock_erg', 'AR10_stock_def', 'AR10_stock_hvy'}, DefaultComponent = 'AR10_stock_def', SlotType = 'Stock', Modifiable = true}, {DefaultComponent = 'side_2_empty', AvailableComponents = {'side_2_empty', 'ToG_Flashlight_2', 'ToG_Red_Dot_2', 'ToG_UV_Dot_2'}, CanBeEmpty = false, SlotType = 'Side2', Modifiable = true}, {DefaultComponent = 'mountfront_empty', AvailableComponents =  {'mountfront_empty','AR10_grip_mountfront', 'ToG_NatoGL'}, CanBeEmpty = false, SlotType = 'Mountfront', Modifiable = true}}
+	AR10std.CritChance = 0
+	AR10std.unwieldy_weapon = false
+	AR10std.default_long_barrel = false
+	AR10std.CanAppearUsed = true
+	AR10std.pistol_swap = false
+	AR10std.AdditionalHint = T( 664367469884, [[<description_hints>]] )
+	AR10std.Description = T(862731285839, [[<style PerkststsBold ><scale 450>The AR-10 is a 7.62×51mm NATO battle rifle designed by Eugene Stoner in the late 1950s<newline><newline>When first introduced in 1956, the AR-10 used an innovative combination forged alloy parts resulting in a small arm significantly easier to control in automatic fire and over 0.45 kg lighter than other infantry rifles of the day.<newline><newline>During 1960 U.S. Army tests and in Portuguese service, the AR-10 was praised for its accuracy, hitting 25 mm groups at 100 meters with standard ammo. Despite limited production, countries like Guatemala, Burma, Italy, Cuba, Sudan, and Portugal issued it to their troops. The AR-10 remained in service with Sudanese Special Forces until 1985 and was used in various African conflicts, sometimes captured and repurposed.<newline><newline>In Chad, the AR-10 was much appreciated by members of the French Foreign Legion. As one police instructor in the Congo stated, "It was a good combat weapon that never failed me; a bit too long (but not as bad as the FAL or M14) for house-to-house work or really heavy brush, but great for 400-800 meters, in the flats - and really nice on the body, after wandering around 12-14 hours looking for bad guys."<newline><newline>Over its production life, the original AR-10 was built in relatively small numbers, with fewer than 10,000 rifles assembled.However, the AR-10 would become the progenitor for a wide range of firearms.<newline><style MMOptionEntry>Made in USA <image UI/Icons/Flags/f_usa.dds 1600>]])
+	AR10std.PenetrationClass = 1
 	Groza_1.RestockWeight = 60
 	Groza_1.Caliber = "9x39"
 	Groza_1.ReloadAP = 4000
@@ -315,7 +368,7 @@ The Groza saw limited use in 1999 in the Second Chechen War, however they quickl
 	MAC11_1.ShootAP = 3000
 	MAC11_1.OverwatchAngle = 1532
 	MAC11_1.LargeItem = 0
-	MAC11_1.WeaponRange = 22
+	MAC11_1.WeaponRange = 24
 	MAC11_1.AvailableAttacks = {"BurstFire", "AutoFire", "SingleShot", "DualShot", "RunAndGun", "CancelShot"}
 	MAC11_1.object_class = "SubmachineGun"
 	MAC11_1.HandSlot = "OneHanded"
@@ -373,7 +426,7 @@ The Groza saw limited use in 1999 in the Second Chechen War, however they quickl
 	MicroUZI_1.ShootAP = 3000
 	MicroUZI_1.OverwatchAngle = 1547
 	MicroUZI_1.LargeItem = 0
-	MicroUZI_1.WeaponRange = 22
+	MicroUZI_1.WeaponRange = 24
 	MicroUZI_1.AvailableAttacks = {"BurstFire", "AutoFire", "SingleShot", "DualShot", "RunAndGun", "CancelShot"}
 	MicroUZI_1.object_class = "SubmachineGun"
 	MicroUZI_1.HandSlot = "OneHanded"
@@ -657,7 +710,7 @@ The Groza saw limited use in 1999 in the Second Chechen War, however they quickl
 <image UI/Conversation/T_Dialogue_IconBackgroundCircle.tga 400 130 128 120> Swapping to this weapon is free, as long it is not dual-wielded.]] )
 	USP_1.Description = T(313263970388, [[<style PerkststsBold ><scale 700>The USP (Universelle Selbstladepistole or "universal self-loading pistol") is a semi-automatic pistol developed in Germany as a replacement for the P7 series of handguns.<newline><newline>Design work on a new family of pistols commenced in September 1989, focused primarily on the United States commercial and law enforcement markets. USP prototypes participated in rigorous testing in the Offensive Handgun Weapon System (OHWS) program requested by the U.S. Special Operations Command (USSOCOM), which would later result in the Mk 23<newline><newline>One of the distinguishing features of the USP is the mechanical recoil reduction system. It consists of a short additional spring located within the main recoil spring on the breech end of the recoil spring assembly. Designed primarily to reduce wear on the pistol's components, the system also lowers the peak recoil forces felt by the shooter.<newline><newline><style MMOptionEntry>Made in Germany <image UI/Icons/Flags/f_germany.dds 1600>]])
 	USP_1.PenetrationClass = 1
-	VigM2_1.RestockWeight = 150
+	VigM2_1.RestockWeight = 80
 	VigM2_1.Caliber = "9mm"
 	VigM2_1.ReloadAP = 3000
 	VigM2_1.ShootAP = 3000
@@ -693,7 +746,7 @@ The Groza saw limited use in 1999 in the Second Chechen War, however they quickl
 	VigM2_1.CritChanceScaled = 10
 	VigM2_1.PointBlankBonus = 1
 	VigM2_1.HolsterSlot = "Shoulder"
-	VigM2_1.MaxStock = 5
+	VigM2_1.MaxStock = 3
 	VigM2_1.CanAppearInShop = true
 	VigM2_1.is_tog_patched = true
 	VigM2_1.ObjDamageMod = 100
@@ -2552,7 +2605,7 @@ The UMP has been adopted for use by various countries including Brazil, Canada, 
 	HK33A2_1.Description = T(419973268941, [[<style PerkststsBold ><scale 600>The HK33 is a 5.56mm assault rifle developed in the 1960s<newline><newline>
 The HK33 series of rifles were adopted by the Brazilian Air Force (Força Aérea Brasileira or FAB), the armed forces of Thailand and Malaysia where they were produced under a licence agreement. The rifle was also licence-built in Turkey, and exported from France but actually made in Germany.<newline><newline>A copy of the HK33 was built under licence as T223 during the Vietnam War. Although heavier than the M16, it was used in small numbers by SEAL teams due to its available 40-round magazine.<newline><newline>In Myanmar, the Karen National Liberation Army fielded government-made HK33s. Thai government units fielded HK33s during the South Thailand insurgency. Some of these rifles were seized by groups such as the Patani United Liberation Organisation or the Gerakan Mujahidin Islam Patani<newline><newline><style MMOptionEntry>Made in Germany <image UI/Icons/Flags/f_germany.dds 1600>]])
 	HK33A2_1.PenetrationClass = 1
-	HK53_1.RestockWeight = 30
+	HK53_1.RestockWeight = 50
 	HK53_1.Caliber = "556"
 	HK53_1.ReloadAP = 3000
 	HK53_1.ShootAP = 3000
@@ -2610,7 +2663,7 @@ The HK33 series of rifles were adopted by the Brazilian Air Force (Força Aérea
 	HK53_1.__parents[1] = "SubmachineGun"
 	HK53_1.Description = T(326107292886, [[<style PerkststsBold ><scale 600>The HK 53 is a compact assault rifle of German origin and the short carbine variant of the HK 33 rifle. It is often classified as a sub machine gun due to its compact size.<newline><newline>A number of police forces and militaries adopted the HK53 for a variety of roles. Special forces units around the world including the British SAS, Royal Military Police Close Protection Unit and Royal Marines, designated the L101A1 in British service, who typically used it during close protection duties and operations involving close quarter battle.<newline><newline>During its service life the HK53 went through a series of changes to furniture mouldings, buttstock types and fire selector options. It remained in production into the early 2000s, when the HK33 and HK53 where replaced with the G36 and G36K<newline><newline><style MMOptionEntry>Made in Germany <image UI/Icons/Flags/f_germany.dds 1600>]])
 	HK53_1.PenetrationClass = 1
-	TAR21_1.RestockWeight = 20
+	TAR21_1.RestockWeight = 35
 	TAR21_1.Caliber = "556"
 	TAR21_1.ReloadAP = 4000
 	TAR21_1.ShootAP = 4000

@@ -39,6 +39,10 @@ return {
 		'name', "WEAPON_COMPONENTS_components",
 		'CodeFileName', "Code/WEAPON_COMPONENTS_components.lua",
 	}),
+	PlaceObj('ModItemCode', {
+		'name', "FUNCTIONS_WeaponComponentsVIsualProcessing",
+		'CodeFileName', "Code/FUNCTIONS_WeaponComponentsVIsualProcessing.lua",
+	}),
 	PlaceObj('ModItemFolder', {
 		'name', "RevisedMagsCompatibility",
 	}, {
@@ -347,6 +351,7 @@ return {
 				}),
 			},
 			Slot = "Scope",
+			Tags = set( "CloseQuarters", "Intimate" ),
 			Visuals = {
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "TAR21_1",
@@ -387,7 +392,6 @@ return {
 			'ShootAP', 4000,
 			'ReloadAP', 3000,
 			'APStance', 1,
-			'PBbonus_base', 0,
 		}),
 		PlaceObj('ModItemWeaponComponent', {
 			Cost = 15,
@@ -422,11 +426,12 @@ return {
 				}),
 				PlaceObj('PresetParamNumber', {
 					'Name', "RangeDecrease",
-					'Value', 6,
+					'Value', 4,
 					'Tag', "<RangeDecrease>",
 				}),
 			},
 			Slot = "Stock",
+			Tags = set( "CloseQuarters", "Intimate" ),
 			Visuals = {
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "AN94_1",
@@ -449,6 +454,7 @@ return {
 				"zzGrndlEquipped",
 			},
 			Slot = "Mountfront",
+			Tags = set( "Precision", "Strategic", "Tactical" ),
 			Visuals = {
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "PapovkaSKS_1",
@@ -494,6 +500,7 @@ return {
 				}),
 			},
 			Slot = "Mountfront",
+			Tags = set( "Precision", "Strategic", "Tactical" ),
 			Visuals = {
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "PapovkaSKS_1",
@@ -545,6 +552,7 @@ return {
 				"zzStockEquipped",
 			},
 			Slot = "Stock",
+			Tags = set( "CloseQuarters", "Intimate", "Precision", "Strategic", "Tactical" ),
 			Visuals = {
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "AN94_1",
@@ -597,6 +605,7 @@ return {
 				}),
 			},
 			Slot = "Stock",
+			Tags = set( "CloseQuarters", "Intimate" ),
 			Visuals = {
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "G36",
@@ -628,6 +637,7 @@ return {
 				}),
 			},
 			Slot = "Bipod",
+			Tags = set( "Precision", "Strategic", "Tactical" ),
 			Visuals = {
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "PapovkaSKS_1",
@@ -670,6 +680,7 @@ return {
 				}),
 			},
 			Slot = "Bipod",
+			Tags = set( "Precision", "Strategic" ),
 			Visuals = {
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "PapovkaSKS_1",
@@ -713,6 +724,7 @@ return {
 				}),
 			},
 			Slot = "Stock",
+			Tags = set( "CloseQuarters", "Precision", "Strategic", "Tactical" ),
 			Visuals = {
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "M70_1",
@@ -742,6 +754,7 @@ return {
 				}),
 			},
 			Slot = "Under",
+			Tags = set( "CloseQuarters", "Intimate", "Tactical" ),
 			Visuals = {
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "B93RR_1",
@@ -799,6 +812,7 @@ return {
 				}),
 			},
 			Slot = "Handguard",
+			Tags = set( "CloseQuarters", "Precision", "Tactical" ),
 			Visuals = {
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "RK62_1",
@@ -847,6 +861,7 @@ return {
 				}),
 			},
 			Slot = "Handguard",
+			Tags = set( "CloseQuarters", "Intimate", "Tactical" ),
 			Visuals = {
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "RK62_1",
@@ -875,6 +890,7 @@ return {
 				}),
 			},
 			Slot = "General",
+			Tags = set( "CloseQuarters", "Intimate", "Precision", "Strategic", "Tactical" ),
 			Visuals = {
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "HK33A2_1",
@@ -901,6 +917,7 @@ return {
 				"EnableFullAuto",
 			},
 			Slot = "General",
+			Tags = set( "CloseQuarters", "Intimate", "Precision", "Strategic", "Tactical" ),
 			Visuals = {
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "HK33A2_1",
@@ -959,6 +976,7 @@ return {
 				}),
 			},
 			Slot = "Scope",
+			Tags = set( "Precision", "Strategic" ),
 			Visuals = {
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "SSG69_1",
@@ -1004,6 +1022,7 @@ return {
 				}),
 			},
 			Slot = "Scope",
+			Tags = set( "CloseQuarters", "Tactical" ),
 			Visuals = {
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "Gewehr43_1",
@@ -1080,6 +1099,7 @@ return {
 				}),
 			},
 			Slot = "Scope",
+			Tags = set( "Precision", "Tactical" ),
 			Visuals = {
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "SteyrScout_1",
@@ -1133,6 +1153,7 @@ return {
 				}),
 			},
 			Slot = "Scope",
+			Tags = set( "Precision", "Tactical" ),
 			Visuals = {
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "M76_1",
@@ -1161,6 +1182,7 @@ return {
 				}),
 			},
 			Slot = "Stock",
+			Tags = set( "CloseQuarters", "Intimate" ),
 			Visuals = {
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "VigM2_1",
@@ -1191,6 +1213,7 @@ return {
 				}),
 			},
 			Slot = "Stock",
+			Tags = set( "CloseQuarters", "Precision", "Strategic", "Tactical" ),
 			Visuals = {
 				PlaceObj('WeaponComponentVisual', {
 					ApplyTo = "VigM2_1",
@@ -1323,6 +1346,7 @@ return {
 					}),
 				},
 				Slot = "Barrel",
+				Tags = set( "Precision", "Strategic", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "Fn2000_1",
@@ -1416,6 +1440,7 @@ return {
 					}),
 				},
 				Slot = "Barrel",
+				Tags = set( "Precision", "Strategic", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "Fn2000_1",
@@ -1464,6 +1489,42 @@ return {
 				id = "ToG_Comp_AR_Barrel_Long_2_SMG",
 			}),
 			PlaceObj('ModItemWeaponComponent', {
+				DisplayName = T(633438513906, --[[ModItemWeaponComponent side_2_empty DisplayName]] "Empty"),
+				Icon = "UI/Icons/Upgrades/default_side",
+				ModificationDifficulty = "-1000",
+				Slot = "Side2",
+				Tags = set( "CloseQuarters", "Intimate", "Precision", "Strategic", "Tactical" ),
+				Visuals = {
+					PlaceObj('WeaponComponentVisual', {
+						ApplyTo = "",
+						Entity = "placeholder_7",
+						Slot = "Side2",
+						param_bindings = false,
+					}),
+				},
+				comment = "side2",
+				group = "Side",
+				id = "side_2_empty",
+			}),
+			PlaceObj('ModItemWeaponComponent', {
+				DisplayName = T(643847756276, --[[ModItemWeaponComponent mountfront_empty DisplayName]] "Empty"),
+				Icon = "UI/Icons/Upgrades/default_handguard",
+				ModificationDifficulty = "-1000",
+				Slot = "Mountfront",
+				Tags = set( "CloseQuarters", "Intimate", "Precision", "Strategic", "Tactical" ),
+				Visuals = {
+					PlaceObj('WeaponComponentVisual', {
+						ApplyTo = "",
+						Entity = "placeholder_7",
+						Slot = "Mountfront",
+						param_bindings = false,
+					}),
+				},
+				comment = "ar10",
+				group = "Default",
+				id = "mountfront_empty",
+			}),
+			PlaceObj('ModItemWeaponComponent', {
 				AdditionalCosts = {
 					PlaceObj('WeaponComponentCost', {
 						'Amount', 1,
@@ -1492,6 +1553,7 @@ return {
 					}),
 				},
 				Slot = "Barrel",
+				Tags = set( "CloseQuarters", "Intimate", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "RPD_1",
@@ -1503,23 +1565,6 @@ return {
 				},
 				group = "Firearm - Heavy",
 				id = "R_TOG_light_barrel",
-			}),
-			PlaceObj('ModItemWeaponComponent', {
-				DisplayName = T(633438513906, --[[ModItemWeaponComponent side_2_empty DisplayName]] "Empty"),
-				Icon = "UI/Icons/Upgrades/default_side",
-				ModificationDifficulty = "-1000",
-				Slot = "Side2",
-				Visuals = {
-					PlaceObj('WeaponComponentVisual', {
-						ApplyTo = "",
-						Entity = "placeholder_7",
-						Slot = "Side2",
-						param_bindings = false,
-					}),
-				},
-				comment = "side2",
-				group = "Side",
-				id = "side_2_empty",
 			}),
 			PlaceObj('ModItemWeaponComponent', {
 				AdditionalCosts = {
@@ -1537,6 +1582,7 @@ return {
 					"flanker",
 					"compensator_effect_silencer",
 					"DecreaseOverwatchAngle",
+					"ReduceReliability",
 				},
 				Parameters = {
 					PlaceObj('PresetParamPercent', {
@@ -1554,8 +1600,14 @@ return {
 						'Value', 97,
 						'Tag', "<OverwatchAngleDecrease>",
 					}),
+					PlaceObj('PresetParamNumber', {
+						'Name', "ReliabilityDecrease",
+						'Value', 10,
+						'Tag', "<ReliabilityDecrease>",
+					}),
 				},
 				Slot = "General",
+				Tags = set( "CloseQuarters", "Intimate", "Precision", "Strategic", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "VSK94_1",
@@ -1589,6 +1641,7 @@ return {
 					"flanker",
 					"compensator_effect_silencer",
 					"DecreaseOverwatchAngle",
+					"ReduceReliability",
 				},
 				Parameters = {
 					PlaceObj('PresetParamPercent', {
@@ -1606,8 +1659,14 @@ return {
 						'Value', 97,
 						'Tag', "<OverwatchAngleDecrease>",
 					}),
+					PlaceObj('PresetParamNumber', {
+						'Name', "ReliabilityDecrease",
+						'Value', 10,
+						'Tag', "<ReliabilityDecrease>",
+					}),
 				},
 				Slot = "Muzzle",
+				Tags = set( "CloseQuarters", "Intimate", "Precision", "Strategic", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "VSK94_1",
@@ -1640,6 +1699,7 @@ return {
 					}),
 				},
 				Slot = "Gassblock",
+				Tags = set( "CloseQuarters", "Intimate", "Precision", "Strategic", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "M70_1",
@@ -1675,6 +1735,7 @@ return {
 					}),
 				},
 				Slot = "Gassblock",
+				Tags = set( "CloseQuarters", "Intimate", "Precision", "Strategic", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "M70_1",
@@ -1703,6 +1764,7 @@ return {
 			PlaceObj('ModItemWeaponComponent', {
 				DisplayName = T(688659107704, --[[ModItemWeaponComponent component_22mm_grenade DisplayName]] "grenade"),
 				Slot = "Muzzle",
+				Tags = set( "CloseQuarters", "Intimate", "Precision", "Strategic", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						Entity = "WeaponAttA_GrenadeRPG",
@@ -1746,6 +1808,7 @@ return {
 					}),
 				},
 				Slot = "Stock",
+				Tags = set( "Precision", "Strategic", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "HK33A2_1",
@@ -1778,6 +1841,7 @@ return {
 					"flanker",
 					"compensator_effect_silencer",
 					"DecreaseOverwatchAngle",
+					"ReduceReliability",
 				},
 				Parameters = {
 					PlaceObj('PresetParamPercent', {
@@ -1795,8 +1859,14 @@ return {
 						'Value', 97,
 						'Tag', "<OverwatchAngleDecrease>",
 					}),
+					PlaceObj('PresetParamNumber', {
+						'Name', "ReliabilityDecrease",
+						'Value', 10,
+						'Tag', "<ReliabilityDecrease>",
+					}),
 				},
 				Slot = "Muzzle",
+				Tags = set( "CloseQuarters", "Intimate", "Precision", "Strategic", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						Entity = "WeaponAttA_SilencerBeretta",
@@ -2110,6 +2180,7 @@ return {
 					"flanker",
 					"compensator_effect_silencer",
 					"DecreaseOverwatchAngle",
+					"ReduceReliability",
 				},
 				Parameters = {
 					PlaceObj('PresetParamPercent', {
@@ -2127,8 +2198,14 @@ return {
 						'Value', 97,
 						'Tag', "<OverwatchAngleDecrease>",
 					}),
+					PlaceObj('PresetParamNumber', {
+						'Name', "ReliabilityDecrease",
+						'Value', 10,
+						'Tag', "<ReliabilityDecrease>",
+					}),
 				},
 				Slot = "Muzzle",
+				Tags = set( "CloseQuarters", "Intimate", "Precision", "Strategic", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						Entity = "WeaponAttA_SuppressorWP",
@@ -2156,6 +2233,7 @@ return {
 					"flanker",
 					"compensator_effect_silencer",
 					"DecreaseOverwatchAngle",
+					"ReduceReliability",
 				},
 				Parameters = {
 					PlaceObj('PresetParamPercent', {
@@ -2173,8 +2251,14 @@ return {
 						'Value', 97,
 						'Tag', "<OverwatchAngleDecrease>",
 					}),
+					PlaceObj('PresetParamNumber', {
+						'Name', "ReliabilityDecrease",
+						'Value', 10,
+						'Tag', "<ReliabilityDecrease>",
+					}),
 				},
 				Slot = "Muzzle",
+				Tags = set( "CloseQuarters", "Intimate", "Precision", "Strategic", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						Entity = "WeaponAttA_Suppressor762",
@@ -2202,6 +2286,7 @@ return {
 					}),
 				},
 				Slot = "Muzzle",
+				Tags = set( "CloseQuarters", "Intimate", "Precision", "Strategic", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						Entity = "WeaponAttA_CompensatorHKG36_02",
@@ -2373,6 +2458,13 @@ return {
 						param_bindings = false,
 					}),
 					PlaceObj('WeaponComponentVisual', {
+						ApplyTo = "AR10std",
+						Entity = "WeaponAttA_MuzzleFNFal",
+						Icon = "UI/Icons/Upgrades/muzzle_fal_01",
+						Slot = "Muzzle",
+						param_bindings = false,
+					}),
+					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "Auto5",
 						Entity = "WeaponAttA_CompensatorAuto5",
 						Icon = "UI/Icons/Upgrades/auto5_duckbill",
@@ -2443,7 +2535,6 @@ return {
 					"FirstAimBonusModifier",
 					"IncreaseRange",
 					"ScopePenalty1",
-					"DecreaseOverwatchAngle",
 					"IncreaseAimAccuracy",
 					"scope_snapshot",
 					"IncreaseOverwatchAngle",
@@ -2471,6 +2562,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "CloseQuarters", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -2492,6 +2584,12 @@ return {
 					}),
 					PlaceObj('WeaponComponentVisual', {
 						Entity = "G11_Rail",
+						Slot = "Scope",
+						param_bindings = false,
+					}),
+					PlaceObj('WeaponComponentVisual', {
+						ApplyTo = "AR10std",
+						Entity = "WeaponAttA_MountM16_01",
 						Slot = "Scope",
 						param_bindings = false,
 					}),
@@ -2639,7 +2737,6 @@ return {
 					"FirstAimBonusModifier",
 					"IncreaseRange",
 					"ScopePenalty1",
-					"DecreaseOverwatchAngle",
 					"IncreaseAimAccuracy",
 					"scope_snapshot",
 					"IncreaseOverwatchAngle",
@@ -2667,6 +2764,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "CloseQuarters", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -2801,6 +2899,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "CloseQuarters", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -2810,6 +2909,12 @@ return {
 					}),
 					PlaceObj('WeaponComponentVisual', {
 						Entity = "G11_Rail",
+						Slot = "Scope",
+						param_bindings = false,
+					}),
+					PlaceObj('WeaponComponentVisual', {
+						ApplyTo = "AR10std",
+						Entity = "WeaponAttA_MountM16_01",
 						Slot = "Scope",
 						param_bindings = false,
 					}),
@@ -2959,6 +3064,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "CloseQuarters", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -3093,6 +3199,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "Precision", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -3108,6 +3215,12 @@ return {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "m625_1",
 						Entity = "WeaponAttA_MountAnaconda",
+						Slot = "Scope",
+						param_bindings = false,
+					}),
+					PlaceObj('WeaponComponentVisual', {
+						ApplyTo = "AR10std",
+						Entity = "WeaponAttA_MountM16_01",
 						Slot = "Scope",
 						param_bindings = false,
 					}),
@@ -3251,6 +3364,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "Precision", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -3390,6 +3504,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "Precision", "Strategic" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -3406,6 +3521,12 @@ return {
 						ApplyTo = "VSK94_1",
 						Entity = "WeaponAttA_MountRPK74",
 						Slot = "Mount",
+						param_bindings = false,
+					}),
+					PlaceObj('WeaponComponentVisual', {
+						ApplyTo = "AR10std",
+						Entity = "WeaponAttA_MountM16_01",
+						Slot = "Scope",
 						param_bindings = false,
 					}),
 					PlaceObj('WeaponComponentVisual', {
@@ -3553,6 +3674,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "Precision", "Strategic" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -3693,6 +3815,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "CloseQuarters", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -3708,6 +3831,12 @@ return {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "m625_1",
 						Entity = "WeaponAttA_MountAnaconda",
+						Slot = "Scope",
+						param_bindings = false,
+					}),
+					PlaceObj('WeaponComponentVisual', {
+						ApplyTo = "AR10std",
+						Entity = "WeaponAttA_MountM16_01",
 						Slot = "Scope",
 						param_bindings = false,
 					}),
@@ -3863,6 +3992,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "CloseQuarters", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -4015,6 +4145,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "CloseQuarters", "Intimate" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -4185,6 +4316,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "CloseQuarters", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -4329,6 +4461,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "Precision", "Strategic" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -4350,6 +4483,12 @@ return {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "SKS_1",
 						Entity = "WeaponAttA_MountRPK74",
+						Slot = "Scope",
+						param_bindings = false,
+					}),
+					PlaceObj('WeaponComponentVisual', {
+						ApplyTo = "AR10std",
+						Entity = "WeaponAttA_MountM16_01",
 						Slot = "Scope",
 						param_bindings = false,
 					}),
@@ -4491,6 +4630,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "Precision", "Strategic" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -4627,6 +4767,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "Precision", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -4660,6 +4801,12 @@ return {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "Papovka2SKS_1",
 						Entity = "WeaponAttA_MountRPK74",
+						Slot = "Scope",
+						param_bindings = false,
+					}),
+					PlaceObj('WeaponComponentVisual', {
+						ApplyTo = "AR10std",
+						Entity = "WeaponAttA_MountM16_01",
 						Slot = "Scope",
 						param_bindings = false,
 					}),
@@ -4787,6 +4934,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "Precision", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -4923,6 +5071,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "Precision", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						Entity = "WeaponAttA_ScopeThermal",
@@ -5115,6 +5264,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "Precision", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						Entity = "WeaponAttA_ScopeThermal",
@@ -5310,6 +5460,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "CloseQuarters", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -5325,6 +5476,12 @@ return {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "m625_1",
 						Entity = "WeaponAttA_MountAnaconda",
+						Slot = "Scope",
+						param_bindings = false,
+					}),
+					PlaceObj('WeaponComponentVisual', {
+						ApplyTo = "AR10std",
+						Entity = "WeaponAttA_MountM16_01",
 						Slot = "Scope",
 						param_bindings = false,
 					}),
@@ -5479,6 +5636,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "CloseQuarters", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -5630,6 +5788,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "CloseQuarters", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -5645,6 +5804,12 @@ return {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "m625_1",
 						Entity = "WeaponAttA_MountAnaconda",
+						Slot = "Scope",
+						param_bindings = false,
+					}),
+					PlaceObj('WeaponComponentVisual', {
+						ApplyTo = "AR10std",
+						Entity = "WeaponAttA_MountM16_01",
 						Slot = "Scope",
 						param_bindings = false,
 					}),
@@ -5805,6 +5970,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "CloseQuarters", "Intimate" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -5946,6 +6112,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "CloseQuarters", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -5961,6 +6128,12 @@ return {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "m625_1",
 						Entity = "WeaponAttA_MountAnaconda",
+						Slot = "Scope",
+						param_bindings = false,
+					}),
+					PlaceObj('WeaponComponentVisual', {
+						ApplyTo = "AR10std",
+						Entity = "WeaponAttA_MountM16_01",
 						Slot = "Scope",
 						param_bindings = false,
 					}),
@@ -6099,6 +6272,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "CloseQuarters", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -6201,6 +6375,7 @@ return {
 					"IgnoreInTheDark",
 				},
 				Slot = "Scope",
+				Tags = set( "CloseQuarters", "Intimate" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -6309,6 +6484,7 @@ return {
 					"IgnoreInTheDark",
 				},
 				Slot = "Scope",
+				Tags = set( "CloseQuarters", "Intimate" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -6423,6 +6599,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "CloseQuarters", "Intimate", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -6555,6 +6732,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "CloseQuarters", "Intimate", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -6661,6 +6839,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "CloseQuarters", "Intimate", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -6785,6 +6964,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "CloseQuarters", "Intimate", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -6891,6 +7071,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "CloseQuarters", "Intimate", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -7021,6 +7202,7 @@ return {
 					}),
 				},
 				Slot = "Scope",
+				Tags = set( "CloseQuarters", "Intimate", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "G3_1",
@@ -7150,6 +7332,7 @@ return {
 					}),
 				},
 				Slot = "Barrel",
+				Tags = set( "Precision", "Strategic", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "SteyrScout_1",
@@ -7190,6 +7373,7 @@ return {
 					}),
 				},
 				Slot = "Barrel",
+				Tags = set( "CloseQuarters", "Tactical" ),
 				Visuals = {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "SteyrScout_1",

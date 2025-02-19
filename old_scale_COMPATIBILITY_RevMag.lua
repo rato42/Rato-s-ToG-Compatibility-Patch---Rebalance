@@ -298,7 +298,7 @@ local map = {
             Entity = "WeaponAttA_MagazineAK47_01",
             Icon = "UI/Icons/Upgrades/AK47_magazine",
             Offset = point(0, 0, 21),
-            Scale = 100,
+            Scale = 90,
             Slot = "Magazine",
             param_bindings = false
         }), PlaceObj('WeaponComponentVisual', {
@@ -307,7 +307,7 @@ local map = {
             Entity = "WeaponAttA_MagazineAK47_01",
             Icon = "UI/Icons/Upgrades/AK47_magazine",
             Offset = point(1, 0, 21),
-            Scale = 100,
+            Scale = 90,
             Slot = "Magazine",
             param_bindings = false
         }), PlaceObj('WeaponComponentVisual', {
@@ -316,7 +316,7 @@ local map = {
             Entity = "WeaponAttA_MagazineAK47_01",
             Icon = "UI/Icons/Upgrades/AK47_magazine",
             Offset = point(5, 0, 21),
-            Scale = 100,
+            Scale = 90,
             Slot = "Magazine",
             param_bindings = false
         }), PlaceObj('WeaponComponentVisual', {
@@ -325,7 +325,7 @@ local map = {
             Entity = "WeaponAttA_MagazineAK47_01",
             Icon = "UI/Icons/Upgrades/AK47_magazine",
             Offset = point(5, 0, 21),
-            Scale = 100,
+            Scale = 90,
             Slot = "Magazine",
             param_bindings = false
         }), PlaceObj('WeaponComponentVisual', {
@@ -334,7 +334,7 @@ local map = {
             Entity = "WeaponAttA_MagazineAK47_01",
             Icon = "UI/Icons/Upgrades/AK47_magazine",
             Offset = point(31, 0, 21),
-            Scale = 100,
+            Scale = 90,
             Slot = "Magazine",
             param_bindings = false
         }), PlaceObj('WeaponComponentVisual', {
@@ -343,7 +343,7 @@ local map = {
             Entity = "WeaponAttA_MagazineAK47_01",
             Icon = "UI/Icons/Upgrades/AK47_magazine",
             Offset = point(31, 0, 21),
-            Scale = 100,
+            Scale = 90,
             Slot = "Magazine",
             param_bindings = false
         }), PlaceObj('WeaponComponentVisual', {
@@ -352,7 +352,7 @@ local map = {
             Entity = "WeaponAttA_MagazineAK47_01",
             Icon = "UI/Icons/Upgrades/AK47_magazine",
             Offset = point(25, 0, 21),
-            Scale = 100,
+            Scale = 90,
             Slot = "Magazine",
             param_bindings = false
         }), PlaceObj('WeaponComponentVisual', {
@@ -361,7 +361,7 @@ local map = {
             Entity = "WeaponAttA_MagazineAK47_01",
             Icon = "UI/Icons/Upgrades/AK47_magazine",
             Offset = point(25, 0, 21),
-            Scale = 100,
+            Scale = 90,
             Slot = "Magazine",
             param_bindings = false
         }), PlaceObj('WeaponComponentVisual', {
@@ -370,7 +370,7 @@ local map = {
             Entity = "WeaponAttA_MagazineAK47_01",
             Icon = "UI/Icons/Upgrades/AK47_magazine",
             Offset = point(25, 0, 21),
-            Scale = 100,
+            Scale = 90,
             Slot = "Magazine",
             param_bindings = false
         }), PlaceObj('WeaponComponentVisual', {
@@ -379,7 +379,7 @@ local map = {
             Entity = "WeaponAttA_MagazineAK47_01",
             Icon = "UI/Icons/Upgrades/AK47_magazine",
             Offset = point(25, 0, 21),
-            Scale = 100,
+            Scale = 90,
             Slot = "Magazine",
             param_bindings = false
         })
@@ -474,7 +474,7 @@ local map = {
             Entity = "WeaponAttA_MagazineAK47_02",
             Icon = "UI/Icons/Upgrades/expanded_AK47_magazine",
             Offset = point(5, 0, 21),
-            Scale = 100,
+            Scale = 90,
             Slot = "Magazine",
             param_bindings = false
         }), PlaceObj('WeaponComponentVisual', {
@@ -483,7 +483,7 @@ local map = {
             Entity = "WeaponAttA_MagazineAK47_02",
             Icon = "UI/Icons/Upgrades/expanded_AK47_magazine",
             Offset = point(5, 0, 21),
-            Scale = 100,
+            Scale = 90,
             Slot = "Magazine",
             param_bindings = false
         }), PlaceObj('WeaponComponentVisual', {
@@ -492,7 +492,7 @@ local map = {
             Entity = "WeaponAttA_MagazineAK47_02",
             Icon = "UI/Icons/Upgrades/expanded_AK47_magazine",
             Offset = point(31, 0, 21),
-            Scale = 100,
+            Scale = 90,
             Slot = "Magazine",
             param_bindings = false
         }), PlaceObj('WeaponComponentVisual', {
@@ -501,7 +501,7 @@ local map = {
             Entity = "WeaponAttA_MagazineAK47_02",
             Icon = "UI/Icons/Upgrades/expanded_AK47_magazine",
             Offset = point(31, 0, 21),
-            Scale = 100,
+            Scale = 90,
             Slot = "Magazine",
             param_bindings = false
         }), PlaceObj('WeaponComponentVisual', {
@@ -510,7 +510,7 @@ local map = {
             Entity = "WeaponAttA_MagazineAK47_02",
             Icon = "UI/Icons/Upgrades/expanded_AK47_magazine",
             Offset = point(25, 0, 21),
-            Scale = 100,
+            Scale = 90,
             Slot = "Magazine",
             param_bindings = false
         }), PlaceObj('WeaponComponentVisual', {
@@ -519,7 +519,7 @@ local map = {
             Entity = "WeaponAttA_MagazineAK47_02",
             Icon = "UI/Icons/Upgrades/expanded_AK47_magazine",
             Offset = point(25, 0, 21),
-            Scale = 100,
+            Scale = 90,
             Slot = "Magazine",
             param_bindings = false
         }), PlaceObj('WeaponComponentVisual', {
@@ -528,7 +528,7 @@ local map = {
             Entity = "WeaponAttA_MagazineAK47_02",
             Icon = "UI/Icons/Upgrades/expanded_AK47_magazine",
             Offset = point(25, 0, 21),
-            Scale = 100,
+            Scale = 90,
             Slot = "Magazine",
             param_bindings = false
         }), PlaceObj('WeaponComponentVisual', {
@@ -537,7 +537,7 @@ local map = {
             Entity = "WeaponAttA_MagazineAK47_02",
             Icon = "UI/Icons/Upgrades/expanded_AK47_magazine",
             Offset = point(25, 0, 21),
-            Scale = 100,
+            Scale = 90,
             Slot = "Magazine",
             param_bindings = false
         })

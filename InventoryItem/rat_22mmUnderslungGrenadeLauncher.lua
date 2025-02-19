@@ -26,6 +26,5 @@ DefineClass.rat_22mmUnderslungGrenadeLauncher = {
 	ShootAP = 4000,
 	ReloadAP = 3000,
 	APStance = 1,
-	PBbonus_base = 0,
 }
 

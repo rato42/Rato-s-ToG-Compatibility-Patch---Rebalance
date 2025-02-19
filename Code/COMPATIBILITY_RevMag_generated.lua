@@ -26,13 +26,53 @@ function OnMsg.RevisedMagPropsAddedToFirearms()
                     {'MagNormal'})
     REV_SetupWeapon(StenMK2_1, 'StenMK2_1_9mm', 'StenMK2_1_Magazine', 'MagNormal', {'MagNormal'})
     REV_SetupWeapon(STG44R_1, 'STG44R_1_7_92x33', 'STG44R_1_Magazine', 'MagNormal', {'MagNormal'})
+    REV_SetupWeapon(AR10std, 'AR10std_762NATO', 'AR10std_Magazine', 'MagNormal', {'MagNormal'})
 end
 
 function GBOTOG_RevMag_CreateMagazine()
     if not IsMod_loaded('URkxyfE') then
         return
     end
+    UndefineClass('AR10std_Magazine')
+    DefineClass.AR10std_Magazine = {
+        __parents = {"RifleMag"},
+        __generated_by_class = "ModItemInventoryItemCompositeDef",
 
+        Caliber = "762NATO",
+        DisplayNamePlural = T(869674712817, 'AR10 Magazines'),
+        MagReloadCosts = 18000,
+        Platform = "AR10std_762NATO",
+        DisplayName = T(136392877639, 'AR10 Magazine'),
+        RestockWeight = 80,
+        object_class = "RifleMag",
+        Icon = "Mod/KKh3Yhf/Images/BM59_mag_def.png",
+        Type = "Rifle",
+        Repairable = false,
+        Weight = 200,
+        CategoryPair = "RifleMags",
+        Tier = 2,
+        ScrapParts = 3,
+        Cost = 349,
+        Group = "Default",
+        AdditionalHint = T(605261329037, '7.62 NATO'),
+        MagUnloadCosts = 9000,
+        Modification = "MagNormal",
+        PocketML_amount = 1,
+        MagazineSize = 20,
+        Carabiner_amount = 0,
+        Description = T(776153606936, 'AR10 Magazine for 7.62 NATO rounds'),
+        KnifeSheath_amount = 0,
+        RifleMag_amount = 1,
+        ExtraAPCosts = 0,
+        PistolMag_amount = 0,
+        PistolHolster_amount = 0,
+        PocketM_amount = 0,
+        PocketL_amount = 1,
+        PocketS_amount = 0,
+        CanBeConsumed = false,
+        Id = "AR10std_Magazine",
+        CanAppearInShop = true
+    }
     UndefineClass('B93RR_1_Magazine')
     DefineClass.B93RR_1_Magazine = {
         __parents = {"PistolMag"},
@@ -1237,6 +1277,12 @@ local map = {
     },
     ["MagNormal"] = {
         PlaceObj('WeaponComponentVisual', {
+            param_bindings = false,
+            Icon = "Mod/KKh3Yhf/Images/BM59_mag_def.png",
+            ApplyTo = "AR10std",
+            Slot = "Magazine",
+            Entity = "AR10_mag_def"
+        }), PlaceObj('WeaponComponentVisual', {
             Icon = "Mod/KKh3Yhf/Images/B93RR_mag_def.png",
             param_bindings = false,
             ApplyTo = "B93RR_1",
@@ -1348,7 +1394,7 @@ function GBOTOG_RevMag_AddClassesToInventoryItemDefs()
         'RPD_1_Magazine', 'Gewehr43_1_Magazine', 'P08_1_Magazine', 'M1911_1_Magazine',
         'M76_1_Magazine', 'MAC11_1_Magazine', 'MicroUZI_1_Magazine', 'PP91_1_Magazine',
         'VigM2_1_Magazine', 'Delisle_1_Magazine', 'SSG69_1_Magazine', 'HK23E_1_Magazine',
-        'SteyrScout_1_Magazine', 'StenMK2_1_Magazine', 'STG44R_1_Magazine'
+        'SteyrScout_1_Magazine', 'StenMK2_1_Magazine', 'STG44R_1_Magazine', 'AR10std_Magazine'
     }
     for _, id in ipairs(classes) do
         InventoryItemDefs[id] = g_Classes[id]
