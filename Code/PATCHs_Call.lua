@@ -66,6 +66,8 @@ function OnMsg.ClassesPostBuilt()
         ['Delisle_1'] = '45ACP',
         ['PKM_1'] = '7_62x54R',
         ['Mosin_1'] = '7_62x54R',
-        ['PP91_1'] = '9x18'
+        ['PP91_1'] = '9x18',
+        ['G11_1'] = '4_7x33',
+        ['A91_2'] = '5_45x39'
     }
 end

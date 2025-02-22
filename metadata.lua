@@ -1,8 +1,8 @@
 return PlaceObj('ModDef', {
 	'title', "Rato's ToG Compatibility Patch & Rebalance",
-	'description', "[h1](Partial) Compatibility patch for Rato's Gameplay Balance and Overhaul and Tons of Guns[/h1]\n\n	\nWill balance and patch a number of guns of ToG to work with Rato's Mod. \n\n\nIt is recommended to start a fresh game. Will cause compatibility issues on a already ToG enabled save.\n\n\n[*] NEW - Compatible with Revised Mags II \nPatched weapons will have correct magazines!\n\nPatched Weapons:\n\nRifles:\n[list]\n[*]AN 94\n[*]SKS\n[*]Papovka\n[*]Type 56\n[*]STG44\n[*]Gewehr 43\n[*]Groza\n[*]M1 Garand\n[*]HK33A2\n[*]G3A3\n[*]M70\n[*]TAR 21\n[*]RK 95\n[*]RK 62\n\n[/list]\nPrecision Rifles:\n[list]\n[*]Mosin Carbine\n[*]VSS Vintorez\n[*]SSG 69\n[*]Steyr Scout Elite\n[*]M76\n[*]Delisle\n[*]VSK94\n[/list]\n\nSMGs:\n[list]\n[*]P90\n[*]Micro Uzi\n[*]Sten MK2\n[*]Mac11\n[*]HK53\n[*]UMP\n[*]PP91\n[*]Vigneron M2\n[/list]\n\nPistols:\n[list]\n[*]Glock17\n[*]USP\n[*]Viking Mp446\n[*]B93R\n[*]P 08 Luger\n[*]M1911\n[/list]\n\nMachine Guns:\n[list]\n[*]RPD\n[*]PKM\n[*]HK23E\n[/list]\n\n\n\nSome other changes:\nChanges some components installation logic.\nPapovka Grenade Launcher now blocks the gun from shooting, and appends a grenade to the muzzle\n\n\n[b]Also includes new calibers from Zulib[/b]\n\n[b]Works with Random Enemy Weapons[/b]: I recommend using the 75% chance of Default Weapon for now.\n\nUnpatched weapons won't drop and won't appear on Bobby Rays\n\nImportant: If you use DiceMan Adaptative Difficulty, you will need to turn OFF the dynamic equipment option. Or unpatched guns will drop.\n\n[b]Big thanks to Archimedes, the creator of ToG, and to Wittzard for helping the mod community with a lot of coding stuff[/b]",
+	'description', "[h1](Partial) Compatibility patch for Rato's Gameplay Balance and Overhaul and Tons of Guns[/h1]\n\n	\nWill balance and patch a number of guns of ToG to work with Rato's Mod. \n\n\nIt is recommended to start a fresh game. Will cause compatibility issues on a already ToG enabled save.\n\n\n[*] NEW - Compatible with Revised Mags II \nPatched weapons will have correct magazines!\n\nPatched Weapons:\n\nRifles:\n[list]\n[*]AN 94\n[*]SKS\n[*]Papovka\n[*]Type 56\n[*]STG44\n[*]Gewehr 43\n[*]Groza\n[*]M1 Garand\n[*]HK33A2\n[*]G3A3\n[*]M70\n[*]TAR 21\n[*]RK 95\n[*]RK 62\n[*]AR10\n[*]A91\n[*]G11\n\n[/list]\nPrecision Rifles:\n[list]\n[*]Mosin Carbine\n[*]VSS Vintorez\n[*]SSG 69\n[*]Steyr Scout Elite\n[*]M76\n[*]Delisle\n[*]VSK94\n[/list]\n\nSMGs:\n[list]\n[*]P90\n[*]Micro Uzi\n[*]Sten MK2\n[*]Mac11\n[*]HK53\n[*]UMP\n[*]PP91\n[*]Vigneron M2\n[/list]\n\nPistols:\n[list]\n[*]Glock17\n[*]USP\n[*]Viking Mp446\n[*]B93R\n[*]P 08 Luger\n[*]M1911\n[/list]\n\nMachine Guns:\n[list]\n[*]RPD\n[*]PKM\n[*]HK23E\n[/list]\n\n\n\nSome other changes:\nChanges some components installation logic.\nPapovka Grenade Launcher now blocks the gun from shooting, and appends a grenade to the muzzle\n\n\n[b]Also includes new calibers from Zulib[/b]\n\n[b]Works with Random Enemy Weapons[/b]: I recommend using the 75% chance of Default Weapon for now.\n\nUnpatched weapons won't drop and won't appear on Bobby Rays\n\nImportant: If you use DiceMan Adaptative Difficulty, you will need to turn OFF the dynamic equipment option. Or unpatched guns will drop.\n\n[b]Big thanks to Archimedes, the creator of ToG, and to Wittzard for helping the mod community with a lot of coding stuff[/b]",
 	'image', "Mod/Dau6w/Images/tog.PNG",
-	'last_changes', "1.23 --- NR\n\nMicroUzi and Mac11 range increased by 2 (to offset changes to No Stock)\n\nPatched the AR10",
+	'last_changes', '1.23 \n\n\nMicroUzi and Mac11 range increased by 2 (to offset changes to No Stock)\nSKS can no longer equip suppressors due to model issues\nfixed the PP91 being able to fold stock when it had an scope equipped\nremoved a bugged scope from the m70\nFixed Papovka and type 56 having wrong extended magazines size\n\nNew Weapons:\nAR10\nG11 \nA91*\n\n\n\n\n*(default components cant have subweapons, so you have to "install" the underslung grenade launcher. It has no cost in parts.)',
 	'dependencies', {
 		PlaceObj('ModDependency', {
 			'id', "cfahRED",
@@ -26,8 +26,8 @@ return PlaceObj('ModDef', {
 	'id', "Dau6w",
 	'author', "rato",
 	'version_major', 1,
-	'version_minor', 22,
-	'version', 3375,
+	'version_minor', 23,
+	'version', 3412,
 	'lua_revision', 233360,
 	'saved_with_revision', 350233,
 	'code', {
@@ -49,8 +49,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1739944441,
-	'code_hash', -7445181538593819410,
+	'saved', 1740235366,
+	'code_hash', 6625662075789370402,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "Caliber",
@@ -200,6 +200,16 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "WeaponComponent",
 			'Id', "_Master_PSO-1M2_Scope_TOG",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "_Master_G11_Scope_1",
+			'ClassDisplayName', "Weapon component",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "WeaponComponent",
+			'Id', "A91_GrenadeLauncher",
 			'ClassDisplayName', "Weapon component",
 		}),
 		PlaceObj('ModResourcePreset', {

@@ -1060,7 +1060,7 @@ return {
 				}),
 			},
 			Cost = 35,
-			DisplayName = T(697900714013, --[[ModItemWeaponComponent _Master_SteyrS_Scope_TOG DisplayName]] "Crossfire II 4x"),
+			DisplayName = T(697900714013, --[[ModItemWeaponComponent _Master_SteyrS_Scope_TOG DisplayName]] "Crossfire II x4"),
 			Icon = "Mod/KKh3Yhf/Images/SteyrScout_Scope.png",
 			ModificationDifficulty = 0,
 			ModificationEffects = {
@@ -1302,6 +1302,72 @@ return {
 			},
 			group = "Scope",
 			id = "_Master_PSO-1M2_Scope_TOG",
+		}),
+		PlaceObj('ModItemWeaponComponent', {
+			AdditionalCosts = {
+				PlaceObj('WeaponComponentCost', {
+					'Amount', 1,
+					'Type', "Microchip",
+				}),
+			},
+			Cost = 30,
+			DisplayName = T(115385164322, --[[ModItemWeaponComponent _Master_G11_Scope_1 DisplayName]] "Zieloptik ZO-1 x1.5"),
+			Icon = "Mod/KKh3Yhf/Images/G11_Scope_icon.png",
+			ModificationDifficulty = 0,
+			ModificationEffects = {
+				"IncreaseRange",
+				"AccuracyBonusWhenAimed",
+			},
+			Parameters = {
+				PlaceObj('PresetParamNumber', {
+					'Name', "RangeIncrease",
+					'Value', 4,
+					'Tag', "<RangeIncrease>",
+				}),
+				PlaceObj('PresetParamNumber', {
+					'Name', "bonus_cth",
+					'Value', 10,
+					'Tag', "<bonus_cth>",
+				}),
+			},
+			Slot = "Scope",
+			Tags = set( "Precision", "Tactical" ),
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					ApplyTo = "G11_1",
+					Entity = "G11_Scope",
+					Slot = "Scope",
+					param_bindings = false,
+				}),
+				PlaceObj('WeaponComponentVisual', {
+					Entity = "G11_Scope",
+					Slot = "Scope",
+					param_bindings = false,
+				}),
+			},
+			group = "Scope",
+			id = "_Master_G11_Scope_1",
+		}),
+		PlaceObj('ModItemWeaponComponent', {
+			DisplayName = T(249109672633, --[[ModItemWeaponComponent A91_GrenadeLauncher DisplayName]] "Grenade Launcher"),
+			EnableWeapon = "UnderslungGrenadeLauncher",
+			Icon = "UI/Icons/Upgrades/m16_grenade_launcher",
+			ModificationDifficulty = "-100",
+			ModificationEffects = {
+				"GrenadeLauncher",
+			},
+			Slot = "Under",
+			Tags = set(),
+			Visuals = {
+				PlaceObj('WeaponComponentVisual', {
+					Entity = "placeholder_7",
+					Slot = "Under",
+					param_bindings = false,
+				}),
+			},
+			comment = "--- default components cant have subweapons for some reason",
+			group = "Underslung",
+			id = "A91_GrenadeLauncher",
 		}),
 		PlaceObj('ModItemFolder', {
 			'name', "Non-Master Comps",
@@ -2226,7 +2292,7 @@ return {
 				},
 				Cost = 30,
 				DisplayName = T(343573025525, --[[ModItemWeaponComponent RAT_TOG_suppressor_762 DisplayName]] "Suppressor"),
-				Icon = "UI/Icons/Upgrades/beretta_silencer",
+				Icon = "UI/Icons/Upgrades/762_suppressor",
 				ModificationDifficulty = 0,
 				ModificationEffects = {
 					"SilentShots",
@@ -2512,6 +2578,12 @@ return {
 					PlaceObj('WeaponComponentVisual', {
 						ApplyTo = "PKM_1",
 						Entity = "placeholder_7",
+						Slot = "Muzzle",
+						param_bindings = false,
+					}),
+					PlaceObj('WeaponComponentVisual', {
+						ApplyTo = "G11_1",
+						Entity = "WeaponAttA_CompensatorHKG36_02",
 						Slot = "Muzzle",
 						param_bindings = false,
 					}),
